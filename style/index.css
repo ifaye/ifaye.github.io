@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: -apple-system,Helvetica Neue,PingFang SC,Microsoft YaHei,sans-serif;
+    font-size: 15px;
+    color: #1a1a1a;
+    background: #f6f6f6;
+    -webkit-tap-highlight-color: rgba(26,26,26,0);
+}
+a{
+    text-decoration: none;
+    color: #565a5f;
+}
+li{
+    list-style-type: none;
+}
+br{
+    border: 1px dashed #eceff2;
+}
+.navbar{
+    position: relative;
+    z-index: 100;
+    min-width: 1032px;
+    overflow: hidden;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+
+}
+.cont{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1000px;
+    height: 52px;
+    padding: 0 16px;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.cont .logo{
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+    color: #565a5f;
+}
+.cont .tabs{
+    border-bottom: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 23px;
+}
+.cont .tabs li{
+    padding: 0 16px;
+}
+.cont .tabs a{
+    font-size: 16px;
+    -webkit-transition:color 0.2s ease;
+    -moz-transition:color 0.2s ease;
+    transition:color 0.2s ease;
+}
+.cont .tabs a:hover{
+    color: #38b7ea;
+}
+
+
+
+
+/*关于作者*/
+.page-about li{list-style: disc;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
