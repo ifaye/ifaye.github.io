@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>background背景的应用</title>
+		<link rel="stylesheet" type="text/css" href="../style/reset.css"/>
+		<style type="text/css">
+			body{background-color: #fafafa; padding-bottom: 100px;}
+			h2{width: 700px; color: #333333; margin: 50px auto 30px;}
+			pre{background-color: #fff;margin-top: 10px; padding: 20px;padding: 20px;}
+			code{font-family: monaco,menlo,consolas,courier new,courier,monospace;}
+			p a{color: #FB4E4E;}
+			.box{width: 700px; margin: 0 auto 50px;}
+			.test1{width: 700px;overflow: hidden;}
+			.grad{display: inline-block;width: 100px; height: 100px;  margin: 10px 10px 10px 0;}
+			.test2{background: linear-gradient(to bottom,#fff,#333);}
+			.test3{background: linear-gradient(to top,#fff,#333);}
+			.test4{background: linear-gradient(to right,#fff,#333);}
+			.test5{background: linear-gradient(to left,#fff,#333);}
+			.test6{background: linear-gradient(45deg,#fff 0%,#333 50%);}
+			
+			.test7{width: 200px; height: 100px; 
+				background: radial-gradient(circle, #f00, #ff0, #080);
+			}
+			.test8{width: 200px; height: 100px; margin-top: 5px;
+				background:url(../img/icon-hot.png) no-repeat left top,
+				url(../img/sea-bg.jpg) no-repeat right bottom;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>background</h2>
+		<div class="box">
+			<div class="test1">
+				<p>半透明背景  background: rgba(255, 255, 255, 0.1)</p>
+				<p>ie8的半透明写法</p>
+				<pre>background: rgba(255,255,255,.1);   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);</pre>
+			</div>
+			
+			<p>线性渐变 linear-gradient (起始位置，起始颜色，结束颜色)</p>
+			<p>角度值指定渐变的方向</p>
+			<p>to bottom：设置渐变从上到下。相当于: 180deg。这是默认值</p>
+			<p>to top：设置渐变从下到上。相当于: 0deg</p>
+			<p>to left：设置渐变为从右到左。相当于: 270deg</p>
+			<p>to right：设置渐变从左到右。相当于: 90deg</p>
+			<p>linear-gradient(45deg, #fff 0%, #333 100%) 用百分比指定起止色位置</p>
+			<div class="grad test2"></div>
+			<div class="grad test3"></div>
+			<div class="grad test4"></div>
+			<div class="grad test5"></div>
+			<div class="grad test6"></div>
+			<p>IE6.0-9.0使用私有滤镜来实现该效果: <a href="http://msdn.microsoft.com/en-us/library/ms532997(VS.85,loband).aspx" target="_blank">progid:DXImageTransform.Microsoft.Gradient()</a></p>
+			<br>
+			<p>径向渐变 radial-gradient()</p>
+			<p>position 圆心位置，两个参数，默认center</p>
+			<p>shape 正圆circle ， 椭圆ellipse</p>
+			<br>
+			<div class="test7"></div>
+			<br>
+			<p>多背景图片</p>
+			<div class="test8"> </div>
+		</div>
+	
+	</body>
+</html>

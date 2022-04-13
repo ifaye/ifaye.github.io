@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>flex伸缩布局及兼容</title>
+		<link rel="stylesheet" type="text/css" href="../style/reset.css"/>
+		<style type="text/css">
+			body{background-color: #fafafa; padding-bottom: 100px;}
+			h2{width: 700px; color: #333333; margin: 50px auto 20px;}
+			h3{width: 700px; color: #333333; margin: 10px auto;}
+			h3 a{font-size: 14px; text-decoration: underline !important;}
+			.box{width: 700px; margin: 0 auto 50px;}
+			.box p{margin-bottom: 5px;}
+			.box span{color: #ff5544;}
+			.comp span{color: #ff5544;}
+			.test1{
+				width: 400px; 
+				height: 50px;
+				margin-bottom: 20px;
+				display: flex;
+				}
+			.test1 .item{height: 50px; line-height: 50px; color: #fff; text-align: center;}	
+			.test1 .item:first-child{flex: 1; background-color: #00BFFF;}
+			.test1 .item:nth-child(2){flex: 2;background-color:#40E0D0 ;}
+			.test1 .item:nth-child(3){flex: 1;background-color:#FF7F50}
+			
+			.test2{
+				width: 500px; 
+				height: 50px;
+				margin-bottom: 20px;
+				display: flex;
+				}
+			.test2 .item{height: 50px; line-height: 50px; color: #fff; text-align: center;}	
+			.test2 .item:first-child{width: 150px; flex:none; background-color: #00BFFF;}
+			.test2 .item:nth-child(2){flex: auto;background-color:#40E0D0 ;}
+			.test2 .item:nth-child(3){width: 150px; flex: none;background-color:#FF7F50}
+			
+			.test3{
+				width: 500px; 
+				height: 50px;
+				margin-bottom: 20px;
+				display: flex;
+				}
+			.test3 .item{height: 50px; line-height: 50px; color: #fff; text-align: center;}	
+			.test3 .item:first-child{flex:none; background-color: #00BFFF;}
+			.test3 .item:nth-child(2){flex: auto;background-color:#40E0D0 ;}
+			
+			.test4{
+				width: 500px; 
+				height: 50px;
+				margin-bottom: 20px;
+				display: flex;
+				}
+			.test4 .item{height: 50px; line-height: 50px; color: #fff; text-align: center;}	
+			.test4 .item:first-child{min-width: 150px; flex:none; background-color: #00BFFF;}
+			.test4 .item:nth-child(2){flex: auto;background-color:#40E0D0 ;}
+			
+			.test5{
+				width: 150px; 
+				height: 200px;
+				margin-bottom: 20px;
+				display: flex;
+				flex-direction: column;
+				}
+			.test5 .item{color: #fff; text-align: center;}	
+			.test5 .item:first-child{flex:1; background-color: #00BFFF;}
+			.test5 .item:nth-child(2){flex: 2;background-color:#40E0D0 ;}
+			.test5 .item:nth-child(3){flex: 1;background-color:#FF7F50}
+			
+			.align-test{
+				display:flex;
+				width:200px;height:100px;border-radius:5px;background-color:#fff;
+				margin-bottom: 30px;
+			}
+			.align-test li{padding: 5px 10px; background:#aaa; border-radius:5px; margin: 5px;}
+			.align-test li:nth-child(2){padding: 10px;}
+			.align-test li:nth-child(3){padding: 15px 10px;}
+			.test6 li{padding: 5px 10px !important;}
+			.test7{align-items:center;}
+			.test8{align-items:flex-start;}
+			.test9{align-items:flex-end;}
+			
+			.justify-test{
+				display:flex;
+				width:200px;height:100px;border-radius:5px;background-color:#fff;
+				margin-bottom: 30px;
+			}
+			.justify-test li{padding: 5px 10px; background:#aaa; border-radius:5px; margin: 5px;}
+			.test10{justify-content:flex-start;}
+			.test11{justify-content:flex-end;}
+			.test12{justify-content:center;}
+			.test13{justify-content:space-between;}
+			.test14{justify-content:space-around;}
+		</style>
+	</head>
+	<body>
+		<h2>flex 的兼容性</h2>
+		<div class="box">
+			<ul class="comp">
+				<li>Android<span>2.3</span>开始支持 <span>display:-webkit-box;</span></li>
+				<li>Android<span>4.4</span>开始支持标准 <span>display: flex;</span></li>
+				<li></li>
+				<li>IOS<span>6.1</span>开始支持 <span>display:-webkit-box;</span></li>
+				<li>IOS<span>7.1</span>开始支持标准 <span>display: flex;</span></li>
+				<li>PC火狐谷歌苹果等浏览器基本都支持 <span>display:box; 和 display: flex;</span></li>
+				<li>IE则是要<span>IE11</span>开始才支持 <span>flex</span></li>
+			</ul>
+		</div>
+		<div class="box">
+			<h3>伸缩布局常用案例 <a href="https://blog.csdn.net/az44yao/article/details/117676617" target="_blank" >参考https://blog.csdn.net/az44yao/article/details/117676617</a></h3>
+			<p>flex-grow 设置扩展比例 兼容写法</p>
+			<p>flex-shrink 设置收缩比率</p>
+			<p>flex-basis 设置伸缩基准值，规定灵活项目的初始长度</p>
+			<p>首先是按比例分配宽度</p>
+			<div class="test1">
+				<div class="item">flex: 1</div>
+				<div class="item">flex: 2</div>
+				<div class="item">flex: 1</div>
+			</div>
+			<p>某个元素宽度固定，其余自动 <span>width:150px; flex:none</span></p>
+			<div class="test2">
+				<div class="item">width:150px</div>
+				<div class="item">flex: auto</div>
+				<div class="item">width:150px</div>
+			</div>
+			<p>某个元素宽度不固定，其余自动 <span>flex:none 不参与后续宽度分配</span></p>
+			<div class="test3">
+				<div class="item">我的宽度就是内容占的宽度</div>
+				<div class="item">flex: auto</div>
+			</div>
+			<p>某个元素宽度不固定，但有初始宽度min-width <span>flex:none</span></p>
+			<div class="test4">
+				<div class="item">初始宽度150px</div>
+				<div class="item">flex: auto</div>
+			</div>
+			<p>布局方向</p>
+			<p>flex-direction:row 默认，水平分布</p>
+			<p>flex-direction:column 垂直分布</p>
+			<div class="test5">
+				<div class="item">我们</div>
+				<div class="item">是垂直</div>
+				<div class="item">分布</div>
+			</div>
+			<p>子项在纵轴的对齐方式</p>
+			<p>align-items:stretch 默认高度等于父元素高度</p>
+			<ul class="align-test test6">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+			<p>align-items:center 居中放置</p>
+			<ul class="align-test test7">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+			<p>align-items:flex-start</p>
+			<ul class="align-test test8">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+			<p>align-items:flex-end</p>
+			<ul class="align-test test9">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+			<p>子项在横轴的对齐方式</p>
+			<p>justify-content:flex-start 默认起始位对齐</p>
+			<ul class="justify-test test10">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+			<p>justify-content:flex-end 结束位对齐</p>
+			<ul class="justify-test test11">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+			<p>justify-content:center 中间位置对齐</p>
+			<ul class="justify-test test12">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+			<p>justify-content:space-between平均地分布在行里</p>
+			<p>两两之间的空白空间相等</p>
+			<ul class="justify-test test13">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+			<p>justify-content:space-between平均地分布在行里</p>
+			<p>两端保留子元素之间间距大小的一半</p>
+			<ul class="justify-test test14">
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+		</div>
+		<h3>兼容性 display:-webkit-box</h3>
+		<div class="box">
+			<p>box-flex，设置子元素分配其剩余空间，注意是分配剩余空间</p>
+			<br>
+			<p>布局方向 box-orient</p>
+			<p>box-orient:horizontal 从左到右</p>
+			<p>box-orient:vertical 从上到下</p>
+			<br>
+			<p>子元素纵轴对齐方式 box-align 类似align-items</p>
+			<p>start、center、end、stretch</p>
+			<br>
+			<p>子元素横轴对齐方式 box-pack 类似justify-content</p>
+			<p>start、center、end、justify</p>
+		</div>
+	</body>
+</html>

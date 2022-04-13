@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>涂伦的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="github blog">
+    <meta property="og:url" content="http://blog.ifaye.cc">
+    <link rel="icon" href="https://s2.ax1x.com/2019/10/16/KPORJg.png">
+	<link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="header-inner">
+			<div class="cont">
+				<div class="head-pt"><img src="../img/200x200mz.jpg" alt=""></div>
+				<a href="index.html" class="logo">Coder · 涂伦</a>
+				<p class="site-subtitle">伟大的诗人杜甫在一千多年前就告诉我们，读书破万卷！</p>
+			</div>
+			<ul class="tabs">
+				<li class="item"><a href="../note/index.html">前端路上</a></li>
+				<li class="item item-active"><a href="#">前端作品</a></li>
+				<li class="item"><a href="../index.html">我的简历</a></li>
+				<li class="item"><a href="../photoshop/index.html">Photoshop</a></li>
+				<li class="item"><a href="../other/index.html" target="_blank" >编程之外</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="content item-demos">
+			<h2>前端作品</h2>
+			<p>我的一些个人作品合集，里面有些是学习时候的练习作品，有些是觉得比较有意思想记录下来。</p>
+			<div class="demo-cont">
+				<div class="wrap shadow">
+					<ol class="list" id="demo-nav">
+						
+					</ol>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+<script type="text/javascript">
+    var str = '',
+        data = [
+            [
+                { title : '第一章 表单常用代码'},
+                { url : 'one/01/index.html', title : '禁止用户输入' },
+                { url : 'one/02/index.html', title : '验证用户是否输入' },
+                { url : 'one/03/index.html', title : '禁止用户复制和粘贴' },
+                { url : 'one/04/index.html', title : '限制只能输入数字' },
+                { url : 'one/05/index.html', title : '限制字符串长度' },
+                { url : 'one/06/index.html', title : '文本内容关键字过滤' },
+                { url : 'one/07/index.html', title : 'Ctrl + Enter提交表单' },
+                { url : 'one/08/index.html', title : '复选框全选' }
+            ],
+            [
+                { title : '第二章 html/css的一些应用'},
+                { url : 'two/01/index.html', title : 'css箭头代码' },
+                { url : 'two/02/index.html', title : '文本不能被选中' },
+                { url : 'two/03/index.html', title : 'calc() 四则运算' },
+				{ url : 'two/04/index.html', title : '渐变背景' },
+				{ url : 'two/05/index.html', title : '通过list-style-image用图片做排序图标' },
+                { url : 'two/06/index.html', title : 'flex的使用场景' },
+                { url : 'two/07/index.html', title : 'ftransform 变形的基础用法' },
+                { url : 'two/08/index.html', title : 'animation 动画的基础用法' },
+                { url : 'two/09/index.html', title : 'transition 过渡的一些效果' },
+                { url : 'two/10/index.html', title : 'grid布局' }
+            ],
+            [
+                { title : '第三章 内容展示常用代码'},
+                { url : 'three/01/index.html', title : '单元行上鼠标悬停提示' },
+                { url : 'three/02/index.html', title : '隔行换色鼠标经过换色' },
+                { url : 'three/03/index.html', title : '跟随广告' },
+                { url : 'three/04/index.html', title : '拖动滑块验证' }
+            ],
+            [
+                { title : '第四章 网页常用效果'},
+				{ url : 'four/01/index.html', title : '商品分类' },
+				{ url : 'four/02/index.html', title : '鼠标移入移出改变透明度' },
+				{ url : 'four/03/index.html', title : '图片放大镜效果' },
+                { url : 'four/04/index.html', title : '百度爱玩-图片轮换' },
+                { url : 'four/05/index.html', title : '遮罩下拉' },
+                { url : 'four/06/index.html', title : '榜单tab切换' },
+                { url : 'four/07/index.html', title : '中秋送好礼' }
+            ],
+            [
+                { title : '第五章 移动端swiper效果'},
+                { url : 'five/01/index.html', title : '选项卡切换' },
+                { url : 'five/02/index.html', title : '图片轮播' }
+            ],
+            [
+                { title : '第六章 时间日期选择'},
+                { url : 'six/01/index.html', title : '各个组件应用' },
+            ],
+        ];
+    for(var i = 0; i < data.length; i++){
+        var items = data[i];
+        var sub = '';
+        for(var j=0; j<items.length; j++){
+            var son = items[j];
+            if(j == 0){
+                sub += '<li><h1><a href="javascript:;" title="' + son.title + '">' + son.title + '</a></h1><dl class="sub-dl">';
+            } else {
+                sub += '<dd><a href="' + son.url + '" target="_blank" title="' + son.title + '">' + son.title + '</a></dd>';
+            }
+            if(j == items.length - 1){
+                sub += '</dl></li>';
+            }
+        }
+        str += sub;
+    }
+    var ol = document.getElementById('demo-nav');
+    ol.innerHTML = str;
+    var h1 = ol.getElementsByTagName('h1');
+    var dl = ol.getElementsByTagName('dl');
+    var tmp = -1;
+    var open = false;
+    for(var i=0; i < h1.length; i++){
+        h1[i].index = i;
+        h1[i].onclick = function(){
+            for(var i=0; i<h1.length; i++){
+                dl[i].style.display = 'none';
+            }
+            if(tmp == this.index && open){
+                dl[this.index].style.display = 'none';
+                open = false;
+            } else {
+                dl[this.index].style.display = 'block';
+                open = true;
+            }
+            tmp = this.index;
+        }
+    }
+
+</script>
+</body>
+</html>

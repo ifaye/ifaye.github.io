@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文本不能被复制</title>
+		<style type="text/css">
+			.test{
+				width: 700px; margin:20px auto;
+				-moz-user-select:none;/*火狐*/
+				-webkit-user-select:none;/*webkit浏览器*/
+				-ms-user-select:none;/*IE10*/
+				user-select:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test" onselectstart="return false;" unselectable="on">
+		    文本不能被复制，文本不能被复制，文本不能被复制，文本不能被复制
+		</div>
+		<script type="text/javascript">
+			document.body.onselectstart = e => {  
+			  e.preventDefault();
+			}
+			
+			document.body.oncopy = e => {  
+			  e.preventDefault();
+			}
+		</script>
+	</body>
+	
+</html>

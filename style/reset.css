@@ -1,0 +1,57 @@
+body{
+    line-height:1.5;
+    color:#333;
+    font-family:helvetica neue,consolas,arial,PingFang SC,Microsoft YaHei,sans-serif;
+    font-size: 16px;
+    background:white;
+}
+input,textarea,select{
+    font-size:12px;
+    font-size:100%;    
+    font-family:arial;
+    font-family:inherit;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dd,form{
+    margin:0;
+}
+h4,h5,h6{
+    font-size:1em;
+}
+ul,ol{
+    padding-left:0; 
+    list-style-type:none;
+}
+div,p,table,textarea,dl,li{
+	word-break:break-all;word-wrap:break-word;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+input[type="text"],input[type="password"],textarea{
+	outline-style:none;
+	-webkit-appearance:none;
+}
+
+a img{border:0;}
+img{border:0;}
+textarea{resize:none}
+em,i{font-style:normal;font-weight:normal;}
+a{color:#565a5f; cursor: pointer; outline: none; text-decoration:none;}
+a:link, a:visited, a:hover, a:active {text-decoration: none;}
+a:focus,input,textarea{outline-style:none;}
+pre{white-space: pre;white-space: pre-wrap;word-wrap: break-word;}
+pre,code{font-family:monaco,menlo,consolas,courier new,courier,monospace}/* pre里面的内容不会继承任何样式 */
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;zoom: 1; }
+.shadow{border:1px solid #e6e6e6;border-radius:5px;box-shadow:0px 2px 3px #ececec;background: #fff;}
+.none{display:none}
+.block{display:block;}
+.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+
+
+/* #ff5544 skyblue */
+

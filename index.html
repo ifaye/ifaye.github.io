@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>涂伦的博客</title>
@@ -7,31 +8,82 @@
     <meta property="og:title" content="github blog">
     <meta property="og:url" content="http://blog.ifaye.cc">
     <link rel="icon" href="https://s2.ax1x.com/2019/10/16/KPORJg.png">
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/index.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="cont">
-            <a href="/" class="logo">Coder · 涂伦</a>
-            <ul class="tabs">
-                <li><a href="/local-blog/">主页</a></li>
-                <li><a href="/local-blog/nav/html/">HTML</a></li>
-                <li><a href="/local-blog/nav/css/">CSS</a></li>
-                <li><a href="/local-blog/nav/javascript/">JavaScript</a></li>
-                <li><a href="/local-blog/nav/photoshop/">Photoshop</a></li>
-                <li><a href="/local-blog/nav/diy/">电脑硬件</a></li>
-                <li><a href="/local-blog/nav/about/">关于我</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="main">
-        <div class="left-col"></div>
-        <div class="mid-col"></div>
-        <div class="right-col"></div>
-    </div>
-
-
-
+	<div class="navbar">
+		<div class="header-inner">
+			<div class="cont">
+				<div class="head-pt"><img src="img/200x200mz.jpg" alt=""></div>
+				<a href="index.html" class="logo">Coder · 涂伦</a>
+				<p class="site-subtitle">伟大的诗人杜甫在一千多年前就告诉我们，读书破万卷！</p>
+			</div>
+			<ul class="tabs">
+				<li class="item"><a href="note/index.html">前端路上</a></li>
+				<li class="item"><a href="demo/index.html">前端作品</a></li>
+				<li class="item item-active"><a href="#">我的简历</a></li>
+				<li class="item"><a href="photoshop/index.html">Photoshop</a></li>
+				<li class="item"><a href="other/index.html">编程之外</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div class="content item-about">
+			<h4>个人信息</h4>
+			<h5>92年 / 男 / 专科 / 现居广州</h5>
+			<p>2013年毕业下来广州，刚出来时做过销售，做过房产中介，做不长久就撤了。后得贵人收留，开始学习网页设计和图像处理，从事天猫淘宝方面的业务。后面学习前端开发，加入电商软件公司，业务主要偏向医药行业，现阶段依旧从事前端为主。</p>
+			<h4>能力专长</h4>
+			<ol  class="be-good">
+				<li>熟悉html、css，能够兼容主流各种浏览器，比如ie6-10， chrome，firefox等；能够熟练的解决各个浏览器下出现的bug。</li>
+				<li>熟悉js dom，event，jsonp，运用ajax进行数据交互，能够编写基本的js原生代码。熟悉dom， event，prototype，constructor 等基础概念。</li>
+				<li>了解sass预处理器的基础操作，熟悉jquery api，能够编写最基本的动态交互效果，并擅长用jquery插件来封装日常的开发组件。</li>
+				<li>熟悉bootstrap，avalon，熟悉Element组件库,了解vue框架。熟悉使用Webpack进行模块管理，并使用glup工程化。</li>			
+				<li>熟悉使用svn，git等版本控制工具。</li>
+				<li>使用wampserver、tomcat搭建本地服务器，配合firebug，chrome调试代码，进一步进行优化代码。</li>
+				<li>使用photoshop， sublime text， webstorm，hbuilder等工具进行前端页面手工式的开发。</li>	
+				<li>熟练使用淘宝的flexible方案进行wap端页面的编写。</li>
+				<li>微信小程序的开发，和移动开发的同事合作过，负责wxml，wxss和一些js页面的编写。</li>
+			</ol>
+			<div id="example"></div>
+			
+			
+			<h4>前端作品</h4>
+			<p>这里不一一展开，更多请点击 <a href="demo/index.html">点此查看</a></p>
+			<h4>求职意向</h4>
+			<p>希望成为一名前端工程师。</p>
+			<h4>履历描述</h4>
+			<h5>2019.8 - 今 自由职业</h5>
+			<ul class="record">
+				<li>主要靠和后端朋友合作，接单苟活</li>
+			</ul>
+			<h5>2014.1 - 2019.7 中小型软件公司（70-150人） 前端工程师</h5>
+			<ul class="record">
+				<li>负责公司设计部视觉设计效果的实现,包括PC端、wap端、小程序页面</li>
+				<li>技术初应用的研究，各种前端插件框架如bootstrap，设计组件如ant.design</li>
+				<li>参与UI团队模块化设计，助于形成设计风格，提高设计效率</li>
+				<li>负责搭建前端模块化组件，与后端沟通，以提高前端开发效率</li>
+			</ul>
+			<h5>2013.1 - 2013.12 小型服装公司（10人） 淘宝美工</h5>
+			<ul class="record">
+				<li>负责处理公司产品的模特图片，设计海报和广告，兼职客服。</li>
+			</ul>
+			<h4>联系方式</h4>
+			<div class="widget-wrap">
+				<div class="item">我的邮箱：<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=FW9vYiQsISJVc3pteHR8eTt2eng">点击查看!</a></div>
+				<div class="item">我的微信：<span>扫描二维码！</span><img src="img/wx-ewm.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="foot">
+		<p>© 2022 <span>不要逃避内心的怯懦，敢于面对平淡的人生</span></p>
+	</div>
+	
+	
+	
+	
+	
 </body>
 </html>
