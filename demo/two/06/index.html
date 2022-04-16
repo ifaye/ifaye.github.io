@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>transform的一些基础应用与拓展</title>
+		<link rel="stylesheet" type="text/css" href="../../../style/reset.css"/>
+		<style type="text/css">
+			body{background-color: #fafafa; padding-bottom: 100px;}
+			h2{width: 700px; color: #333333; margin: 50px auto;}
+			h2 span{font-size: 16px; padding-left: 10px; font-weight: 400;}
+			.box{width: 700px; margin: 50px auto;}
+			.test1{width: 700px; margin: 0 auto;}
+			.test1 li{float: left; border: 1px solid #333333; margin: 0 20px 50px 0;}
+			.test1 li p{width: 300px; height: 100px; padding: 10px; background-color: #ddd;}
+			.test1 .translate p{transform:translate(10px,10px);}
+			.test1 .rotate p{transform:rotate(-15deg);}
+			.test1 .scale1 {transform:scale(0.8);}
+			.test1 .scale2 {transform:scale(1.2);}
+			.test1 .skew1 {transform:skew(-5deg);}
+			.test1 .skew2 {transform:skew(-5deg,-5deg);}
+			
+			.test2{width: 100px; height: 100px; 
+				perspective: 500px; 
+				/* perspective：视距，表示视点距离屏幕的长短。视点，用于模拟透视效果时人眼的位置。 */
+				/* perspective 一般作为一个属性，设置给父元素，作用于所有3D转换的子元素。 */
+			}
+			.test2 span{
+				display: block;width: 100%; height: 100%;
+				background-color: #ff3040; transition: all 1s;
+			}
+			.test2:hover span{background-color: skyblue; transform: rotateY(180deg);}
+			
+			.test3{margin: 50px 0; width: 150px; border-radius: 50%; height: 150px; position: relative; overflow: hidden;}/* 圆形图片旋转不需要设置视距 perspective */
+			.test3 img{
+				width: 150px; height: 150px; position: absolute; left: 0; top:0; 
+				transition: transform 1s;
+				}
+			.test3 img:first-child{z-index: 1; backface-visibility: hidden;/*不是正面对向屏幕，就隐藏*/}
+			.test3:hover img{transform: rotateY(180deg);}
+			
+			.test4{width: 700px; margin: 20px auto 50px;}
+			.test4 li{float: left; width: 120px; height: 50px; position: relative;
+			transform-style:preserve-3d;  /*设置子元素显示方式为3d*/
+			transition: transform 0.8s;}
+			.test4 li a{display: block; position: absolute; left: 0; top:0; width: 100%; height: 50px; 
+				line-height: 50px; text-align: center; color: #fff;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+			 }
+			 .test4 li a:first-child{background-color: #ff5544; transform: translateZ(25px);}
+			 .test4 li a:last-child{transform: rotateX(-90deg) translateZ(25px);background-color: skyblue;}
+			 .test4 li:hover{transform: rotateX(90deg);}
+			 
+			.test5{
+				width: 320px; height: 200px; position: relative; ; 
+				background: url(../../../case/dog.jpg);
+				perspective: 800px;  /*给父盒子添加透视效果*/
+				}
+			.test5 .dr-lt,.test5 .dr-rt{
+				width: 50%; height: 200px; background: url(../../../img/sea-bg.jpg) repeat;
+				position: absolute;top:0; transition: transform 0.8s;
+				}
+			.test5 .dr-lt{left: 0; transform-origin: left;} 
+			.test5 .dr-rt{right: 0; transform-origin: right;} 
+			.test5:hover .dr-lt{transform: rotateY(-130deg);}
+			.test5:hover .dr-rt{transform: rotateY(130deg);}
+		</style>
+	</head>
+	<body>
+		<h2>transform基础2D</h2>
+		<ul class="test1 clearfix">
+			<li class="translate"><p>transform:translate(10px,10px)</p></li>
+			<li class="rotate"><p>transform:rotate(-15deg)</p></li>
+			<li class="scale1"><p>transform:scale(0.8)</p></li>
+			<li class="scale2"><p>transform:scale(1.2)</p></li>
+			<li class="skew1"><p>transform:skew(-5deg)</p></li>
+			<li class="skew2"><p>transform:skew(-5deg,-5deg)</p></li>
+		</ul>
+		<h2>transform应用3D <span>注:3d对ie兼容性不好</span></h2>
+		<div class="box">
+			<div class="test2"><span></span></div>
+			<div class="test3">
+				<img src="../../../case/front-pic.svg" alt="">
+				<img src="../../../case/rear-pic.svg" alt="">
+			</div>
+		</div>
+		<ul class="test4 clearfix">
+			<li>
+				<a href="#">导航栏一</a>
+				<a href="#">前端路上</a>
+			</li>
+			<li>
+				<a href="#">导航栏二</a>
+				<a href="#">我的简历</a>
+			</li>
+			<li>
+				<a href="#">导航栏三</a>
+				<a href="#">前端作品</a>
+			</li>
+			<li>
+				<a href="#">导航栏四</a>
+				<a href="#">编程之外</a>
+			</li>
+		</ul>
+		<div class="box">
+			<div class="test5">
+				<div class="dr-lt"></div>
+				<div class="dr-rt"></div>
+			</div>
+		</div>
+		
+
+	</body>
+</html>

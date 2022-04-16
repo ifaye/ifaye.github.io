@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>calc()四则运算</title>
+		<style type="text/css">
+			.test{
+				width: 700px; margin:20px auto;
+				-moz-user-select:none;/*火狐*/
+				-webkit-user-select:none;/*webkit浏览器*/
+				-ms-user-select:none;/*IE10*/
+				user-select:none;
+			}
+			.demo1{
+				width: 500px; height: 100px;
+				
+			}
+			.box-lt{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: skyblue;
+			}
+			.box-rt{
+				float: right;
+				width: calc(100% - 100px);
+				height: 100px;
+				background-color: #EEA236;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test">
+		    <p>有些地方不适合或者不想用js或者flex，但是需要计算剩余宽度的时候，可以试试calc()四则运算，
+			兼容性跟flex差不多，注意加减符号两边要有空格/p>
+			<div class="demo1">
+				<div class="box-lt">width:100px</div>
+				<div class="box-rt">width:calc(100% - 100px)</div>
+			</div>
+		</div>
+	</body>
+	
+</html>

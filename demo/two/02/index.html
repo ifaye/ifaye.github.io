@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>文本不能被复制</title>
 		<style type="text/css">
 			.test{
@@ -15,7 +16,10 @@
 	</head>
 	<body>
 		<div class="test" onselectstart="return false;" unselectable="on">
-		    文本不能被复制，文本不能被复制，文本不能被复制，文本不能被复制
+		    文本不能被选中，文本不能被复制，文本不能被选中，文本不能被复制<br>
+			css是利用user-select <br>
+			html有unselectable 属性<br>
+			js可以用preventDefault 阻止操作
 		</div>
 		<script type="text/javascript">
 			document.body.onselectstart = e => {  

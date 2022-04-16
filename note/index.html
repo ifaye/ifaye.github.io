@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>涂伦的博客</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta property="og:title" content="github blog">
     <meta property="og:url" content="http://blog.ifaye.cc">
     <link rel="icon" href="https://s2.ax1x.com/2019/10/16/KPORJg.png">
@@ -32,15 +32,62 @@
 	<div class="main">
 		<div class="content item-technical">
 			<div>
-				<p>1 移动端1像素问题及解决方法</p>
-				<p>grid布局的一些探讨腾讯云专栏
-				https://cloud.tencent.com/developer/article/1186773
+				<p>移动端1像素问题及解决方法</p>
+				<p>根据分辨率的兼容写法</p>
+				<p>table 多出省略，要给table设置 table-layout:fixed;</p>
+				<p>垂直居中显示</p>
+				<!-- 元素是div元素垂直水平居中显示
+				.cantainer{text-align: center; vertical-align:middle; display: table-cell;}//添加display属性
+				注意：cantainer这个div不能有float -->
 				
-				web前端开发
-				https://www.html.cn/archives/tag/grid-area
+				<p>多行文本固定高度的居中</p>
+				<!-- 父元素display:table ，子元素  display:table-cell;vertical-align:middle;
+				<div style="display:table;">
+				    <div style="display:table-cell;vertical-align:middle; width:200px; height:200px;">
+				        我是文本文本文本文本文本文本文本文本文本
+				        我是文本文本文本文本文本文本文本文本文本
+				    </div>
+				</div> -->
 				
-				腾讯云文档
-				https://cloud.tencent.com/developer/section/1072094</p>
+				<p>background的基础用法</p>
+				<!-- 只要背景透明        兼容ie8
+				<div class="main">
+				      <div class="cont">呵呵</div>
+				 </div>
+				.main:{background: #fff; background:rgba(255,255,255,0.95); filter:alpha(opacity=95); }
+				. cont {position: relative;} 重要，有了这个属性内容才不会透明。
+				特别注意，main这个div不能有定位，否则会无效 -->
+				
+				<p>火狐浏览器firefox 表格table td th不支持position</p>
+				<!-- 今天下午遇到一个火狐浏览器里的小bug，在表格table里的th加了个相对定位，在里边的某个div里加了绝对定位，但是绝对定位不起作用，并且在ie和谷歌浏览器里正常。解决办法：给th加了个display属性，让它为块状元素，即display:block; -->
+				
+				<p>比较好的一像素解决方案</p>
+				<!-- div { height:1px; background:#000; -webkit-transform: scaleY(0.5); -webkit-transform-origin:0 0; overflow: hidden;} 
+				/* 2倍屏 */@media only screen and (-webkit-min-device-pixel-ratio: 2.0) { .border-bottom::after { -webkit-transform: scaleY(0.5); transform: scaleY(0.5); }}/* 3倍屏 */@media only screen and (-webkit-min-device-pixel-ratio: 3.0) { .border-bottom::after { -webkit-transform: scaleY(0.33); transform: scaleY(0.33); }}
+				-->
+				
+				<p>media和import的学习和使用</p> <!-- 笔记 css参考手册知识整理 -->
+				<p>nimation动画的学习与使用</p>
+				<p>flex布局的学习与使用</p>
+				<p>transform变形的学习与使用</p>
+				<p>grid布局的一些探讨
+				<a href="https://cloud.tencent.com/developer/article/1186773">腾讯云专栏</a>
+				<a href="https://www.html.cn/archives/tag/grid-area">web前端开发</a>
+				<a href="https://cloud.tencent.com/developer/section/1072094">腾讯云文档</a>
+				</p>
+				<p>pc端年月日，时间的选择</p>
+				<p>移动端年月日，时间的选择</p>
+				<p>淘宝wap端页面开发解决方案rem</p>
+				<p>如何搭建本地服务器</p>
+				<p>Sass css预处理器的学习与使用</p>
+				<p>webpage的学习与使用</p>
+				<p>gulp的学习与使用</p>
+				<p>jquery的学习与使用</p>
+				<p>ajax数据交互</p>
+				<p>Avalon框架的学习与使用</p>
+				<p>Swiper插件的学习与使用</p>
+				<p>Bootstrap框架的应用</p>
+				<p>Element桌面端组件库的学习与使用</p>
 			</div>
 			<div style="height: 400px;"></div>
 		</div>

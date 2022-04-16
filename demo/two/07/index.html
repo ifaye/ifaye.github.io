@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>animation动画的应用</title>
+		<link rel="stylesheet" type="text/css" href="../../../style/reset.css"/>
+		<style type="text/css">
+			body{background-color: #fafafa; padding-bottom: 100px;}
+			h2{width: 700px; color: #333333; margin: 50px auto;}
+			h2 span{font-size: 16px; padding-left: 10px; font-weight: 400;}
+			pre{background-color: #fff;margin-top: 20px; padding: 20px;padding: 20px;}
+			code{font-family: monaco,menlo,consolas,courier new,courier,monospace;}
+			.box{width: 700px; margin: 0 auto 50px;}
+			.test1,.test2{width: 700px; height: 50px; margin-top: 20px; position: relative; 
+			background-color: #FF7F50;overflow: hidden;}
+			.test1 span,.test2 span{
+				display: inline-block; 
+				width: 100px; height: 50px;
+				position: absolute;left: -100px;top:0;
+				background-color: skyblue;
+				}
+			.test2 span{left: 0;}	
+			.test1 span{animation:move1 4s linear 0.2s infinite;}
+			.test2 span{animation:move2 4s linear 0.2s infinite alternate; }
+			@keyframes move1{/* 写法一 from,to */
+				from{left:-100px;}
+				to{left:100%;}
+			}
+			@keyframes move2{/* 写法二 0,100% */
+				0{left:0;}
+				100%{left:calc(100% - 100px);} /* 运算符两边要有空格 */
+			}
+		</style>
+	</head>
+	<body>
+		<h2>animation </h2>
+		<div class="box">
+			<p>animation-name 动画名称</p>
+			<p>animation-duration 动画时间</p>
+			<p>animation-timing-function 运动曲线:linear，ease</p>
+			<p>animation-delay 何时开始</p>
+			<p>animation-iteration-count 播放次数:数值，infinite无限</p>
+			<p>animation-direction 播放方向 normal正，reverse反，alternate正反交替</p>
+			<br>
+			<p>声明动画 @keyframes 动画名称{}</p>
+			<pre><code>@keyframs move1{
+	0%{left:0;}
+	50%{left:50%;}
+	100%{left:100%;}
+}</code></pre>
+			<div class="test1"><span></span></div>
+			<div class="test2"><span></span></div>
+		</div>
+	
+	</body>
+</html>

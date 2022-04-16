@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>flex伸缩布局及兼容</title>
-		<link rel="stylesheet" type="text/css" href="../style/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../style/reset.css"/>
 		<style type="text/css">
 			body{background-color: #fafafa; padding-bottom: 100px;}
 			h2{width: 700px; color: #333333; margin: 50px auto 20px;}
@@ -62,7 +63,7 @@
 				display: flex;
 				flex-direction: column;
 				}
-			.test5 .item{display: flex; justify-content:center; color: #fff; align-items: center;}
+			.test5 .item{display: flex; justify-content:center; color: #fff; align-items: center;}	
 			.test5 .item:first-child{flex:1; background-color: #00BFFF;}
 			.test5 .item:nth-child(2){flex: 2;background-color:#40E0D0 ;}
 			.test5 .item:nth-child(3){flex: 1;background-color:#FF7F50}
@@ -104,7 +105,6 @@
 				<li>IOS<span>7.1</span>开始支持标准 <span>display: flex;</span></li>
 				<li>PC火狐谷歌苹果等浏览器基本都支持 <span>display:box; 和 display: flex;</span></li>
 				<li>IE则是要<span>IE11</span>开始才支持 <span>flex</span></li>
-				<li>小知识点，flex盒子的子元素会附带块效果，哪怕是span都能设置margin-top</li>
 			</ul>
 		</div>
 		<div class="box">
@@ -138,9 +138,9 @@
 			<p>flex-direction:row 默认，水平分布</p>
 			<p>flex-direction:column 垂直分布</p>
 			<div class="test5">
-				<div class="item">我们</div>
-				<div class="item">是垂直</div>
-				<div class="item">分布</div>
+				<div class="item"><i>我们</i></div>
+				<div class="item"><i>是垂直</i></div>
+				<div class="item"><i>分布</i></div>
 			</div>
 			<p>子项在纵轴的对齐方式</p>
 			<p>align-items:stretch 默认高度等于父元素高度</p>

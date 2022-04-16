@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>三角箭头的写法</title>
+		<style type="text/css">
+			p{margin-bottom: 0;}
+			span{font-size: 0; display: inline-block;}
+			.test{
+				width: 700px; margin:20px auto;
+			}
+			.demo1{margin-bottom: 20px;}
+			.demo1 .to_top{
+				width: 0;
+				height: 0;
+				border-bottom: 10px solid #ccc;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+			}
+			.demo1 .to_bottom {
+			    width: 0;
+			    height: 0;
+			    border-top: 10px solid #ccc;
+			    border-left: 10px solid transparent;
+			    border-right: 10px solid transparent;
+			}
+			.demo1 .to_left {
+			    width: 0;
+			    height: 0;
+			    border-right: 10px solid #ccc;
+			    border-top: 10px solid transparent;
+			    border-bottom: 10px solid transparent;
+			}
+			.demo1 .to_right {
+				width: 0;
+				height: 0;
+				border-left: 10px solid #cccf;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+			}
+			
+			.demo2 .to_top{
+				width: 12px; height: 12px;
+				border:2px solid #cccf;
+				border-left: none;border-bottom: none;
+				transform: rotate(-45deg);
+				margin-top: 10px;
+			}
+			.demo2 .to_bottom{
+				width: 12px; height: 12px;
+				border:2px solid #cccf;
+				border-top: none;border-right: none;
+				transform: rotate(-45deg);
+			}
+			.demo2 .to_left{
+				width: 12px; height: 12px;
+				border:2px solid #cccf;
+				border-top: none;border-right: none;
+				transform: rotate(45deg);
+				margin-top: 10px;
+			}
+			.demo2 .to_right{
+				width: 12px; height: 12px;
+				border:2px solid #cccf;
+				border-left: none;border-bottom: none;
+				transform: rotate(45deg);
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test">
+		    <div class="demo1">
+				<h4>实心箭头，利用border边框去实现</h4>
+				<p>向上箭头</p>
+				<span class="to_top"></span>
+				<p>向下箭头</p>
+				<span class="to_bottom"></span>
+				<p>向左箭头</p>
+				<span class="to_left"></span>
+				<p>向右箭头</p>
+				<span class="to_right"></span>
+			</div>
+		    <div class="demo2">
+				<h4>空心箭头，利用border边框transform去实现</h4>
+				<p>向上箭头</p>
+				<span class="to_top"></span>
+				<p>向下箭头</p>
+				<span class="to_bottom"></span>
+				<p>向左箭头</p>
+				<span class="to_left"></span>
+				<p>向右箭头</p>
+				<span class="to_right"></span>
+			</div>
+		</div>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>遮罩下拉</title>
+	<style type="text/css">
+		body{background-color: #fafafa; font-size: 14px;}
+		.demo1{
+			width: 700px;
+			font-size: 14px;
+			margin: 50px auto; 
+			overflow: hidden;
+		}
+		.box{
+			width: 295px;
+			height: 184px;
+			overflow: hidden;
+			background-color: #fff;
+			float: left;
+			margin:0 20px 20px 0;
+		}
+		.box .home-tile{
+			display: block;
+			background: #141b20;
+			width: 100%;
+			height: 184px;
+			transition: all .15s ease-out;
+			overflow: hidden;
+			position: relative;
+			cursor: pointer;
+		}
+		.box .tile-image{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			bottom: auto;
+			right: auto;
+			height: 184px;
+			transform: translate(-50%,-50%);
+		}
+		
+		.box .home-tile-overlay{
+			display: flex;
+			flex-direction:column;
+			justify-content:space-between;
+			position: absolute;
+			top: -184px;
+			/* top: 0; */
+			left: 0;
+			height: 184px;
+			width: 100%;
+			z-index: 1;
+			background-color: rgba(0,0,0,0.5);
+			transition: top .3s ease;
+			overflow: hidden;
+		}
+		.box .otkbtn-primary{
+			display: block;
+			width: 135px;
+			padding: 12px 0;
+			margin: 45px auto 0;
+			line-height: 20px;
+			text-align: center;
+			cursor: pointer;
+			color: #fff;
+			background: #f56c2d;
+			border-radius: 4px;
+			transition: background .3s ease-in-out,color .3s ease-in-out;
+		}
+		.box .otkbtn-primary:hover{
+			background-color: #c85e36;
+		}
+		.box .home-tile-details{padding: 12px;}
+		.box .home-tile-header{
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			max-height: 52px;
+			color: #c3c6ce;
+			font-size: 18px;
+			line-height: 26px;
+			overflow: hidden;
+			transition: color 0.3s ease;
+		}
+		.box .home-tile-header:hover{color: #fff;}
+		.box .otkprice,.box .otkprice-free{
+			display: flex;
+			align-items: flex-end;
+			color: #f56c2d;
+			font-size: 18px;
+			line-height: 26px;
+			font-weight: 300;
+		}
+		.box .otkprice-free{color: #04bd68;}
+		.box .home-tile:hover .home-tile-overlay{top: 0;}
+		
+	</style>
+</head>
+<body>
+<div class="demo1">
+    <div class="box">
+		<a href="##" class="home-tile">
+			<img class="tile-image" src="https://data3.origin.com/asset/content/dam/originx/web/app/games/a-plague-tale-innocence/a-plague-tale-innocence/gdp/1080176-standard-edition_hometile_2000x500_en_WW.jpg/01eaa594-840a-416c-ba18-510e4a523b8b/original.jpg" alt="">
+			<div class="home-tile-overlay">
+				<span class="otkbtn-primary">了解详情</span>
+				<div class="home-tile-details">
+					<div class="home-tile-header">A Plague Tale: Innocence</div>
+					<span class="otkprice">HK$ 139.00</span>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="box">
+		<a href="##" class="home-tile">
+			<img class="tile-image" src="https://data1.origin.com/asset/content/dam/originx/web/app/games/the-count-lucanor/the-count-lucanor/gdp/TCL_hometile_2000x500_en_WW.jpg/dae8372e-1ece-4ee9-844d-b7b5de41a1f7/original.jpg" alt="">
+			<div class="home-tile-overlay">
+				<span class="otkbtn-primary">了解详情</span>
+				<div class="home-tile-details">
+					<div class="home-tile-header">The Count Lucanor</div>
+					<span class="otkprice-free">免费</span>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

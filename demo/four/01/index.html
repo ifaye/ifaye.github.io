@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>商品分类</title>
+    <link rel="stylesheet" type="text/css" href="../../../style/reset.css" media="all"/>
+	<style type="text/css">
+		body{background-color: #fafafa; font-size: 14px;}
+		.demo1{
+			width: 1190px;
+			font-size: 14px;
+			margin: 50px auto; 
+		}
+		.box{
+			width: 190px;
+			padding: 10px 0;
+			background-color: #fff;
+			position: relative;
+		}
+		.menu-item a{color: #333; font-size: 14px;}
+		.menu-item a:hover{color: #c81623;}
+		.cate-menu{
+			padding-left: 18px;
+			height: 25px;
+			line-height: 25px;
+			font-size: 0;
+			overflow: hidden;
+			transition: background-color 0.2 ease;
+		}
+		.cate-menu .menu-line{padding: 0 2px; font-size: 12px;}
+		.cate-part{
+			display: none;
+			position: absolute;
+			width: 790px;
+			padding: 20px 10px 20px 0;
+			left:190px;top:0;
+			box-shadow: 2px 0 5px rgba(0,0,0,.2);
+			background-color: #fff;
+			min-height: 380px;
+			font-size: 12px;
+		}
+		.cate-part a{font-size: 12px;}
+		.cate-part .cate-channel{padding-left: 20px; height: 24px; line-height: 24px; overflow: hidden;}
+		.cate-part .cate-channel a{
+			float: left;
+			margin-right: 10px;
+			padding: 0 10px;
+			height: 24px;
+			background-color: #333;
+			line-height: 24px;
+			color: #fff;
+			transition:background-color 0.2s ease;
+		}
+		.channel-arrow{
+			display: inline-block; 
+			width: 6px; 
+			height: 6px; 
+			margin-left: 2px;
+			border: 1px solid #ccc;
+			border-left: none;border-bottom: none;
+			transform: rotate(45deg);
+			}
+		.cate-part .cate-channel a:hover{background-color: #c81623;}	
+		.cate-part .cate-detail{
+			padding: 10px 20px;
+		}
+		.cate-part .cate-detail dl{position: relative;padding-left: 80px;}
+		.cate-part .cate-detail dt{
+			position: absolute; height: 19px; 
+			line-height: 20px; left: 0; 
+			top:5px;overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			text-align: right;
+			padding-right: 5px;
+			width: 65px;
+			}
+		.cate-part .cate-detail dt a{font-weight: 700;}	
+		.cate-part .cate-detail .channel-arrow{border-color: #333;}
+		.cate-part .cate-detail a:hover .channel-arrow{border-color: #c81623;}
+		.cate-part .cate-detail dd{padding: 5px 0; overflow: hidden;}
+		.cate-part .cate-detail dd a{
+			float: left;
+			margin: 3px 0;
+			padding: 0 7px;
+			height: 16px;
+			line-height: 16px;
+			white-space: nowrap;
+			color: #666;
+		}
+		.cate-part .cate-detail dd a:hover{color:#c81623;}
+		.menu-item:hover .cate-menu{background-color: #d9d9d9;}
+		.menu-item:hover .cate-part{display: block;}
+	</style>
+</head>
+<body>
+<div class="demo1">
+    <ul class="box">
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">家用电器</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">手机</a>
+				<span class="menu-line">/</span>
+				<a href="##">运营商</a>
+				<span class="menu-line">/</span>
+				<a href="##">数码</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">母婴</a>
+				<span class="menu-line">/</span>
+				<a href="##">玩具乐器</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">图书</a>
+				<span class="menu-line">/</span>
+				<a href="##">文娱</a>
+				<span class="menu-line">/</span>
+				<a href="##">教育</a>
+				<span class="menu-line">/</span>
+				<a href="##">电子书</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">图书<i class="channel-arrow"></i></a>
+					<a href="##">文娱<i class="channel-arrow"></i></a>
+					<a href="##">电子书<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">电脑</a>
+				<span class="menu-line">/</span>
+				<a href="##">办公</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">家居</a>
+				<span class="menu-line">/</span>
+				<a href="##">家具</a>
+				<span class="menu-line">/</span>
+				<a href="##">家装</a>
+				<span class="menu-line">/</span>
+				<a href="##">厨具</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">女鞋</a>
+				<span class="menu-line">/</span>
+				<a href="##">箱包</a>
+				<span class="menu-line">/</span>
+				<a href="##">钟表</a>
+				<span class="menu-line">/</span>
+				<a href="##">珠宝</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">男鞋</a>
+				<span class="menu-line">/</span>
+				<a href="##">运动</a>
+				<span class="menu-line">/</span>
+				<a href="##">户外</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">房产</a>
+				<span class="menu-line">/</span>
+				<a href="##">汽车</a>
+				<span class="menu-line">/</span>
+				<a href="##">汽车用品</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">手机</a>
+				<span class="menu-line">/</span>
+				<a href="##">运营商</a>
+				<span class="menu-line">/</span>
+				<a href="##">数码</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">母婴</a>
+				<span class="menu-line">/</span>
+				<a href="##">玩具乐器</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">图书</a>
+				<span class="menu-line">/</span>
+				<a href="##">文娱</a>
+				<span class="menu-line">/</span>
+				<a href="##">教育</a>
+				<span class="menu-line">/</span>
+				<a href="##">电子书</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">图书<i class="channel-arrow"></i></a>
+					<a href="##">文娱<i class="channel-arrow"></i></a>
+					<a href="##">电子书<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">电脑</a>
+				<span class="menu-line">/</span>
+				<a href="##">办公</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">家居</a>
+				<span class="menu-line">/</span>
+				<a href="##">家具</a>
+				<span class="menu-line">/</span>
+				<a href="##">家装</a>
+				<span class="menu-line">/</span>
+				<a href="##">厨具</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">女鞋</a>
+				<span class="menu-line">/</span>
+				<a href="##">箱包</a>
+				<span class="menu-line">/</span>
+				<a href="##">钟表</a>
+				<span class="menu-line">/</span>
+				<a href="##">珠宝</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		<li class="menu-item">
+			<div class="cate-menu">
+				<a href="##">男鞋</a>
+				<span class="menu-line">/</span>
+				<a href="##">运动</a>
+				<span class="menu-line">/</span>
+				<a href="##">户外</a>
+			</div>
+			<div class="cate-part">
+				<div class="cate-channel">
+					<a href="##">家电馆<i class="channel-arrow"></i></a>
+					<a href="##">开店设备<i class="channel-arrow"></i></a>
+				</div>
+				<div class="cate-detail">
+					<dl>
+						<dt><a href="##">电视<i class="channel-arrow"></i></a></dt>
+						<dd>
+							<a href="##">全面屏电视</a>
+							<a href="##">教育电视</a>
+							<a href="##">OLED电视</a>
+							<a href="##">智慧屏</a>
+							<a href="##">4K超清电视</a>
+							<a href="##">55英寸</a>
+							<a href="##">65英寸</a>
+							<a href="##">电视配件</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</li>
+		
+	</ul>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
