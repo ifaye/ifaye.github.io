@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>图片放大镜效果</title>
+	<style type="text/css">
+		body{background-color: #fff;}
+		.box{width: 950px; margin: 50px auto 0;}
+		.demo1{
+			width: 350px;
+			height: 350px;
+			position: relative;
+			border:1px solid #eee;
+		}
+		.main-img{width: 350px; height: 350px;}
+		.float-layer{
+			position: absolute;
+			top:0; left:0;
+			width: 200px; height: 200px;
+			background-color:#fede4f;
+			opacity: 0.5;
+			z-index: 2;
+			cursor: move;
+			display: none;
+		}
+		.big-pic{
+			position: absolute;
+			left:352px;
+			top:0;
+			width: 540px;
+			height: 540px;
+			z-index: 10;
+			background: url(https://static.360buyimg.com/item/main/1.0.12/css/i/loading.gif) no-repeat center center #fff;border: 1px solid #e4e4e4; overflow: hidden;
+			display: none;
+		}
+		.big-pic img{width: 800px; position: absolute; left:0; top:0;}
+	</style>
+</head>
+<body>
+<div class="box">
+	<div class="demo1">
+		<img class="main-img" src="https://img10.360buyimg.com/n1/jfs/t1/223536/39/9204/174048/624d3f30E82cc33c7/13b93a401dfa7e94.jpg" alt="">
+		<span class="float-layer"></span>
+		<div class="big-pic"><img src="https://img10.360buyimg.com//n0/jfs/t1/223536/39/9204/174048/624d3f30E82cc33c7/13b93a401dfa7e94.jpg" alt=""></div>
+	</div>
+</div>
+
+
+    <script>
+        window.addEventListener('load', function () {
+            var box = document.querySelector('.demo1');
+            var yy = document.querySelector('.float-layer');
+            var big = document.querySelector('.big-pic');
+            box.addEventListener('mouseover', function () {
+                yy.style.display = 'block';
+                big.style.display = 'block';
+            })
+            box.addEventListener('mouseout', function () {
+                yy.style.display = 'none';
+                big.style.display = 'none';
+            })
+            box.addEventListener('mousemove', function (e) {
+                var x = e.pageX - box.offsetLeft;
+                var y = e.pageY - box.offsetTop;
+                var width = x - yy.offsetWidth / 2;
+                var height = y - yy.offsetHeight / 2;
+                if (width <= 0) {
+                    width = 0;
+                } else if (width >= box.offsetWidth - yy.offsetWidth) {
+                    width = 150;
+                }
+                if (height <= 0) {
+                    height = 0;
+                } else if (height >= box.offsetHeight - yy.offsetHeight) {
+                    height = box.offsetHeight - yy.offsetHeight;
+                }
+                yy.style.left = width + 'px';
+                yy.style.top = height + 'px';
+                var bigimg = document.querySelector('.big-pic>img');
+                // 大图片的移动距离=遮挡层移动距离*大图片最大移动距离/遮挡层最大移动距离
+                var bigx = width * (bigimg.offsetWidth - big.offsetWidth) / (box.offsetWidth - yy.offsetWidth);
+                var bigy = height * (bigimg.offsetHeight - big.offsetHeight) / (box.offsetHeight - yy.offsetHeight);
+                bigimg.style.left = -bigx + 'px';
+                bigimg.style.top = -bigy + 'px';
+            })
+        })
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

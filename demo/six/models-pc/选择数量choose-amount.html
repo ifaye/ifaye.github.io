@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>选择数量</title>
+	<link rel="stylesheet" href="style/base.css">
+	<style>
+		html,body{background-color: #fff;}
+		.main{margin: 50px;}
+
+		.model01 .wrap-input{width: 130px; position: relative;}
+		.model01 .wrap-input input{display: block; margin: 0 35px; height: 33px; line-height: 33px; width: 60px; text-align: center; border: none; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; background: none; color: #333333; font-size: 14px;}
+		.model01 .wrap-input .btn-reduce{display: block; width: 33px;  border: 1px solid #dbdbdb;height: 33px;  position: absolute; left: 0;top:0;}
+		.model01 .wrap-input .btn-reduce:before{content: ''; width: 11px; height: 1px; background-color: #666666; position: absolute; left: 11px; top:16px;}
+		.model01 .wrap-input .btn-add{display: block; width: 33px; border: 1px solid #dbdbdb; height: 33px; position: absolute; right: 0;top:0;}
+		.model01 .wrap-input .btn-add:after{content: ''; width: 1px; height: 11px; background-color: #666666; position: absolute; left: 16px; top:11px;}
+		.model01 .wrap-input .btn-add:before{content: ''; width: 11px; height: 1px; background-color: #666666; position: absolute; left: 11px; top:16px;}
+		.model01 .wrap-input .disabled{cursor: default;}
+		.model01 .wrap-input .disabled:after{opacity: 0.5;}
+		.model01 .wrap-input .disabled:before{opacity: 0.5;}
+
+		/*===========================================================*/
+		.model02{margin-top: 50px;}
+		.model02 .wrap-input{width: 110px; padding-right:20px; height: 33px; position: relative; border: 1px solid #e6e6e6;}
+		.model02 .wrap-input input{display: block; padding-left: 15px; height: 33px; line-height: 33px; border: none; background: none; color: #333333; font-size: 14px;}
+		.model02 .wrap-input .btn-add{display: block; width: 16px; cursor: pointer; border: 1px solid #dbdbdb; text-align: center; line-height: 16px; color: #666666; position: absolute; right: -1px;top:-1px;}
+		.model02 .wrap-input .btn-reduce{display: block; width: 16px; cursor: pointer; border: 1px solid #dbdbdb; border-top: none; text-align: center; line-height: 16px; color: #666666; position: absolute; right: -1px;bottom:-1px;}
+		.model02 .wrap-input .btn-add.disabled{color: #ccc; cursor: default;}
+		.model02 .wrap-input .btn-reduce.disabled{color: #ccc; cursor: default;}
+
+
+		/*===========================================================*/
+
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<div class="model01">
+			<div class="wrap-input">
+				<a href="##" class="btn-reduce disabled"></a>
+				<input value="1" type="text">
+				<a href="##" class="btn-add "></a>
+			</div>
+		</div>
+		<div class="model02">
+			<div class="wrap-input">
+				<i class="btn-add">+</i>
+				<i class="btn-reduce disabled">&minus;</i>
+				<input type="text" value="1000">
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

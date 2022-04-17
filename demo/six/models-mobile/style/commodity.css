@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*1px 像素线*/
+/*继承 @extend .setTopLine;*/
+.main { width: 10rem; margin: 0 auto; }
+.main .modal01 { margin-bottom: 0.4rem; }
+.main .modal02 { margin-bottom: 0.4rem; }
+.main .modal03 { margin-bottom: 0.4rem; }
+
+.main .modal01 .item { padding: 10px 12px 10px 112px; position: relative; background-color: #fff; min-height: 90px; }
+.main .modal01 .item:before { content: " "; position: absolute; left: 0; bottom: 0; right: 0; height: 1px; border-bottom: 1px solid #ddd; color: #ddd; -webkit-transform-origin: 0 100%; transform-origin: 0 100%; -webkit-transform: scaleY(0.5); transform: scaleY(0.5); }
+.main .modal01 .item:last-child:before { display: none; }
+.main .modal01 .item .pic-box { width: 90px; height: 90px; position: absolute; left: 12px; top: 10px; background: gray; overflow: hidden; }
+.main .modal01 .item .pic-box img { width: 90px; height: 90px; }
+.main .modal01 .item .product-text { height: 20px; line-height: 20px; color: #222; font-size: 14px; font-weight: bold; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.main .modal01 .item .desc-text { height: 20px; line-height: 20px; color: #999; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.main .modal01 .item .promotional-tips { font-size: 0; line-height: 1.4; padding-bottom: 1px; margin-top: 5px; overflow-x: auto; text-overflow: ellipsis; white-space: nowrap; }
+.main .modal01 .item .promotional-tips .promotional-item { display: inline-block; font-size: 11px; color: #FF6600; margin-right: 8px; padding-right: 5px; padding-left: 5px; height: 16px; line-height: 16px; border-radius: 8px; background: rgba(255, 102, 0, 0.08); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.main .modal01 .item .price { margin-top: 5px; color: #FF6600; }
+.main .modal01 .item .price span { color: #FF6600; font-size: 18px; }
+.main .modal01 .item .price del { color: #999; margin-left: 5px; }
+
+.main .modal02 .item { padding: 0.266667rem 0.3rem 0.266667rem 2.973333rem; position: relative; background-color: #fff; min-height: 2.4rem; line-height: 1.2; }
+.main .modal02 .item:before { content: " "; position: absolute; left: 0; bottom: 0; right: 0; height: 1px; border-bottom: 1px solid #ddd; color: #ddd; -webkit-transform-origin: 0 100%; transform-origin: 0 100%; -webkit-transform: scaleY(0.5); transform: scaleY(0.5); }
+.main .modal02 .item:last-child:before { display: none; }
+.main .modal02 .item .pic-box { width: 2.4rem; height: 2.4rem; position: absolute; left: 0.333333rem; top: 0.266667rem; background: gray; }
+.main .modal02 .item .pic-box img { width: 2.4rem; height: 2.4rem; }
+.main .modal02 .item .product-text { height: 1rem; line-height: 0.5rem; color: #222; font-size: 14px; font-weight: bold; -webkit-box-orient: vertical; -webkit-line-clamp: 2; word-break: break-word; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; }
+[data-dpr="2"] .main .modal02 .item .product-text { font-size: 28px; }
+[data-dpr="3"] .main .modal02 .item .product-text { font-size: 42px; }
+.main .modal02 .item .promotional-tips { line-height: 1.4; font-size: 0; padding-bottom: 1px; margin-top: 0.2rem; overflow-x: auto; text-overflow: ellipsis; white-space: nowrap; }
+.main .modal02 .item .promotional-tips .promotional-item { display: inline-block; font-size: 11px; color: #FF6600; margin-right: 0.20rem; padding-right: 0.12rem; padding-left: 0.12rem; border-radius: 14px; background: rgba(255, 102, 0, 0.08); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+[data-dpr="2"] .main .modal02 .item .promotional-tips .promotional-item { font-size: 22px; }
+[data-dpr="3"] .main .modal02 .item .promotional-tips .promotional-item { font-size: 33px; }
+.main .modal02 .item .price { margin-top: 0.267rem; color: #FF6600; }
+.main .modal02 .item .price span { color: #FF6600; font-size: 18px; }
+[data-dpr="2"] .main .modal02 .item .price span { font-size: 36px; }
+[data-dpr="3"] .main .modal02 .item .price span { font-size: 54px; }
+.main .modal02 .item .price del { color: #999; margin-left: 5px; }

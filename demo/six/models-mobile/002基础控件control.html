@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>002基础控件</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="flexible" content="initial-dpr=1" />
+    <script src="js/flexible.js"></script>
+    <link href="style/base.css" type="text/css" rel="stylesheet" />
+    <link href="style/002control.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="top-box">
+        <p>基础控件</p>
+        <span>乐商标准组件库依据设计规范实现，目标保证产品或项目视觉风格统一，提升设计和开发效率</span>
+    </div>
+    <div class="page">
+        <h3>常用控件</h3>
+
+        <div class="kj-module01 inline-block">
+            <div class="switch-box">
+                <!-- checked="checked" 控制 -->
+                <input type="checkbox" name="" class="input-checkbox" id="switcher1" />
+                <span class="switcher">
+                    <i>外送</i>
+                    <em>自提</em>
+                </span>
+            </div>
+        </div>
+        <div class="kj-module02 inline-block">
+            <div class="switch-box">
+                <!-- checked="checked" 控制 -->
+                <input type="checkbox" name="" class="input-checkbox" id="switcher2" checked="checked" />
+                <span class="switcher">
+                        <i></i>
+                </span>
+            </div>
+        </div>
+        <div class="kj-module03 inline-block">
+            <span class="icon_select"></span>
+        </div>
+        <div class="kj-module03 inline-block">
+            <span class="icon_select selected"></span>
+        </div>
+        <div class="kj-module04 inline-block">
+            <span class="icon_select"></span>
+        </div>
+        <div class="kj-module04 inline-block">
+            <span class="icon_select selected"></span>
+        </div>
+        <div class="kj-module05 inline-block">
+            <span class="icon_del"></span>
+        </div>
+        <div class="kj-module06 inline-block">
+            <div class="num_wrap">
+                <span class="minus"></span>
+                <div class="input_wrap">
+                    <input class="num" type="tel" value="1" max="200" prevalue="1" lowestbuy="0">
+                </div>
+                <span class="plus"></span>
+            </div>
+        </div>
+        <div class="kj-module07 inline-block">
+            <div class="num_wrap">
+                <span class="minus disabled"></span>
+                <div class="input_wrap">
+                    <input class="num" type="tel" value="1" max="200" prevalue="1" lowestbuy="0">
+                </div>
+                <span class="plus"></span>
+            </div>
+        </div>
+        <div class="count-module01">
+            <div class="end-time">
+                <label>距团购结束：</label>
+                <div class="time">
+                    <span>0</span>
+                    <span>6</span>
+                    <i>:</i>
+                    <span>1</span>
+                    <span>3</span>
+                    <i>:</i>
+                    <span>0</span>
+                    <span>5</span>
+                    <i>:</i>
+                    <span>4</span>
+                    <span>8</span>
+                </div>
+            </div>
+        </div>
+        <div class="count-module02">
+            <div class="end-time">
+                <label>距结束</label>
+                <span>01</span>
+                <em>天</em>
+                <span>03</span>
+                <i>:</i>
+                <span>26</span>
+                <i>:</i>
+                <span>58</span>
+            </div>
+        </div>
+
+        <h3>提示</h3>
+        <div class="ts-module01 inline-block">
+            <span class="tag">满赠</span>
+            <br>
+            <br>
+            <span class="tag disabled">满赠</span>
+        </div>
+        <div class="ts-module02 inline-block">
+            <span class="tag">New</span>
+            <br>
+            <br>
+            <span class="tag disabled">New</span>
+        </div>
+        <div class="ts-module03 inline-block">
+            <img src="images/icon_warn.png" alt="">
+        </div>
+        <div class="ts-module04 inline-block">
+            <img src="images/icon_loading.png" alt="">
+        </div>
+        <div class="ts-module05 inline-block">
+            <span class="weui-badge" style="position: absolute;top: -2px;left: 1px;">9</span>
+            <span class="weui-badge" style="position: absolute;top: -2px;left: 50px;">28</span>
+            <span class="badge-dot" style="position: absolute;top:0;left:100px;"></span>
+        </div>
+        <div class="ts-module06">
+            <div class="slider-pagination">
+                <i class="pagination-bullet"></i>
+                <i class="pagination-bullet pagination-bullet-active"></i>
+                <i class="pagination-bullet"></i>
+            </div>
+        </div>
+        <div class="ts-module07 inline-block">
+            <div class="toast">
+                <span class="icon-pic"><img src="images/icon_success.png" alt=""></span>
+                <p>成功提示</p>
+            </div>
+        </div>
+        <div class="ts-module08 inline-block">
+            <div class="toast">
+                <span class="icon-pic"><img src="images/icon_failed.png" alt=""></span>
+                <p>失败提示</p>
+            </div>
+        </div>
+        <div class="ts-module09 inline-block">
+            <div class="toast">
+                <span class="icon-pic"><img src="images/icon_caution.png" alt=""></span>
+                <p>警示信息</p>
+            </div>
+        </div>
+        <div class="ts-module10">
+            <div class="toast">
+                <span>最长文案不超过14个字</span>
+            </div>
+        </div>
+        <div class="ts-module10">
+            <div class="toast">
+                <span>不要误会，我不是针对你，我是说在座各位，都是垃圾！</span>
+            </div>
+        </div>
+        <div class="ts-module11">
+            <div class="infor">
+                <div class="cell_bd">亲，卫岗乳业玻璃瓶奶品的玻璃瓶是属于需回收收</div>
+            </div>
+        </div>
+        <div class="ts-module11">
+            <div class="infor">
+                <div class="cell_hd"></div>
+                <div class="cell_bd">亲，卫岗乳业玻璃瓶奶品的玻璃瓶是属于需回收收</div>
+            </div>
+        </div>
+        <div class="ts-module11">
+            <div class="infor">
+                <div class="cell_hd"></div>
+                <div class="cell_bd">亲，卫岗乳业玻璃瓶奶品的玻璃瓶是属于需回收收</div>
+                <div class="cell_ft">
+                    <span class="arrow-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="ts-module11">
+            <div class="infor">
+                <div class="cell_hd"></div>
+                <div class="cell_bd">亲，卫岗乳业玻璃瓶奶品的玻璃瓶是属于需回收收</div>
+                <div class="cell_ft">
+                    <span class="icon-delete"></span>
+                </div>
+            </div>
+        </div>
+
+        <h3>按钮</h3>
+        <!--普通按钮-->
+        <div class="block">
+            <div class="an-module01 inline-block">
+                <a href="##" class="btn-default">普通按钮</a>
+                <br>
+                <a href="##" class="btn-default button-disabled">普通按钮</a>
+            </div>
+
+            <div class="an-module02 inline-block">
+                <a href="##" class="btn-outline">边框按钮</a>
+                <br>
+                <a href="##" class="btn-outline button-disabled">边框按钮</a>
+            </div>
+
+            <div class="an-module03 inline-block">
+                <a href="##" class="btn-outline">边框按钮</a>
+                <br>
+                <a href="##" class="btn-outline button-disabled">边框按钮</a>
+            </div>
+        </div>
+
+        <!--圆角按钮-->
+        <div class="block">
+            <div class="an-module04 inline-block">
+                <a href="##" class="btn-default">普通按钮</a>
+                <br>
+                <a href="##" class="btn-default button-disabled">普通按钮</a>
+            </div>
+
+            <div class="an-module05 inline-block">
+                <a href="##" class="btn-outline">边框按钮</a>
+                <br>
+                <a href="##" class="btn-outline button-disabled">边框按钮</a>
+            </div>
+
+            <div class="an-module06 inline-block">
+                <a href="##" class="btn-outline">边框按钮</a>
+                <br>
+                <a href="##" class="btn-outline button-disabled">边框按钮</a>
+            </div>
+        </div>
+
+        <!--icon按钮-->
+        <div class="block">
+            <div class="icon-btn-module01 inline-block">
+                <a href="##" class="btn-default">
+                    <i class="button-icon icon-module1"></i>
+                    普通按钮
+                </a>
+                <br>
+                <a href="##" class="btn-default button-disabled">
+                    <i class="button-icon icon-module1"></i>
+                    普通按钮
+                </a>
+            </div>
+        </div>
+
+        <!--渐变按钮-->
+        <div class="block">
+            <div class="gradual-module01 inline-block">
+                <a href="##" class="btn-default">
+                    渐变按钮
+                </a>
+                <br>
+                <a href="##" class="btn-default button-disabled">
+                    渐变按钮
+                </a>
+            </div>
+        </div>
+
+        <!--大按钮-->
+        <div class="block">
+            <div class="big-btn-module01">
+                <a href="##" class="btn-default">普通按钮</a>
+                <br>
+                <a href="##" class="btn-default button-disabled">普通按钮</a>
+            </div>
+
+            <div class="big-btn-module02">
+                <a href="##" class="btn-outline">边框按钮</a>
+                <br>
+                <a href="##" class="btn-outline button-disabled">边框按钮</a>
+            </div>
+        </div>
+
+
+        <div class="block">
+            <div class="an-module11">
+                <div class="cell_ft">
+                    <a href="##" class="ft_btn btn_primary">新增收货地址</a>
+                    <a href="##" class="ft_btn btn_default">查看配送说明</a>
+                </div>
+            </div>
+        </div>
+
+        <h3>表单</h3>
+        <!--可点击操作-->
+        <div class="fm-module01">
+            <a href="##" class="cell_access">
+                <div class="cell_hd">
+                    <span class="icon"></span>
+                </div>
+                <div class="cell_bd">
+                    <span class="label_tex">未命名</span>
+                </div>
+                <div class="cell_ft">呵呵</div>
+            </a>
+            <br>
+            <a href="##" class="cell_access">
+                <div class="cell_hd">
+                    <span class="icon"></span>
+                </div>
+                <div class="cell_bd">
+                    <span class="label_tex">未命名</span>
+                </div>
+                <div class="cell_ft">呵呵</div>
+            </a>
+        </div>
+
+        <div class="fm-module01">
+            <a href="##" class="cell_access">
+                <div class="cell_bd">
+                    <span class="label_tex">未命名</span>
+                </div>
+                <div class="cell_ft"></div>
+            </a>
+            <br>
+            <a href="##" class="cell_access">
+                <div class="cell_bd">
+                    <span class="label_tex">未命名</span>
+                </div>
+                <div class="cell_ft"></div>
+            </a>
+        </div>
+
+        <!--不可点击操作-->
+        <div class="fm-module01">
+            <div class="weui_cell">
+                <div class="cell_hd">
+                    <span class="label">限购数量</span>
+                </div>
+                <div class="cell_bd">
+                    <input type="text" class="input-tex" placeholder="输入限购的商品数量">
+                </div>
+            </div>
+            <br>
+            <div class="weui_cell">
+                <div class="cell_hd">
+                    <span class="label">限购数量</span>
+                </div>
+                <div class="cell_bd">
+                    <input type="text" class="input-tex" placeholder="输入限购的商品数量">
+                </div>
+            </div>
+        </div>
+
+        <div class="fm-module01">
+            <div class="weui_cell">
+                <div class="cell_hd">
+                    <span class="label">详细地址</span>
+                </div>
+                <div class="cell_bd">
+                    <input type="text" class="input-tex" placeholder="例：xx小区一单元888室">
+                </div>
+                <div class="cell_ft">
+                    <span class="icon_addr"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fm-module01">
+            <a href="##" class="cell_access">
+                <div class="cell_hd">
+                    <span class="label">开户行</span>
+                </div>
+                <div class="cell_bd"><input type="text" class="input-tex" placeholder="选择开户银行"></div>
+                <div class="cell_ft"></div>
+            </a>
+            <br>
+            <a href="##" class="cell_access">
+                <div class="cell_hd">
+                    <span class="label">开户行</span>
+                </div>
+                <div class="cell_bd"><input type="text" class="input-tex" placeholder="选择开户银行"></div>
+                <div class="cell_ft"></div>
+            </a>
+        </div>
+
+        <div class="fm-module01">
+            <div class="weui_cell">
+                <div class="cell_hd">
+                    <span class="label">持卡人</span>
+                </div>
+                <div class="cell_bd">
+                    <span class="label_tex">奔雷手文泰</span>
+                </div>
+            </div>
+            <br>
+            <div class="weui_cell">
+                <div class="cell_hd">
+                    <span class="label">持卡人</span>
+                </div>
+                <div class="cell_bd">
+                    <span class="label_tex">奔雷手文泰</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fm-module01">
+            <div class="weui_cell">
+                <div class="cell_hd">
+                    <span class="label">验证码</span>
+                </div>
+                <div class="cell_bd">
+                    <input type="text" class="input-tex" placeholder="输入验证码">
+                </div>
+                <div class="cell_ft">
+                    <a href="##" class="send">发送验证码</a>
+                </div>
+            </div>
+            <br>
+            <div class="weui_cell">
+                <div class="cell_hd">
+                    <span class="label">验证码</span>
+                </div>
+                <div class="cell_bd">
+                    <input type="text" class="input-tex" placeholder="输入验证码" value="1947">
+                </div>
+                <div class="cell_ft">
+                    <a href="##" class="send disabled">倒计时54s</a>
+                </div>
+            </div>
+        </div>
+
+        <h3>输入</h3>
+        <div class="input-module01">
+            <div class="input-item">
+                <input type="text" placeholder="输入11位手机号码">
+            </div>
+        </div>
+
+        <div class="input-module01">
+            <div class="input-item">
+                <input type="text" placeholder="输入11位手机号码" value="13800138000">
+                <span class="clear-btn"></span>
+            </div>
+        </div>
+
+        <div class="input-module02">
+            <div class="input-item">
+                <input type="text" placeholder="输入11位手机号码">
+                <a href="##" class="search-btn">搜索</a>
+                <span class="clear-btn"></span>
+            </div>
+        </div>
+        <div class="input-module02">
+            <div class="input-item">
+                <input type="text" placeholder="输入11位手机号码" value="13800138000">
+                <a href="##" class="search-btn">搜索</a>
+                <span class="clear-btn"></span>
+            </div>
+            <div class="search-result">
+                <div class="item">
+                    <span class="name">韩先生</span>
+                    <span class="contact">138****3800</span>
+                    <div class="address">
+                        南京市江宁区格致路99号文鼎广州江宁区格致路江宁区格致路6楼608室
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h3>单选</h3>
+        <div class="radio-module01">
+            <div class="weui_cell">
+                <div class="cell_hd">
+                    <span class="label">地址类型</span>
+                </div>
+                <div class="cell_bd">
+                    <div class="radio-custom">
+                        <input id="inputAddr1" name="inputAddr" checked="checked" type="radio">
+                        <label for="inputAddr1">家庭</label>
+                    </div>
+                    <div class="radio-custom">
+                        <input id="inputAddr2" name="inputAddr" type="radio">
+                        <label for="inputAddr2">公司</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="radio-module02">
+            <div class="radio-wrapper">
+                <input id="inputReplenish" name="service" checked="checked" type="radio">
+                <label for="inputReplenish">次日补</label>
+            </div>
+            <br>
+            <div class="radio-wrapper">
+                <input id="inputRefund" name="service" checked="checked" type="radio">
+                <label for="inputRefund">退款</label>
+            </div>
+            <br>
+            <div class="rd-item">
+                <div class="item-bd">次日补</div>
+                <div class="item-ft"></div>
+            </div>
+            <br>
+            <div class="rd-item cur">
+                <div class="item-bd">退款</div>
+                <div class="item-ft"></div>
+            </div>
+        </div>
+
+        <h3>地址选择</h3>
+        <div class="addr-sel-module01">
+            <div class="address-wrapper selected">
+                <span class="icon-select"></span>
+                <span class="name">陈独秀</span>
+                <span class="phone">13800138000</span>
+                <p>南京市江宁区格致路99号文鼎广州6楼608室</p>
+            </div>
+        </div>
+
+        <h3>地址</h3>
+        <div class="addr-module01">
+            <div class="addr-item">
+                <span class="name">吴先生</span>
+                <span class="contact">138****3800</span>
+                <div class="address">
+                    南京市江宁区格致路99号文鼎广州江宁区格致路江宁区格致路6楼608室
+                </div>
+            </div>
+        </div>
+        <div class="addr-module02">
+            <!--默认地址selected-->
+            <div class="addr-item selected">
+                <div class="item-top">
+                    <span class="name">吴先生</span>
+                    <span class="contact">138****3800</span>
+                    <div class="address">
+                        <div class="address-hd">地址：</div>
+                        <div class="address-bd">
+                            <span class="tag">公司</span>
+                            南京市江宁区格致路99号文鼎江宁区格致路广州江宁区格致路6楼608室
+                        </div>
+                    </div>
+                </div>
+                <div class="item-bot">
+                    <div class="bot-hd"><span class="icon_select"></span>设为默认地址</div>
+                    <div class="bot-bd"><span class="icon_edit"></span>编辑</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>取现</h3>
+        <div class="co-module01">
+            <div class="withdraw">
+                <div class="wd-top">提现金额</div>
+                <div class="wd-mid">
+                    <span class="tex">￥</span>
+                    <input class="input" type="text" placeholder="输入提现金额" />
+                    <span class="clear-btn" style="display: none"></span>
+                    <span class="all-btn">全部</span>
+                </div>
+                <div class="wd-bot">
+                    <span>可提现金额 200.00元</span>
+                </div>
+            </div>
+        </div>
+        <div class="co-module01">
+            <div class="withdraw">
+                <div class="wd-top">提现金额</div>
+                <div class="wd-mid">
+                    <span class="tex">￥</span>
+                    <input class="input" type="text" placeholder="输入提现金额" value="300" />
+                    <span class="clear-btn"></span>
+                    <span class="all-btn">全部</span>
+                </div>
+                <div class="wd-bot">
+                    <span class="warning">金额已超过可提现余额</span>
+                </div>
+            </div>
+        </div>
+        <h3>支付方式</h3>
+        <div class="pay-module01">
+            <div class="pay-channel">
+                <div class="paybox">
+                    <div class="paybox-hd"><img src="case/bank-gong80x80.jpg" alt=""></div>
+                    <div class="paybox-bd">
+                        <div class="bank-name">中国工商银行</div>
+                        <span class="p-value">尾号3456储蓄卡</span>
+                    </div>
+                    <div class="paybox-ft"><span class="icon_select"></span></div>
+                </div>
+                <div class="paybox selected">
+                    <div class="paybox-hd"><img src="case/bank-nong80x80.jpg" alt=""></div>
+                    <div class="paybox-bd">
+                        <div class="bank-name">中国工商银行</div>
+                        <span class="p-value">尾号3456储蓄卡</span>
+                    </div>
+                    <div class="paybox-ft"><span class="icon_select"></span></div>
+                </div>
+                <div class="paybox">
+                    <div class="paybox-hd"><img src="case/bank-gong80x80.jpg" alt=""></div>
+                    <div class="paybox-bd">
+                        <div class="bank-name">中国工商银行</div>
+                        <span class="p-value">尾号3456储蓄卡</span>
+                    </div>
+                    <div class="paybox-ft">
+                        <span class="icon_arrow"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>列表</h3>
+        <div class="list-module01">
+            <div class="info-wrapper">
+                <div class="item">
+                    <div class="item-hd">1/</div>
+                    <div class="item-bd">200g瓶装低脂酸牛奶</div>
+                    <div class="item-ft">50份</div>
+                </div>
+                <div class="item">
+                    <div class="item-hd">2/</div>
+                    <div class="item-bd">200g瓶装低脂酸牛奶</div>
+                    <div class="item-ft">50份</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="script/jquery-1.8.3.min.js"></script>
+    <!--module02-->
+    <script>
+        // 开关1
+        $(function () {
+
+            $(".kj-module01").on("click", ".switcher", function () {
+                var switcher1 = $("#switcher1").attr("checked");
+
+                if(switcher1){
+                    $("#switcher1").removeAttr("checked");
+                }else{
+                    $("#switcher1").attr("checked",true);
+                }
+            })
+
+        });
+
+        // 开关2
+        $(function () {
+
+            $(".kj-module02").on("click", ".switcher", function () {
+                var switcher2 = $("#switcher2").attr("checked");
+
+                if(switcher2){
+                    $("#switcher2").removeAttr("checked");
+                }else{
+                    $("#switcher2").attr("checked",true);
+                }
+            })
+
+
+        });
+
+    </script>
+</body>
+
+
+</html>

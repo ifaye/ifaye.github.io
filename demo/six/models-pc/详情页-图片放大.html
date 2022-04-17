@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>详情页-图片放大</title>
+	<link rel="stylesheet" href="style/base.css">
+	<link rel="stylesheet" href="style/layer.css">
+
+	<style type="text/css">
+		*{padding: 0; margin: 0;}
+		ul, li { list-style: none; }
+		a{text-decoration: none;}
+
+		.main{width: 1190px; margin:0 auto; padding:50px 0;}
+		#preview-box {width: 360px;height: 360px; border: 1px solid #ddd; position: relative;}
+
+		#mask {width: 100px;height: 100px;background-color: #FEDE4F;opacity: 0.5;position: absolute;left: 0;top: 0;display: none;}
+
+		#bigBox {width: 500px;height: 500px;overflow: hidden;border: 1px solid #ddd;position: absolute;left: 360px;top: 0;z-index: 18;background-color: #fff;display: none;}
+		#bigBox img{position: absolute;}
+
+		.model01 .x-pic{width: 360px; height: 360px; overflow: hidden;}
+		.model01 .x-pic img{width: 360px; height: 360px;}
+
+	</style>
+</head>
+<body>
+	
+	<div class="main">
+
+		<div class="model01">
+			<div id="preview-box">
+				<div class="x-pic" id="smallBox">
+					<img src="zoom-images/pic360x360.jpg" alt="" width="360" id="smallImg">
+					<span id="mask"></span>
+				</div>
+				<div id="bigBox">
+					<img src="zoom-images/pic800x800.jpg" alt="" width="800" id="bigImg">
+				</div>
+			</div>
+		</div>
+
+		<div class="model02">
+
+		</div>
+	</div>
+
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="script/jquery-1.8.3.min.js"></script>
+
+
+
+	<script>
+
+        var box = document.getElementById("preview-box");
+        var smallBox = document.getElementById("smallBox");
+        var smallImg = document.getElementById("smallImg");
+        var bigImg = document.getElementById("bigImg");
+        var bigBox = document.getElementById("bigBox");
+        var mask = document.getElementById("mask");
+
+        smallBox.onmouseover = function(){
+            bigBox.style.display = "block";
+            mask.style.display = "block";
+        }
+
+        smallBox.onmouseout = function(){
+            bigBox.style.display = "none";
+            mask.style.display = "none";
+        }
+
+
+        document.onmousemove = function (event) {
+            var event = event || window.event;
+            //获取鼠标手移动到的x轴，y轴位置
+            var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
+            var pageY = event.pageY || event.clientY + document.documentElement.scrollTop;
+
+            var boxX = pageX - box.offsetLeft;
+            var boxY = pageY - box.offsetTop;
+
+            //为了能以中心点移动，向左挪动遮罩层宽度的一半
+            var targetX = boxX - mask.offsetWidth / 2;
+            var targetY = boxY - mask.offsetHeight / 2;
+
+            if (targetX < 0) {
+                targetX = 0;
+            }
+
+            if (targetX > smallBox.offsetWidth - mask.offsetWidth) {
+                targetX = smallBox.offsetWidth - mask.offsetWidth;
+            }
+
+            if(targetY < 0){
+                targetY = 0;
+            }
+
+            if(targetY > smallBox.offsetHeight - mask.offsetHeight){
+                targetY = smallBox.offsetHeight - mask.offsetHeight;
+            }
+
+            mask.style.left = targetX + "px";
+            mask.style.top = targetY + "px";
+
+            //按比例显示右侧图片
+            //小遮罩层／小图片可移动范围 ＝ 大遮罩层／大图片可移动范围
+            var smallMove = smallImg.offsetWidth - mask.offsetWidth;
+            var bigMove = bigImg.offsetWidth - bigBox.offsetWidth;
+            var rate = bigMove/smallMove;
+            var bigtargetX = -rate*targetX;
+            var bigtargetY = -rate*targetY;
+
+            bigImg.style.left = bigtargetX + "px";
+            bigImg.style.top = bigtargetY + "px";
+        }
+	</script>
+
+
+
+
+</body>
+</html>

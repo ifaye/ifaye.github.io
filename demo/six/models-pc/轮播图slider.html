@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>轮播图</title>
+	<link rel="stylesheet" href="style/base.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<link rel="stylesheet" href="style/slider.css">
+	<link rel="stylesheet" href="../../project/华润商业/华润医药08-24/style/index.css">
+</head>
+<body>
+
+	<div class="main">
+
+		<div class="slider-box1">
+
+			<div class="slider-inner swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="##"><img src="case/pic690x310-1.jpg" alt=""></a></div>
+					<div class="swiper-slide"><a href="##"><img src="case/pic690x310-2.jpg" alt=""></a></div>
+					<div class="swiper-slide"><a href="##"><img src="case/pic690x310-1.jpg" alt=""></a></div>
+					<div class="swiper-slide"><a href="##"><img src="case/pic690x310-2.jpg" alt=""></a></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="script/swiper.min.js"></script>
+
+	<!--slider-box1-->
+	<script>
+        var swiper = new Swiper('.slider-box1 .swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,   //当前显示几个，可以1个两个或者auto
+            paginationClickable: true, //点击分页器的指示点分页器是否控制Swiper切换
+            spaceBetween: 0,   //图片间距
+            loop: false,        //是否环路
+        });
+	</script>
+
+</body>
+</html>

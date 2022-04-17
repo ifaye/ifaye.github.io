@@ -1,0 +1,62 @@
+html,body{background-color: #fff;}
+.main{margin: 50px 0;}
+
+
+/*面包屑导航*/
+.model01 .past{width: 1190px; padding: 19px 0 13px; height: 26px; margin: 0 auto;}
+.model01 .past .crumbs-arrow{display: block; width: 6px; height: 12px; float:left; background: url("../crumb-model01-images/past-icon01.png") no-repeat; margin: 7px 10px 0 10px; overflow: hidden;}
+.model01 .past .first{float: left; padding-left: 20px; height: 26px; }
+.model01 .past span{float: left; line-height: 26px; color: #999999;}
+.model01 .past .cata{float: left; line-height: 26px; color: #2d415a;}
+.model01 .past a:hover.cata{color: #ff9933;}
+.model01 .past .nav-item{float: left; height: 26px; }
+.model01 .past .nav-item .menu-drop{float: left; height: 26px; position: relative; z-index: 10;}
+.model01 .past .nav-item .menu-drop .trigger{display: inline-block; padding: 0 26px 0 10px; height: 24px; line-height: 24px; border: 1px dashed #dcdcdc; color: #2d415a; position: relative; z-index: 2;}
+.model01 .past .nav-item .menu-drop .trigger i{display: inline-block; width: 9px; height: 5px; background: url("../crumb-model01-images/past-icon01.png") no-repeat -19px 0; position: absolute; top: 10px; right: 10px; overflow: hidden;}
+.model01 .past .nav-item .menu-drop .trigger:before{display: none; content: ''; width: 100%; position: absolute; left: 0; right: 0; bottom: -2px; height: 3px; background-color: #fff;}
+.model01 .past .nav-item .menu-drop .trigger:hover{color: #ff9933;}
+.model01 .past .nav-item .menu-drop .drop-main-bd{display: none; width: 280px; background-color: #fff; position: absolute; left: 0; top: 25px;}
+.model01 .past .nav-item .menu-drop .drop-main-bd .drop-main{padding: 10px 0 10px 10px; border: 1px dashed #dcdcdc; overflow: hidden;}
+.model01 .past .nav-item .menu-drop .drop-main-bd .drop-main a{display: inline-block; width: 100px; float: left; margin-right: 10px; height: 30px; line-height: 30px; color: #555555;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.model01 .past .nav-item .menu-drop .drop-main-bd .drop-main a:hover{color: #ff9933;}
+
+.model01 .past .nav-item .menu-drop:hover .drop-main-bd{display: block;}
+.model01 .past .nav-item .menu-drop:hover .trigger:before{display: block;}
+
+.model01 .past .crumb-select-item{float: left; display: inline-block; padding: 0 26px 0 10px; height: 24px; line-height: 24px; border: 1px dashed #fcb404; color: #fcb404; position: relative; z-index: 2;}
+.model01 .past .crumb-select-item i{display: inline-block; width: 24px; height: 24px;  position: absolute; top: 0; right: 0;}
+.model01 .past .crumb-select-item i:before{content: ''; width: 9px; height: 1px; background-color: #fcb404;transform:rotate(45deg); position: absolute; top:12px; left: 8px;}
+.model01 .past .crumb-select-item i:after{content: ''; width: 1px; height: 9px; background-color: #fcb404;transform:rotate(45deg); position: absolute; top:8px; left: 12px;}
+
+/*===========================================================*/
+
+.model02 .crumbs-bar{width: 1190px; height: 36px; margin: 0 auto;}
+.model02 .crumbs-bar .nav-item{float: left; height: 26px; line-height: 26px; color:#000000;}
+.model02 .crumbs-bar .nav-item:hover{color: #ff9933;}
+.model02 .crumbs-bar .crumbs-arrow{float: left; width: 6px; height: 12px; background: url("../crumb-model02-images/icon-before.png") no-repeat -38px -12px; margin: 7px 9px 0 8px;}
+.model02 .crumbs-bar .select-item{float: left; display: inline-block; margin-right: 5px; color: #fff; background-color: #ff9933; height: 26px; line-height: 26px; padding: 0 28px 0 8px; position: relative;}
+.model02 .crumbs-bar .select-item span{display: inline-block;}
+.model02 .crumbs-bar .select-item i{display: block; width: 18px; height: 26px; position: absolute; top:0; right: 0;}
+.model02 .crumbs-bar .select-item i:before{content: ''; width: 15px; height: 1px; background-color: #fff;transform:rotate(45deg); position: absolute; top:12px; left: -2px;}
+.model02 .crumbs-bar .select-item i:after{content: ''; width: 1px; height: 15px; background-color: #fff;transform:rotate(45deg); position: absolute; top:5px; left: 5px;}
+
+.model02 .crumbs-bar .select-item:hover{background-color: #5ab124;}
+.model02 .crumbs-bar .nav-dl{float: left; height: 31px; position: relative; z-index: 10;}
+.model02 .crumbs-bar .nav-dl .dt{display: inline-block; height: 24px; line-height: 24px; background-color: #fff; padding: 0 26px 0 10px; border: 1px dashed #ff9933; color: #000000; position: relative;}
+.model02 .crumbs-bar .nav-dl .dt:before{content: ''; display: block; width:9px; height: 5px; background: url("../crumb-model02-images/icon-before.png") no-repeat -27px -16px; position: absolute; top:9px; right: 9px;}
+.model02 .crumbs-bar .nav-dl .dd{display: none; width: 275px; padding: 6px 0; border: 3px solid #eeeeee; background-color: #fff; position: absolute; top:28px; left: 0; overflow: hidden;}
+.model02 .crumbs-bar .nav-dl .nav-classify{float: left; line-height: 30px; margin: 0 20px 0 15px; color: #666;}
+.model02 .crumbs-bar .nav-dl .nav-classify:hover{color: #ff9933;}
+.model02 .crumbs-bar .nav-dl:hover .dt{color: #ff9933;}
+.model02 .crumbs-bar .nav-dl:hover .dt:before{background: url("../crumb-model02-images/icon-after.png") no-repeat -27px -18px; position: absolute; top:9px; right: 9px;}
+.model02 .crumbs-bar .nav-dl:hover .dd{display: block;}
+
+/*===========================================================*/
+
+
+
+
+
+
+
+

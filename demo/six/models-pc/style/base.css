@@ -1,0 +1,41 @@
+/* CSS Document */
+html{background:white; color:#37474F;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td,hr,button,article,footer,header,menu,nav,section{margin:0; padding:0;}
+body,button,input,select,textarea {font:12px/1 arial,tahoma, Microsoft Yahei, Hiragino Sans GB, '\5b8b\4f53', sans-serif;}
+h1,h2,h3,h4,h5,h6,textarea{font-weight:normal; font-size:12px;}
+b,textarea{font-style:normal; font-weight:400;}
+table{ border-collapse:collapse; border-spacing:0;}/* 去掉 table cell 的边距并让其边重合 */
+pre{white-space: pre-wrap;word-wrap: break-word;}/* pre 可以换行*/
+img{border:none; vertical-align:middle;}
+input,select,textarea {font-size:100%;}
+del{text-decoration:line-through;}/* 一致的 del 样式 */
+a{color:#37474F;text-decoration:none;}
+button{cursor: pointer; border: none;}
+button:active,button:focus, a:active,a:focus,*:focus {-moz-outline:none;outline:none;}/* 去除 ie6 & ie7 焦点点状线 */
+ul,li,ol{ list-style:none;}
+input{font-family:inherit; margin: 0; padding: 0;}
+th {text-align:inherit;}/* ie bug：th 不继承 text-align */
+iframe{display:block;}/* ie6 7 8(q) bug 显示为行内表现 */
+em,i{font-style: normal;}
+a:hover{transition:border .2s linear, color .2s linear, background-color .2s linear}
+/*{font-family:Verdana;}*/
+/*{font-family:PingFangSC-Regular;}*/
+/*{webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}*/
+.simsun{font-family: simsun;}
+
+.hide{display: none;}
+.elli{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}/* 单行多出省略号.... */
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1; /* for ie6 & ie7 */}
+
+.fl{float:left;}
+.fr{float:right;}
+
+
+.margin-vertical-20{margin-top: 20px; margin-bottom: 20px;}
+.margin-horizontal-20{margin-left: 20px; margin-right: 20px;}
+
+
+
+
+

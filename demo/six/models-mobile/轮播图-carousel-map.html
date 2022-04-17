@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>轮播图</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="js/flexible.js"></script>
+    <link href="style/base.css" type="text/css" rel="stylesheet" />
+    <link href="style/swiper.min.css" type="text/css" rel="stylesheet"/>
+    <link href="style/carousel-map.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div class="details-main">
+
+
+		<!-- //分享 -->
+		<!-- <div class="share-itpic">
+			<img src="images/fenxian.png">
+		</div> -->
+		<!-- 轮播图片 -->
+		<div class="mod-slider-warp">
+			<div class="swiper-container mod-slider">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide"></div>
+			      <div class="swiper-slide"></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			  </div>
+		</div>
+	
+	</div>
+	<script src="js/swiper.min.js"></script>
+	<script>
+	    var swiper = new Swiper('.mod-slider', {
+	      pagination: {
+	        el: '.swiper-pagination',
+	        type: 'fraction',
+	      }
+	    });
+	    var swiperExtra = new Swiper('.extra-box', {
+	      slidesPerView: 'auto',
+	      spaceBetween: '2%',
+
+	    });
+  </script>
+
+</body>
+
+
+</html>

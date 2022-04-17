@@ -1,0 +1,13 @@
+html,body{background-color: #f5f5f5;}
+.bg-white{background-color: #fff;}
+
+.model01{margin: 30px 0;}
+.model01 .information-inner{margin: 0 auto; width: 1200px; height: 240px; padding-top: 20px; background-color: #fff; overflow: hidden;}
+.model01 .information-inner .item{width: 370px; float: left; margin: 0 5px 0 20px;}
+.model01 .information-inner .item .item-bd{width: 370px; height: 170px; margin-top: 20px; overflow: hidden;}
+.model01 .information-inner .item .item-bd li{padding: 0 70px 0 13px; height: 28px; line-height: 28px; position: relative;}
+.model01 .information-inner .item .item-bd li:before{content: ''; width: 3px; height: 3px; border-radius: 50%; background-color: #a2adb6; position: absolute; left: 0; top:50%; margin-top: -1px;}
+.model01 .information-inner .item .item-bd li span{color: #76838F ; font-size: 14px; position: absolute; right: 0; top:0;}
+.model01 .information-inner .item .item-bd li a{display: inline-block; color: #526069; font-size: 14px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.model01 .information-inner .item .item-bd li a:hover{text-decoration: underline;}
+

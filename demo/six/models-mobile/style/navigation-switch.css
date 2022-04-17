@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*1px 像素线*/
+/*继承 @extend .setTopLine;*/
+.index-main { padding-top: 1.333333rem; padding-bottom: 1.666667rem; width: 10rem; margin: 0 auto; }
+.index-main .top-wrapper { position: fixed; top: 0; left: 0; right: 0; z-index: 30; }
+.index-main .top-wrapper .container { max-width: 10rem; margin: 0 auto; }
+.index-main .top-wrapper .hot-nav { height: 1.066667rem; line-height: 1.066667rem; text-align: center; color: #FFF; font-size: 14px; border-radius: 0.05333rem 0.05333rem 0 0; transition: background 200ms,color 200ms; }
+[data-dpr="2"] .index-main .top-wrapper .hot-nav { font-size: 28px; }
+[data-dpr="3"] .index-main .top-wrapper .hot-nav { font-size: 42px; }
+.index-main .top-wrapper .hot-nav .swiper-wrapper { display: -webkit-box; display: -webkit-flex; display: flex; background: #fff; }
+.index-main .top-wrapper .hot-nav .swiper-slide { width: auto; height: 100%; }
+.index-main .top-wrapper .hot-nav .swiper-slide span { padding: 0 0.36rem; color: #666; }
+.index-main .top-wrapper .hot-nav .swiper-slide-thumb-active { font-weight: bold; position: relative; font-size: 16px; }
+[data-dpr="2"] .index-main .top-wrapper .hot-nav .swiper-slide-thumb-active { font-size: 32px; }
+[data-dpr="3"] .index-main .top-wrapper .hot-nav .swiper-slide-thumb-active { font-size: 48px; }
+.index-main .top-wrapper .hot-nav .swiper-slide-thumb-active:before { content: ''; width: 0.72rem; height: 0.066667rem; border-radius: 0.066667rem; background-color: #666; position: absolute; left: 50%; bottom: 0.12rem; margin-left: -0.36rem; transition: background 200ms; }
+.index-main .top-wrapper .swiper-container { width: 100%; margin-left: auto; margin-right: auto; }
+.index-main .hot-cont { background: #fff; color: #666; font-size: 30px; text-align: center; }
+[data-dpr="2"] .index-main .hot-cont { font-size: 60px; }
+[data-dpr="3"] .index-main .hot-cont { font-size: 90px; }
+
+.icon-model1 { background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat; background-size: 100%; }
+
+.icon-model2 { background: transparent url(https://gw.alipayobjects.com/zos/rmsportal/jBfVSpDwPbitsABtDDlB.svg) no-repeat; background-size: 100%; }

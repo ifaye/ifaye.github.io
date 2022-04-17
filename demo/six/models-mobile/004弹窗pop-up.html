@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>004弹窗</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="flexible" content="initial-dpr=1" />
+    <script src="js/flexible.js"></script>
+    <link href="style/base.css" type="text/css" rel="stylesheet" />
+    <link href="style/004pop-up.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="modal-open">
+    <div class="page">
+        <h3>弹窗(模态对话框)</h3>
+
+        <div class="modal fade" style="display: block;">
+           <div class="mask"></div>
+
+            <!--module01-->
+            <div class="modal-dialog module01">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="paybox paybox-selected">
+                            <i class="p-k-icon"><img src="images/wechatpay-icon.png" alt=""></i>
+                            <span class="wc-tex">微信支付</span>
+                        </div>
+                        <div class="paybox">
+                            <i class="p-k-icon"><img src="images/alipay-icon.png" alt=""></i>
+                            <span class="zfb-tex">支付宝支付</span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="pay-content">
+                            <span>微信扫一扫，向我付钱</span>
+                            <div class="pay-code"></div>
+                            <a href="##" class="share-btn">分享微信二维码</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--module02-->
+            <div class="modal-dialog module02">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="dialog-title">标题</span>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" placeholder="输入您的内容" class="modal-input" >
+                    </div>
+                    <div class="modal-footer">
+                        <a href="##" class="btn_default">取消</a>
+                        <a href="##" class="btn_primary">确定</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--module03-->
+            <div class="modal-dialog module03">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span>当前尚未添加银行卡，请’添加银行卡’进行提现操作</span>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="##" class="btn_primary">添加银行卡</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--module04-->
+            <div class="modal-dialog module04">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span>当前状态，信息和解决方法</span>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="##" class="btn_default">取消</a>
+                        <a href="##" class="btn_primary">确定</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--module05-->
+            <div class="modal-dialog module05">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="dialog-title">标题</span>
+                    </div>
+                    <div class="modal-body">
+                        <span>告知当前状态，信息和解决方法</span>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="##" class="btn_primary">确定</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--module06-->
+            <div class="modal-dialog module06">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="dialog-title">标题</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="box"></div>
+                        <span>描述内容，最好不超过一行</span>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="##" class="btn_primary">知道了</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--module07-->
+            <div class="modal-dialog module07">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="dialog-title">关注智慧药店，尽享优惠</div>
+                        <span class="main-color">长按指纹</span>
+                        <span>识别二维码加关注</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="atten">
+                            <div class="ewm-box"><img src="case/ewm150x150.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--module08-->
+            <div class="modal-dialog module08">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="dialog-title">抱歉，您本单购买的以下商 品在所选择的地址下失效</div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="item">
+                            <div class="pic-box">
+                                <img src="case/pic200x200.jpg" alt="">
+                                <div class="lose"><span>售罄</span></div>
+                            </div>
+                            <div class="product-text">喜玫瑰婴幼儿饼干(AD钙原味)</div>
+                            <div class="reason-text">商品库存不足</div>
+                            <div class="item-bot">
+                                <div class="price">
+                                    ￥28.<span>00</span>
+                                </div>
+                                <div class="num">x2</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic-box">
+                                <img src="case/pic200x200.jpg" alt="">
+                                <div class="lose"><span>售罄</span></div>
+                            </div>
+                            <div class="product-text">喜玫瑰婴幼儿饼干(AD钙原味)</div>
+                            <div class="reason-text">商品库存不足</div>
+                            <div class="item-bot">
+                                <div class="price">
+                                    ￥28.<span>00</span>
+                                </div>
+                                <div class="num">x2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="##" class="btn_default">返回购物车</a>
+                        <a href="##" class="btn_primary">移除商品</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+</html>

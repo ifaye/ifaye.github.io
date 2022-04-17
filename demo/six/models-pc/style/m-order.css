@@ -1,0 +1,18 @@
+html,body{background-color: #f5f5f5;}
+.bg-white{background-color: #fff;}
+
+.order-model01{margin: 50px; display: inline-block; background-color: #fff;}
+.order-model01 .user-inner{width: 258px; height: 117px; padding-top: 11px; border-bottom: 1px solid #eeeeee; overflow: hidden;}
+.order-model01 .user-avatar{width: 60px; height: 60px; margin: 0 auto 3px; border-radius: 50%; overflow: hidden;}
+.order-model01 .user-avatar img{width: 60px; height: 60px;}
+.order-model01 .user-show{text-align: center; line-height: 16px;}
+.order-model01 .user-show a{display: block; height: 16px; color: #3399ff;}
+.order-model01 .user-show a:hover{text-decoration: underline;}
+.order-model01 .user-show p{color: #333333; margin-top: 5px;}
+.order-model01 .service{width: 258px; height: 139px; overflow: hidden;}
+.order-model01 .service li{float: left; width: 85px; height: 69px; border-right: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; overflow: hidden;}
+.order-model01 .service li a{display: block;width: 85px; height: 55px; text-align: center; transition: color 120ms; padding-top: 14px;}
+.order-model01 .service li i{font-family: Arial; color: #f66000; font-size: 16px;}
+.order-model01 .service li span{display: block; color: #555555; margin-top: 10px;}
+.order-model01 .service li a:hover span{color: #f66000;}
+.order-model01 .service li:nth-child(3n){border-right: none; width: 86px;}

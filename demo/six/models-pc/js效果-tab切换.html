@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>js效果-tab切换</title>
+	<link rel="stylesheet" href="style/base.css">
+	<link rel="stylesheet" href="style/layer.css">
+
+	<style type="text/css">
+		*{padding: 0; margin: 0;}
+		ul, li { list-style: none; }
+		a{text-decoration: none;}
+		
+
+		.main{width: 1190px; margin:0 auto; padding:50px 0;}
+		.model01 .information-inner{margin: 0 auto; width: 258px; height: 188px;  border:1px solid #eeeeee; background-color: #fff; overflow: hidden;}
+		.model01 .information-inner .inner-nav{height: 44px; overflow: hidden;}
+		.model01 .information-inner .inner-nav ul{width: 258px; height: 44px; overflow: hidden;}
+		.model01 .information-inner .inner-nav li{width: 86px; height: 44px; float: left; border-left:1px solid #eeeeee; box-sizing: border-box;}
+		.model01 .information-inner .inner-nav li a{display: block; height: 43px; background-color: #f8f8f8; transition: background-color 200ms, border-color 200ms; line-height: 43px; text-align: center; color: #555555; font-weight: bold; border-bottom: 1px solid #eeeeee;}
+		.model01 .information-inner .inner-nav li:first-child{border-left: none;}
+		.model01 .information-inner .inner-nav .cur a{border-bottom: 1px solid #fff; background-color: #fff;}
+		.model01 .information-inner .inner-cont{padding: 7px 19px 0 19px;}
+		.model01 .information-inner .inner-cont .cont-box{ width: 220px; height: 120px; overflow: hidden;}
+		.model01 .information-inner .inner-cont .cont-box li{height: 30px; overflow: hidden;}
+		.model01 .information-inner .inner-cont .cont-box a{display: inline-block; max-width: 100%; height: 30px; font-weight: bold; line-height: 30px; padding-left: 9px; color: #555555; position: relative;}
+		.model01 .information-inner .inner-cont .cont-box a:before{content: '.'; line-height: 26px; position: absolute; left:0; top:0;}
+		.model01 .information-inner .inner-cont .cont-box a:hover{color: #f5a31b;}
+
+
+
+		.model02 .box1{width: 500px;height: 200px;margin: 30px auto;}
+		.model02 .box2{width: 500px;height: 200px;margin: 30px auto;}
+		.model02 .hide{display: none;}
+		.model02 .tab-hor ul{margin-bottom: 15px; overflow: hidden;}
+		.model02 .product-detail-content-tag{margin-right: 20px;float: left;}
+		.model02 .product-detail-content-tag a{color: #333;font-size: 16px;}
+		.model02 .active a{color: #0C57D4;}
+		.model02 .bg-color1{width: 100px;height: 100px;background-color: red;}
+		.model02 .bg-color2{width: 100px;height: 100px;background-color: yellow;}
+		.model02 .product-detail-content{display: none;}
+		.model02 .product-detail-content.active{display: block;}
+		.model02 .bg-color3{width: 100px;height: 100px;background-color: green;}
+		.model02 .bg-color4{width: 100px;height: 100px;background-color: blue;}
+
+	</style>
+</head>
+<body>
+	
+	<div class="main">
+		<div class="model01">
+			<div class="information-inner">
+				<div class="inner-nav">
+					<ul>
+						<li class="product-detail-content-tag cur"><a href="##">商城公告</a></li>
+						<li class="product-detail-content-tag"><a href="##">公司新闻</a></li>
+						<li class="product-detail-content-tag"><a href="##">行业资讯</a></li>
+					</ul>
+				</div>
+				<div class="inner-cont">
+					<div class="cont-box">
+						<ul>
+							<li><a href="##" class="elli">傅育宁董事长、罗熹总经理拜访陕西省</a></li>
+							<li><a href="##" class="elli">华润集团举行2018年“七一”主题活动</a></li>
+							<li><a href="##" class="elli">华润集团有限公司2018年煤炭去产能能能公</a></li>
+							<li><a href="##" class="elli">傅育宁董事长、罗熹总经理拜访陕西省华润物业发布2017年度社会责任报告</a></li>
+						</ul>
+					</div>
+					<div class="cont-box hide">
+						<ul>
+							<li><a href="##" class="elli">傅育宁董事长、罗熹总经理拜访陕西省华润物业发布2017年度社会责任报告</a></li>
+							<li><a href="##" class="elli">华润集团举行2018年“七一”主题活动</a></li>
+							<li><a href="##" class="elli">傅育宁董事长、罗熹总经理拜访陕西省</a></li>
+							<li><a href="##" class="elli">华润集团有限公司2018年煤炭去产能能能公</a></li>
+						</ul>
+					</div>
+					<div class="cont-box hide">
+						<ul>
+							<li><a href="##" class="elli">罗熹总经理拜访陕西省,傅育宁董事长</a></li>
+							<li><a href="##" class="elli">华润集团举行2018年“七一”主题活动</a></li>
+							<li><a href="##" class="elli">傅育宁董事长、罗熹总经理拜访陕西省华润物业发布2017年度社会责任报告</a></li>
+							<li><a href="##" class="elli">华润集团有限公司2018年煤炭去产能能能公</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="model02">
+			<div class="box box1">
+				<div class="tab-hor">
+					<ul>
+						<li class="product-detail-content-tag active"><a href="##">未完成</a></li>
+						<li class="product-detail-content-tag"><a href="##">已完成</a></li>
+					</ul>
+				</div>
+				<div class="tab-cont">
+					<div class="product-detail-content active">
+						<div class="bg-color1"></div>
+					</div>
+					<div class="product-detail-content">
+						<div class="bg-color2"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box box2">
+				<div class="tab-hor">
+					<ul>
+						<li class="product-detail-content-tag active"><a href="##">未完成</a></li>
+						<li class="product-detail-content-tag"><a href="##">已完成</a></li>
+					</ul>
+				</div>
+				<div class="tab-cont">
+					<div class="product-detail-content active">
+						<div class="bg-color3"></div>
+					</div>
+					<div class="product-detail-content">
+						<div class="bg-color4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="script/jquery-1.8.3.min.js"></script>
+
+
+
+	<script>
+        //model01
+
+        $(".model01").on('click', '.product-detail-content-tag', function () {
+            let $this = $(this);
+            let index = $this.index();
+            //content
+            $(".cont-box").addClass("hide");
+            $(".cont-box").closest(".inner-cont").find(".cont-box:eq(" + index + ")").removeClass("hide");
+            //tag
+            $(".product-detail-content-tag").removeClass("cur");
+            $(this).addClass("cur");
+        });
+
+
+        // model02
+        $(".model02").on('click', '.product-detail-content-tag', function () {
+            let $this = $(this);
+            let $box = $this.closest(".box");
+            if (!$this.hasClass("active")) {
+                $box.find(".product-detail-content-tag").toggleClass("active");
+                $box.find(".product-detail-content").toggleClass("active");
+            }
+        })
+	</script>
+
+
+
+
+</body>
+</html>

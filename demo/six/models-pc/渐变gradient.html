@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>渐变</title>
+	<link rel="stylesheet" href="style/base.css">
+	<style type="text/css">
+		/*渐变*/
+		.model01{display: inline-block; margin: 50px;}
+		.model02{display: inline-block; margin: 50px;}
+		.model03{display: inline-block; margin: 50px;}
+		.model04{display: inline-block; margin: 50px;}
+
+
+		.model01 .gradient{
+		    width: 500px; height: 200px;
+		    background-color: #ff4c22;
+		    background: -moz-linear-gradient(left, #ff4c22 0%, #f52f3e 100%);
+		    background: -webkit-linear-gradient(left, #ff4c22 0%,#f52f3e 100%);
+		    background: linear-gradient(to right, #ff4c22 0%,#f52f3e 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffff4c22,endcolorstr=#fff52f3e,gradientType=1);
+		}
+
+		.model02 .gradient{
+		    width: 500px; height: 200px;
+		    background-color: #87e0fd;
+		    background: -moz-linear-gradient(top, #87e0fd 0%, #0690D6 100%);
+		    background: -webkit-linear-gradient(top, #87e0fd 0%,#0690D6 100%);
+		    background: linear-gradient(to bottom, #87e0fd 0%,#0690D6 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff87e0fd,endcolorstr=#ff0690D6,gradientType=0);
+		}
+
+		.model03 .gradient{
+		    width: 500px; height: 200px;
+		    background-color: #b4e391;
+		    background: -moz-linear-gradient(-45deg, #b4e391 0%, #299a0b 100%);
+		    background: -webkit-linear-gradient(-45deg, #b4e391 0%,#299a0b 100%);
+		    background: linear-gradient(135deg, #b4e391 0%,#299a0b 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffb4e391,endcolorstr=#ff299a0b,gradientType=1);
+		}
+
+		.model04 .gradient{
+		    width: 500px; height: 200px;
+		    background-color: #ffff88;
+		    background: -moz-linear-gradient(45deg, #ffff88 0%, #febf01 100%);
+		    background: -webkit-linear-gradient(45deg, #ffff88 0%,#febf01 100%);
+		    background: linear-gradient(45deg, #ffff88 0%,#febf01 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff88,endcolorstr=#fffebf01,gradientType=1);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<!--从左到右-->
+		<div class="model01">
+			<div class="gradient"></div>
+		</div>
+
+		<!--从上到下-->
+		<div class="model02">
+			<div class="gradient"></div>
+		</div>
+
+		<!--从左上到右下-->
+		<div class="model03">
+			<div class="gradient"></div>
+		</div>
+
+		<!--从左下到右上-->
+		<div class="model04">
+			<div class="gradient"></div>
+		</div>
+	</div>
+
+</body>
+</html>

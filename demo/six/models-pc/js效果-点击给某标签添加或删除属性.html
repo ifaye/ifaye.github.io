@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>js效果-点击给某标签添加或删除属性</title>
+	<link rel="stylesheet" href="style/base.css">
+	<link rel="stylesheet" href="style/layer.css">
+
+	<style type="text/css">
+		/*background-color: #52C41A;*/
+		*{padding: 0; margin: 0;}
+		.main{width: 1190px; margin:0 auto; padding:50px 0;}
+
+		.model01 .btn{display: block; width: 100px; height: 20px; margin-bottom: 30px;}
+		.model01 .input-box{width: 100px; height: 20px;}
+
+		.model02{margin-top: 20px;}
+		.model02 .switchery{display: block; position: relative; width: 80px; height: 40px; background-color: #fff; cursor: pointer; border: 1px solid #e4eaec; border-radius:20px;-webkit-background-clip: content-box;background-clip: content-box;transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;}
+		.model02 .switchery i{display: block; width: 40px; height: 40px; border-radius: 50%; background-color: #fff;
+			position: absolute; left:0; top:0; box-shadow: 0 1px 3px rgba(0, 0, 0, .4); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;}
+		.model02 .switcher input[checked="checked"]+span{border-color: #52C41A;background-color:#52C41A;}
+		.model02 .switcher input[checked="checked"]+span i{left: 40px;}
+		
+		.model03{margin-top: 60px;}
+		.model03 .sign-in{width: 80px; position: relative;}
+		.model03 .sign-in span{
+				position: relative;
+				display: block;
+				text-align: center;
+				width: 80px;
+				height: 40px;
+				line-height: 40px;
+				border-radius: 20px;
+				color: #FFF;
+				font-size: 14px;
+				background-color: #E60320;
+			    background: -moz-linear-gradient(left, #E60320 0%, #FF5B3E 100%);
+			    background: -webkit-linear-gradient(left, #E60320 0%,#FF5B3E 100%);
+			    background: linear-gradient(to right, #E60320 0%,#FF5B3E 100%);
+		}
+		.model03 .sign-in i{
+				opacity: 0;
+				position: absolute;
+				left: 50%;
+				top:0;
+				color: #e60320;
+				transform: translateX(-50%);
+				font-size: 13px;
+			}
+		.model03 .already span{color: #333;background: #fff;}
+		.model03 .already span:before{
+			content: "";
+		    width: 200%;
+		    height: 200%;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    border: 1px solid #999;
+		    border-radius: 40px;
+		    -webkit-transform: scale(.5,.5);
+		    transform: scale(.5,.5);
+		    -webkit-transform-origin: top left;
+		    transform-origin: top left;
+		}
+		.model03 .already i{animation: signinte 2s ease;}
+		@keyframes signinte{
+			0%{
+				opacity: 0;
+				top:0;
+			}
+			50%{
+				opacity: 1;
+				top:-30px;
+			}
+			100%{
+				opacity: 0;
+				top:-40px;
+			}
+
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<div class="main">
+
+		<div class="model01">
+			<a  class="btn">点击</a>
+			<input type="" class="input-box" name="">
+		</div>
+		<div class="model02">
+			<div class="switcher">
+				<input type="checkbox" name="" class="input-box2">
+				<span class="switchery"><i></i></span>
+			</div>
+
+		</div>
+		
+		<div class="model03">
+			<div class="sign-in">
+				<span class="sign-tex">签到</span>
+				<i>+20</i>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="script/jquery-1.8.3.min.js"></script>
+
+
+	<!--model01-->
+	<script>
+        $(function () {
+
+            // $(".main").on("click", ".btn", function () {
+            //     var _imgSrc = $(".inp").attr("disabled");
+			//
+            //     if(_imgSrc){
+            //         $(".inp").removeAttr("disabled");
+            //     }else{
+            //         $(".inp").attr("disabled",true);
+            //     }
+			//
+            // })
+
+            var $inputBox = $(".input-box");
+			$(".btn").click(function () {
+                var unclickable = $inputBox.attr("disabled");
+                if(unclickable){
+                    $inputBox.removeAttr("disabled");
+                }else{
+                    $inputBox.attr("disabled",true);
+                }
+            })
+
+        });
+
+	</script>
+
+
+	<!--model02-->
+	<script>
+        $(function () {
+
+            $(".main").on("click", ".switchery", function () {
+                var _imgSrc = $(".input-box2").attr("checked");
+
+                if(_imgSrc){
+                    $(".input-box2").removeAttr("checked");
+                }else{
+                    $(".input-box2").attr("checked",true);
+                }
+            })
+
+            // var $inputBox = $(".input-box");
+            // $(".btn").click(function () {
+            //     var unclickable = $inputBox.attr("disabled");
+            //     if(unclickable){
+            //         $inputBox.removeAttr("disabled");
+            //     }else{
+            //         $inputBox.attr("disabled",true);
+            //     }
+            // })
+
+        });
+
+	</script>
+
+	<!-- model03 -->
+	<script type="text/javascript">
+		$('.sign-in').on('click',function(){
+		    $(this).addClass('already');
+		    document.querySelector(".sign-tex").innerHTML="已签到";
+		});
+	</script>
+
+</body>
+</html>

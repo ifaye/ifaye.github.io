@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*1px 像素线*/
+/*继承 @extend .setTopLine;*/
+.details-main { padding-bottom: 1.44rem; width: 10rem; margin: 0 auto; }
+.details-main .mod-slider-warp { width: 10rem; height: 9.466667rem; position: relative; }
+.details-main .mod-slider { position: absolute; left: 0; right: 0; top: 0; }
+.details-main .mod-slider .swiper-slide { width: 10rem; height: 10rem; }
+.details-main .mod-slider .swiper-slide img { width: 10rem; height: 10rem; }
+.details-main .mod-slider .swiper-slide:nth-child(1) { background: red; }
+.details-main .mod-slider .swiper-slide:nth-child(2) { background: green; }
+.details-main .mod-slider .swiper-pagination { width: 1rem; height: 0.466667rem; line-height: 0.466667rem; border-radius: 0.24rem; background-color: rgba(0, 0, 0, 0.4); color: #fff; font-size: 11px; left: auto; right: 0.333333rem; bottom: 0.8rem; }
+[data-dpr="2"] .details-main .mod-slider .swiper-pagination { font-size: 22px; }
+[data-dpr="3"] .details-main .mod-slider .swiper-pagination { font-size: 33px; }
+.details-main .mod-slider .swiper-pagination span { font-size: 13px; }
+[data-dpr="2"] .details-main .mod-slider .swiper-pagination span { font-size: 26px; }
+[data-dpr="3"] .details-main .mod-slider .swiper-pagination span { font-size: 39px; }
+
+/* 2019-3-15 */
+.share-itpic { top: 0.4rem; right: 0.333333rem; position: absolute; position: absolute; width: 0.933333rem; height: 0.933333rem; z-index: 55; }
+.share-itpic img { width: 0.933333rem; height: 0.933333rem; }

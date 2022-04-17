@@ -1,0 +1,26 @@
+html,body{background-color: #fff;}
+.main{margin: 50px;}
+
+
+/*遮罩层*/
+.layer-mask{position: fixed; zoom: 1; left: 0; right: 0; top:0; bottom: 0; opacity: 0.4; filter:Alpha(opacity=40)\9; background-color: #000; z-index: 998;}
+
+
+/*============================================================*/
+
+.model01 .end-time{height: 18px; margin-top: 15px;}
+.model01 .end-time label{float: left; line-height: 18px;}
+.model01 .end-time span{float: left; width: 155px;  white-space: nowrap; height: 23px; font-family: Lato; overflow: hidden;}
+.model01 .end-time .time{width: 160px; height: 18px; float: left; line-height: 18px; color: #000000; font-size: 14px; overflow: hidden;}
+.model01 .end-time .time span{display: inline-block; width: 16px; text-align: center; height: 18px; background-color: #2d415a; color: #fff; font-size: 14px; margin-right: 1px; float: left; }
+.model01 .end-time .time i{float: left; padding: 0 2px;}
+
+/*===========================================================*/
+
+
+
+
+
+
+
+

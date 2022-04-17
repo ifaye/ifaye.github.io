@@ -1,0 +1,31 @@
+html,body{background-color: #fff;}
+.main{margin: 50px;}
+
+.model01{padding: 50px; background-color: #338ce8; overflow: hidden; margin-bottom: 50px;}
+.model01 .login-box {float:right; width: 360px; height: 415px; background-color: #fff; border-radius: 6px; overflow: hidden;}
+.model01 .login-box .box-nav{width: 100%; height: 50px; background-color: #f7d28b; overflow: hidden;}
+.model01 .login-box .box-nav a{display: block; width: 50%; height: 50px; float: left; line-height: 50px; text-align: center; color: #666666; font-size: 18px;}
+.model01 .login-box .box-nav a.cur{background-color: #fff;}
+.model01 .login-form{padding: 40px 0 0 20px; overflow: hidden;}
+.model01 .login-form .form-group { position: relative; height: 64px; }
+.model01 .login-form input { width: 254px; height: 43px; padding-right: 10px; padding-left: 53px; font-size: 14px; line-height: 43px; color: #333; border: 1px solid #e8e8e8;  border-radius: 3px; background-color: #fff; }
+.model01 .login-form .inp-name { background: #fff url('../login-model01-images/login-icon.png') no-repeat 5px -27px; }
+.model01 .login-form .inp-pass { background: #fff url('../login-model01-images/login-icon.png') no-repeat 5px -60px; }
+.model01 .login-form .inp-vcode { float: left; width: 110px; background: #fff url('../login-model01-images/login-icon.png') no-repeat 5px -96px; }
+.model01 .login-form .vcode-img { display: inline-block; float: left; overflow: hidden; width: 60px; height: 26px; margin: 9px 15px 0; background-color: #ccc; }
+.model01 .login-form .vcode-link { float: left; line-height: 45px; color: #2448ab; }
+.model01 .login-form .vcode-link:hover { text-decoration: underline; }
+.model01 .login-form .btn-login {display: block; margin:10px 0 15px; clear: both; width: 320px; height: 45px; font-size: 16px; line-height: 45px; text-align: center; color: #fff; border-radius: 3px; background-color: #2448ab; }
+.model01 .login-form .link-forget { float: right; margin-right: 30px; clear: both; font-size: 14px; margin-left: 56px; color: #2448ab; }
+.model01 .login-form .link-forget:hover { text-decoration: underline; }
+
+/*===========================================================*/
+
+
+
+
+
+
+
+
+

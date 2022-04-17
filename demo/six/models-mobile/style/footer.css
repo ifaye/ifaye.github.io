@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/*1px 像素线*/
+/*继承 @extend .setTopLine;*/
+.modal01 { margin: 0 auto; padding: 50px 10px; }
+.modal01 .ls-footer { text-align: center; color: #808080; line-height: 1.6; }
+.modal01 .ls-footer .ls-footer-links { font-size: 0; }
+.modal01 .ls-footer .ls-footer-link { display: inline-block; vertical-align: top; margin: 0 .62em; position: relative; font-size: 14px; color: #586C94; }
+.modal01 .ls-footer .ls-footer-link:before { content: " "; position: absolute; width: 1px; border-left: 1px solid #C7C7C7; color: #C7C7C7; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scaleX(0.5); transform: scaleX(0.5); left: -0.65em; top: .36em; bottom: .36em; }
+.modal01 .ls-footer .ls-footer-link:first-child:before { display: none; }
+.modal01 .ls-footer .ls-footer-text { font-size: 12px; }

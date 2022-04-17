@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>button</title>
+    <link rel="stylesheet" href="style/base.css" />
+    <style>
+        /*hover变浅  active变深*/
+        .main{width: 1190px; margin: 50px auto;}
+
+        .btn-default{color: #76838f; background-color:#e4eaec; width: 134px; padding: 5px 0; line-height: 22px; font-size: 14px; border-radius: 3px; display: inline-block; text-align: center; border:1px solid #e4eaec; cursor:pointer; vertical-align: middle; transition:color .2s linear, background-color .2s linear;}
+        .btn-default:hover{background-color: #f3f7f9;}
+
+        .btn-primary{ color:#ffffff; background-color:#62a8ea; width: 134px; padding: 5px 0; line-height: 22px; font-size: 14px; border-radius: 3px; display: inline-block; text-align: center; border:1px solid #62a8ea; cursor:pointer; vertical-align: middle; transition:color .2s linear, background-color .2s linear;}
+        .btn-primary:hover{background-color: #89bceb;}
+
+        .btn-outline.btn-default{color: #76838f; background-color: #fff;}
+        .btn-outline.btn-default:hover{background-color: #f1f2f4;}
+        .btn-outline.btn-primary{color: #62a8ea; background-color: #fff;}
+        .btn-outline.btn-primary:hover{color: #ffffff; background-color:#62a8ea;}
+
+        .disabled{opacity: 0.6;}
+        .disabled.btn-default:hover{background-color:#e4eaec;}
+        .disabled.btn-primary:hover{background-color: #62a8ea;}
+        .disabled.btn-outline.btn-default:hover{background-color: transparent;}
+        .disabled.btn-outline.btn-primary:hover{color: #62a8ea; background-color:transparent;}
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="margin-vertical-20">
+
+            <a href="##" class="btn-default">Default</a>
+
+        </div>
+
+        <div class="margin-vertical-20">
+
+            <a href="##" class="btn-primary">Primary</a>
+
+        </div>
+
+        <div class="margin-vertical-20">
+
+            <a href="##" class="btn-outline btn-default">Default</a>
+
+        </div>
+
+        <div class="margin-vertical-20">
+
+            <a href="##" class="btn-outline btn-primary">Primary</a>
+
+        </div>
+
+        <div class="margin-vertical-20">
+
+            <a href="##" class="btn-default disabled">Default</a>
+
+        </div>
+
+        <div class="margin-vertical-20">
+
+            <a href="##" class="btn-primary disabled">Primary</a>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

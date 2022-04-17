@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*1px 像素线*/
+/*继承 @extend .setTopLine;*/
+html, body { background-color: #fff; }
+
+.main { width: 8rem; padding: 50px 0; margin: 0 auto; }
+
+div[class^="modal"] { margin: 30px 0; min-height: 20px; position: relative; }
+
+.modal01 .one-way-tag { font-size: 0; margin-top: 0.2rem; overflow-x: auto; text-overflow: ellipsis; white-space: nowrap; }
+.modal01 .one-way-tag .tag { display: inline-block; height: 18px; line-height: 18px; min-width: 9px; max-width: 100%; border-radius: 12px; font-size: 12px; padding: 0 5px; text-align: center; color: #fff; background-color: #ff5b05; white-space: nowrap; margin-right: 10px; }
+.modal01 .one-way-tag .tag-outline { display: inline-block; font-size: 12px; text-align: center; padding: 0 5px; height: 18px; line-height: 18px; background-color: #fff; color: #888; border: 1px solid #ddd; border-radius: 3px; white-space: nowrap; margin-right: 10px; }
+
+.modal02 .sku-choose { width: 100%; overflow: hidden; }
+.modal02 .sku-choose .item { float: left; height: 30px; line-height: 30px; border-radius: 4px; font-size: 14px; margin-left: 10px; margin-bottom: 10px; display: inline-block; padding: 0 10px; min-width: 20px; max-width: 100%; overflow: hidden; text-align: center; color: #333; background-color: #f7f7f7; }
+.modal02 .sku-choose .active { background-color: #e4393c; color: #fff; border-color: #e4393c; }
+
+.modal03 .weui-badge { display: inline-block; padding: .15em .4em; min-width: 8px; border-radius: 18px; background-color: #F43530; color: #FFFFFF; line-height: 1.2; text-align: center; font-size: 12px; vertical-align: middle; font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif; }
+.modal03 .badge-dot { display: inline-block; padding: .4em; min-width: 0; border-radius: 18px; background-color: #F43530; color: #FFFFFF; line-height: 1.2; text-align: center; font-size: 12px; vertical-align: middle; }
+
+.modal06 { height: 34px; }
+.modal06 .tips { position: absolute; left: 0; top: 0; right: 0; background-color: rgba(255, 76, 106, 0.7); border-radius: 0.08rem; padding: 0.14rem 0.92rem 0.13rem 0.26rem; color: #FFF; font-size: 13px; font-weight: bold; }
+.modal06 .tips:before { position: absolute; left: 0.64rem; top: -0.19rem; content: ''; width: 0; height: 0; border-left: 0.18rem solid transparent; border-right: 0.18rem solid transparent; border-bottom: 0.2rem solid rgba(255, 76, 106, 0.7); }
+.modal06 .tips .close-btn { display: block; width: 0.8rem; height: 100%; position: absolute; top: 0; right: 0; cursor: pointer; background: url("../images/close-white.png") no-repeat center/auto 0.48rem; }
+
+.modal07 .end-time { height: 18px; margin-top: 15px; }
+.modal07 .end-time label { float: left; line-height: 18px; }
+.modal07 .end-time span { float: left; width: 155px; white-space: nowrap; height: 23px; font-family: Lato; overflow: hidden; }
+.modal07 .end-time .time { width: 160px; height: 18px; float: left; line-height: 18px; color: #000000; font-size: 14px; overflow: hidden; }
+.modal07 .end-time .time span { display: inline-block; width: 16px; text-align: center; height: 18px; background-color: #2d415a; color: #fff; font-size: 14px; margin-right: 1px; float: left; }
+.modal07 .end-time .time i { float: left; padding: 0 2px; }

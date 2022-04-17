@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>切换</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="js/flexible.js"></script>
+    <link href="style/base.css" type="text/css" rel="stylesheet" />
+    <link href="style/element.css" type="text/css" rel="stylesheet" />
+    <link href="style/swiper.min.css" type="text/css" rel="stylesheet"/>
+    <link href="style/footnav.css" type="text/css" rel="stylesheet" />
+    <link href="style/navigation-switch.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div class="index-main">
+		<div class="top-wrapper">
+			<div class="container">
+				<div class="swiper-container hot-nav">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><span>热门推荐</span></div>
+				        <div class="swiper-slide"><span>童装童鞋</span></div>
+				        <div class="swiper-slide"><span>奶粉尿裤</span></div>
+				        <div class="swiper-slide"><span>儿童玩具</span></div>
+				    </div>
+			    </div>
+			</div>
+		</div>
+	    <div class="swiper-container hot-cont">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<!-- 普通商品 -->
+		        	<div class="project-box">
+		        		11111111111111
+						<a href="##" class="am-button">默认按钮</a>
+						<br>
+						<a href="##" class="am-button am-button-disabled">默认按钮</a>
+						<br>
+						<a href="##" class="am-button am-button-primary">主要按钮</a>
+						<br>
+						<a href="##" class="am-button am-button-primary am-button-disabled">主要按钮</a>
+						<br>
+						<a href="##" class="am-button am-button-gradient1">渐变按钮1</a>
+						<br>
+						<a href="##" class="am-button am-button-gradient2">渐变按钮2</a>
+						<br>
+						<a href="##" class="am-button am-button-primary">
+							<i class="am-button-icon icon-model1"></i>图标按钮
+						</a>
+						<br>
+						<a href="##" class="am-button">
+							<i class="am-button-icon icon-model2"></i>图标按钮
+						</a>
+						<br>
+						<a href="##" class="am-button am-button-primary am-button-small">
+							<i class="am-button-icon icon-model1"></i>图标按钮
+						</a>
+						<br>
+						<a href="##" class="am-button am-button-primary am-button-small am-button-inline">
+							<i class="am-button-icon icon-model1"></i>图标按钮
+						</a>
+						<a href="##" class="am-button am-button-primary am-button-small am-button-inline">
+							ghost
+						</a>
+						<a href="##" class="am-button am-button-primary am-button-small am-button-inline">
+							我是中文
+						</a>
+						<br>
+
+						<div style="position: relative;height: 20px; margin:20px 0 0 60px;">
+							<span class="am-badge-text">处方药</span>
+						</div>
+						<div style="position: relative;height: 20px; margin:20px 0 0 60px;">
+							<span class="am-badge-text">9</span>
+						</div>
+						<div style="position: relative;height: 20px; margin:20px 0 0 60px;">
+							<span class="am-badge-text">28</span>
+						</div>
+		        	</div>
+		        </div>
+
+		        <div class="swiper-slide">
+		        	<div class="project-box">
+		        		<div style="padding-top: 200px;">222222222222</div>
+		        	</div>
+		        </div>
+
+		        <div class="swiper-slide">
+		        	<div class="project-box">
+		        		3333333333333
+		        	</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="project-box">
+	        		4444444444444
+		        	</div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+	<a href="##" class="back-top"></a>
+
+
+	
+	<script src="js/jquery-1.8.3.min.js"></script> 
+	<script src="js/swiper.min.js"></script>
+	
+	<!-- 限时秒杀 -->
+	<script>
+		var swiperSpike = new Swiper('.spike-box', {
+	      slidesPerView: 'auto',
+	      nested:true,
+	      spaceBetween: '2%',
+
+	    });
+
+    </script>
+	
+	<!-- 热门推荐 导航 和内容 -->
+    <script type="text/javascript">
+    	var galleryThumbs = new Swiper('.hot-nav', {
+	        slidesPerView : 'auto',
+	        watchSlidesVisibility: true,
+	        watchSlidesProgress: true,
+	    });
+	    var galleryTop = new Swiper('.hot-cont', {
+	    	autoHeight: true,
+	    	touchRatio : 0.5,
+	        spaceBetween: 32,
+	        thumbs: {
+	          swiper: galleryThumbs
+	        }
+	    });
+    </script>
+
+</body>
+
+
+</html>
