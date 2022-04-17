@@ -1,0 +1,63 @@
+ <!doctype html>
+<html style="height: 100%;" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>登录</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app2.css">
+  <link rel="stylesheet" href="assets/css/rewrite.css">
+
+</head>
+<body style="height: 100%;">
+<div  class="login-body">
+  <!--top nav start-->
+  <header data-am-widget="header" class="am-header subheader">
+      <div class="am-header-left am-header-nav">
+          <a href="#" class="back"><i class="iconfont">&#xe617;</i></a>
+      </div>
+      <h1 class="am-header-title">登录</h1>
+      <div class="am-header-right am-header-nav"><a href="##" class="hd-link">注册</a></div>
+  </header>
+ <div style="height:4.4rem;"></div>
+	<div class="contain" style="position: relative; z-index: 10;">
+    	<div class="midBox">
+    		<form class="am-form" data-am-validator>
+    			<div class="am-form-group am-form-icon">
+                    <span class="iconfont userIco">&#xe60c;</span>
+    				<input class="input am-form-field" type="text" id="" minlength="6" placeholder="手机号码" required />
+    			</div>
+    			<div class="am-form-group am-form-icon" style="margin-bottom:3.2rem;">
+    				<span class="iconfont pwdIco">&#xe60d;</span>
+            <input class="input am-form-field" type="password" placeholder="密码" pattern="" required />
+    			</div>
+    			<button class="xb-btn" type="submit" >登 录</button>
+    		</form>
+    	</div>
+   </div>
+  <!--<div class=" login-bg"><img src="assets/images/login-bg.png" alt=""></div>-->
+  <div class="mt1 forgot">
+      <span class="link-reg">忘记密码?</span>
+      <a href="findPwd.html" class="link-findpwd">马上找回</a>
+  </div>
+  <script src="assets/js/libs/jquery.min.js"></script>
+  <script src="assets/js/libs/amazeui.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+//	var h=$(window).height();
+//	$(".contain").css("min-height",h);
+  })
+  </script>
+</div>
+</body>
+</html>

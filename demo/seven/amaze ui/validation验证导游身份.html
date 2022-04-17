@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>验证导游身份</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app2.css">
+  <link rel="stylesheet" href="assets/css/rewrite.css">
+</head>
+<body>
+
+<!--top nav start-->
+<header data-am-widget="header" class="am-header subheader">
+	<div class="am-header-left am-header-nav">
+		<a href="#" class="back"><i class="iconfont">&#xe617;</i></a>
+	</div>
+	<h1 class="am-header-title">验证导游身份</h1>
+</header>
+  <div style="height:4.4rem"></div>
+ 
+	<div class="contain">
+    	<div class="midBox">
+    		<form class="am-form" data-am-validator>
+    			<div class="am-form-group am-form-icon">
+    				<span class="iconfont pwdIco">&#xe60d;</span>
+    				<input class="input am-form-field" type="text" placeholder="请输入您的身份证号码/其他地区ID" pattern="" required />
+    			</div>
+    			<div class="am-form-group am-form-icon" style="margin-bottom:2rem;">
+    				<span class="iconfont pwdIco">&#xe60d;</span>
+    				<input class="input am-form-field" type="text" placeholder="请输入您的导游证号码" pattern="" required />
+    			</div>
+    			<button class="xb-btn" type="submit">立即验证</button>
+    		</form>
+			<div class="tip">
+				若您尚未在系统上录入资料<br>
+				请先进行新用户资料录入<br>
+				<span class="iconfont">&#xe61a;</span>
+			</div>
+			<div class="mt1 entry">
+				<span class="link-reg">未录入资料?</span>
+				<a class="link-findpwd" href="##">马上录入</a>
+			</div>
+    	</div>
+    </div>
+  <script src="assets/js/libs/jquery.min.js"></script>
+  <script src="assets/js/libs/amazeui.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+//	var h=$(window).height();
+//	$(".contain").css("min-height",h);
+  })
+  </script>
+</body>
+</html>

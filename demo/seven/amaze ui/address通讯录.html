@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>通讯录</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app2.css">
+  <link rel="stylesheet" href="assets/css/rewrite.css">
+</head>
+<body>
+
+<!--top nav start-->
+<header data-am-widget="header" class="am-header subheader">
+	<h1 class="am-header-title">通讯录</h1>
+</header>
+  <div style="height:4.4rem"></div>
+ 
+	<div class="contain">
+    	<div class="midBox">
+    		<form class="am-form" data-am-validator>
+    			<div class="am-form-group am-form-icon address">
+					<span>部门名称</span>
+    				<input style="padding-left: 1rem !important;" class="input am-form-field" type="text" placeholder="请输入部门名称" />
+    			</div>
+				<div class="am-form-group am-form-icon address">
+                    <span>同事姓名</span>
+                    <input style="padding-left: 1rem !important;" class="input am-form-field" type="text" placeholder="请输入同事姓名" />
+				</div>
+				<div class="am-form-group am-form-icon address">
+                    <span>同事电话</span>
+                    <input style="padding-left: 1rem !important;" class="input am-form-field" type="text" placeholder="请输入同事电话"/>
+				</div>
+				<div class="am-form-group am-form-icon address">
+                    <span>岗位名称</span>
+                    <input style="padding-left: 1rem !important;" class="input am-form-field" type="text" placeholder="请输入岗位名称" />
+				</div>
+    			<button class="xb-btn" style="margin-top: 2rem;" type="submit">查询</button>
+    		</form>
+    	</div>
+    </div>
+<div style="height:5rem;"></div>
+<footer id="footer">
+	<a href="##" class="nav-assistant">
+		<span class="iconfont">&#xe608;</span>
+		导游助手
+	</a>
+	<a href="##" class="nav-know on">
+		<span class="iconfont">&#xe601;</span>
+		知识库
+	</a>
+	<a href="##" class="nav-info">
+		<span class="iconfont">&#xe60a;</span>
+		<i class="remind">2</i>
+		我的资讯
+	</a>
+	<a href="##" class="nav-personal">
+		<span class="iconfont">&#xe62c;</span>
+		个人中心
+	</a>
+</footer>
+  <script src="assets/js/libs/jquery.min.js"></script>
+  <script src="assets/js/libs/amazeui.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+	var h=$(window).height();
+	$(".contain").css("min-height",h);
+	$('.btn-loading-example').click(function () {
+	  
+	  var $btn = $(this)
+	  $btn.button('loading');
+	    setTimeout(function(){
+	      $btn.button('reset');
+	  }, 5000);
+	});
+
+  })
+  </script>
+</body>
+</html>

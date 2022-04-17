@@ -1,0 +1,49 @@
+*:focus {outline: none;}
+.am-slider-a1 .am-control-nav li a.am-active{background-color:#6bc400;}
+.am-list-item-hd{line-height: 1.5rem}
+.am-list-news-default{margin-bottom:0;}
+.am-form input[type=text], .am-form input[type=password]{border:none; border-bottom:1px solid #eee; outline: none}
+ul{padding:0.8rem 0 0; margin:0;}
+body{font-size:1.4rem;}
+.am-form input[type="number"], .am-form input[type="search"], .am-form input[type="text"], .am-form input[type="password"], .am-form input[type="datetime"], .am-form input[type="datetime-local"], .am-form input[type="date"], .am-form input[type="month"], .am-form input[type="time"], .am-form input[type="week"], .am-form input[type="email"], .am-form input[type="url"], .am-form input[type="tel"], .am-form input[type="color"], .am-form select, .am-form textarea, .am-form-field{font-size:1.4rem;}
+.am-center{text-align:center;}
+p{ margin: 0; overflow:hidden;}
+.am-list > li, .am-list > li > a{overflow:hidden;}
+[class*="am-u-"] {  padding-left: 0.4rem; padding-right: 0.4rem;}
+.am-list li{padding:0 0.4rem;}
+hr.am-divider{ clear:both; margin:1rem 0; overflow:hidden;}
+.am-panel-default > .am-panel-hd{border:none; background:#fff;}
+.am-panel{border-left:none; border-right:none; margin-bottom:0.8rem; box-shadow:none;}
+.am-table > tbody > tr > td, .am-table > tbody > tr > th, .am-table > tfoot > tr > td, .am-table > tfoot > tr > th, .am-table > thead > tr > td, .am-table > thead > tr > th{padding:0.4rem 0.2rem;}
+.am-table{margin-bottom:0;}
+[class*="am-icon-angle-"]{font-size:2rem; color:#999;}
+[class*="am-icon-"]{ padding:0 0.8rem; display:inline-block;}
+.am-nav-tabs{ background:#fff;}
+.massage-tabs .am-nav-tabs li a{border:none;}
+.am-slider-a1{box-shadow:none;}
+hr{margin:0.8rem 0; overflow:hidden; clear:both;}
+.am-gotop-default, .xc-btn{position:fixed; right:0.4rem; top:60%; z-index:10;}
+.am-gotop-default a, .xc-btn{color:#fff; font-size:2.4rem; padding:0.4rem; background:#000; opacity:0.5; border-radius:0.4rem;}
+.am-gotop-default i, .xc-btn i{color:#fff; }
+.xc-btn{ margin-top:-5rem;}
+.am-offcanvas-bar{background:#000; opacity:0.9;}
+.am-modal-dialog{background:#fff;}
+.am-modal-hd{ font-size:1.6rem; padding:0.6rem 0; background:#f8f8f8;}
+.am-modal-bd{ margin:0.8rem; text-align:left;}
+.am-btn-warning{background:#ff9a14;}
+.am-checkbox-inline.am-secondary .am-ucheck-checkbox:checked + .am-ucheck-icons, .am-checkbox-inline.am-secondary .am-ucheck-checkbox:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-checkbox-inline.am-secondary .am-ucheck-radio:checked + .am-ucheck-icons, .am-checkbox-inline.am-secondary .am-ucheck-radio:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-checkbox.am-secondary .am-ucheck-checkbox:checked + .am-ucheck-icons, .am-checkbox.am-secondary .am-ucheck-checkbox:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-checkbox.am-secondary .am-ucheck-radio:checked + .am-ucheck-icons, .am-checkbox.am-secondary .am-ucheck-radio:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-radio-inline.am-secondary .am-ucheck-checkbox:checked + .am-ucheck-icons, .am-radio-inline.am-secondary .am-ucheck-checkbox:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-radio-inline.am-secondary .am-ucheck-radio:checked + .am-ucheck-icons, .am-radio-inline.am-secondary .am-ucheck-radio:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-radio.am-secondary .am-ucheck-checkbox:checked + .am-ucheck-icons, .am-radio.am-secondary .am-ucheck-checkbox:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-radio.am-secondary .am-ucheck-radio:checked + .am-ucheck-icons, .am-radio.am-secondary .am-ucheck-radio:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-ucheck-checkbox:checked + .am-ucheck-icons, .am-ucheck-checkbox:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons, .am-ucheck-radio:checked + .am-ucheck-icons, .am-ucheck-radio:hover:not(.am-nohover):not(:disabled) + .am-ucheck-icons{color: #6bc400!important;}
+
+/*mika add 1.5 */
+.am-slider .am-slides img{height:100%;}
+#sliderContainer .am-slider-default .am-viewport, #sliderContainer .am-slider .am-slides > li{height:12rem;}
+.am-slider-default .am-control-nav{bottom:5px;}
+.am-slider-default{margin: 0;}
+.next-list li ul li .am-icon-angle-right{ right:0.8rem;}
+
+
+/*2016-05-08*/
+
+
+
+
+
