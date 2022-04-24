@@ -1,0 +1,60 @@
+
+.my-evaluate{width: 950px;  background-color: #fff; float: right;}
+.my-evaluate .mt{width: 950px;}
+.my-evaluate .mt .top{width: 950px; height: 50px; overflow: hidden;}
+.my-evaluate .mt .top span{color: #2448ab; font-size: 20px; line-height: 50px; float: left; margin-left: 30px;}
+
+.my-evaluate .mc{width: 950px; border-top: 1px solid #e8e8e8; padding: 10px 0 110px;}
+.my-evaluate .mc .mc-th{width: 928px; height: 32px; line-height: 32px; color: #666666; border: 1px solid #e8e8e8; background-color: #fafafa; margin: 0 auto;}
+.my-evaluate .mc .mc-th span{float: left; margin-left: 19px;}
+.my-evaluate .mc .mc-th i{float: left; margin-left: 385px;}
+.my-evaluate .mc .mc-td{width: 928px; border: 1px solid #e8e8e8; margin: 10px auto 0;}
+.my-evaluate .mc .mc-td .td-top{width: 890px; height: 68px; border-bottom: 1px solid #e8e8e8; padding: 0 19px; background-color: #fafafa;}
+.my-evaluate .mc .mc-td .td-top .top1{height: 35px; line-height: 35px; color: #666666;}
+.my-evaluate .mc .mc-td .td-top .top1 span{float: left; margin-right: 24px;}
+.my-evaluate .mc .mc-td .td-top .top2{height: 30px; color: #333333;}
+.my-evaluate .mc .mc-td .td-top .top2 span{float: right; line-height: 30px;}
+.my-evaluate .mc .mc-td .td-top .top2 .stars{float: left; width: 173px; height: 30px; overflow: hidden;}
+.my-evaluate .mc .mc-td .td-top .top2 .stars label{float: left; line-height: 30px; color: #333333; margin-right: 10px;}
+.my-evaluate .mc .mc-td .td-top .top2 .stars em{display: block; width: 75px; height: 14px; float: left; margin-top: 8px; background: url("../images/detail-01-star.png") no-repeat;}
+.my-evaluate .mc .mc-td .td-top .top2 .stars .star4{background: url("../images/detail-01-star.png") no-repeat -15px 0;}
+.my-evaluate .mc .mc-td .td-top .top2 .stars .star3{background: url("../images/detail-01-star.png") no-repeat -30px 0;}
+.my-evaluate .mc .mc-td .td-top .top2 .stars .star2{background: url("../images/detail-01-star.png") no-repeat -45px 0;}
+.my-evaluate .mc .mc-td .td-top .top2 .stars .star1{background: url("../images/detail-01-star.png") no-repeat -60px 0;}
+.my-evaluate .mc .mc-td .td-top .top2 .stars .star0{background: url("../images/detail-01-star.png") no-repeat -75px 0;}
+
+.my-evaluate .mc .mc-td .td-bot{width: 928px; height: 26px; text-align: center;background-color: #fafafa;}
+.my-evaluate .mc .mc-td .td-bot a{ color: #2448ab;  line-height: 26px; }
+.my-evaluate .mc .mc-td .td-bot a:hover{text-decoration: underline;}
+
+
+.my-evaluate .mc .mc-td .td-mid{width:928px; height: 339px; overflow: hidden; background-color: #fff; }
+.my-evaluate .mc .mc-td .td-mid .mid-item{width: 928px; border-bottom: 1px solid #e8e8e8; overflow: hidden;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mlt{width: 412px; padding: 14px 0 12px 19px; overflow: hidden;float: left; }
+.my-evaluate .mc .mc-td .td-mid .mid-item .mlt .pic{width: 60px; height: 60px; margin-bottom: 20px; margin-right: 22px; border: 1px solid #e8e8e8; float: left;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mlt .title{width: 300px; color: #2d415a; font-size: 14px; height: 25px; line-height: 25px; }
+.my-evaluate .mc .mc-td .td-mid .mid-item .mlt a:hover.title{color: #ff6600;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mlt p{width: 300px; height: 20px; line-height: 20px; color: #666666;}
+
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt{width: 440px; float: left; padding: 14px 18px 0 38px; border-left: 1px solid #e8e8e8; }
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt span{float: right; line-height: 30px;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .stars{float: left; font-size: 14px; width: 173px; height: 30px; overflow: hidden;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .stars label{float: left; line-height: 30px; color: #333333; margin-right: 10px;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .stars em{display: block; width: 75px; height: 14px; float: left; margin-top: 8px; background: url("../images/detail-01-star.png") no-repeat;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .stars .star4{background: url("../images/detail-01-star.png") no-repeat -15px 0;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .stars .star3{background: url("../images/detail-01-star.png") no-repeat -30px 0;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .stars .star2{background: url("../images/detail-01-star.png") no-repeat -45px 0;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .stars .star1{background: url("../images/detail-01-star.png") no-repeat -60px 0;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .stars .star0{background: url("../images/detail-01-star.png") no-repeat -75px 0;}
+
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .comment{width: 440px; font-size: 14px; float: left; overflow: hidden;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .comment label{float: left; line-height: 30px; color: #333333; margin-right: 10px;}
+.my-evaluate .mc .mc-td .td-mid .mid-item .mrt .comment p{width: 270px; float: left; line-height: 22px; padding: 4px 0; min-height: 60px; color: #333;}
+
+
+
+
+
+
+
+

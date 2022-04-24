@@ -1,0 +1,51 @@
+
+.prom-list{width: 950px; float: right;}
+.prom-list .mt{width: 950px;}
+.prom-list .mt .top{width: 950px; height: 50px; overflow: hidden; background-color: #fff; border-bottom: 1px solid #e8e8e8; }
+.prom-list .mt .top span{color: #2448ab; font-size: 20px; line-height: 50px; float: left; margin-left: 30px;}
+.prom-list .mt .top a{float: right; color: #2448ab; display: block; width: 94px; padding-left: 24px; text-align: center; line-height: 26px; height: 26px; border: 1px solid #e8e8e8; margin: 11px 10px 0 0; background: url("../images/arrows.png") no-repeat 11px -130px;}
+.prom-list .mt .top a:hover{background:#fcfcfc url("../images/arrows.png") no-repeat 11px -130px;}
+
+
+.prom-list .mc{width: 950px; overflow: hidden; }
+.prom-list .mc .mc-notice{width: 890px; padding: 0 30px; height: 36px; line-height: 36px; background-color: #fff9d9; color: #666666; border-bottom: 1px solid #ffdcaa; overflow: hidden; }
+.prom-list .mc .mc-user-msg{ padding: 10px 0 39px 30px; background-color: #ffffff; overflow: hidden; }
+.prom-list .mc .mc-user-msg .msg-list li{ width: 500px;  border-bottom: 1px dashed #e8e8e8; overflow: hidden; }
+.prom-list .mc .mc-user-msg .msg-list li:first-child{ height: 52px; line-height: 52px; font-size: 16px; font-weight: bold; color: #2d415a; border-bottom: 1px solid #e8e8e8; }
+.prom-list .mc .mc-user-msg .msg-list li span{ display: block; height: 52px; line-height: 52px; float: left; }
+.prom-list .mc .mc-user-msg .msg-list li span.msg-name{ width: 75px; color: #666666; overflow: hidden; }
+.prom-list .mc .mc-user-msg .msg-list li span.msg-desc{ width: 425px; color: #333333; overflow: hidden; }
+
+.prom-list .mc .cart-box{ width: 975px; background: url("../images/bg-02.png") no-repeat center bottom; padding-bottom: 100px;  margin-top: 10px;  }
+.prom-list .mc .cart-box .cart-list{ width: 975px;  }
+.prom-list .mc .cart-box .cart-list li{ float: left; margin: 0 15px 10px 0; width: 310px; height: 343px; background-color: #ffffff;  }
+.prom-list .mc .cart-box .cart-list li a{display: block; width: 310px; height: 313px; padding-top: 30px;overflow: hidden;}
+.prom-list .mc .cart-box .cart-list li a:hover{ box-shadow: 0 0 4px rgba(0,0,0,0.2); }
+.prom-list .mc .cart-box .cart-list li .title{ margin: 0 auto 15px; width: 274px; height: 24px; line-height: 24px; font-size: 18px; color: #ff6600; text-align: center; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .pic{ margin: 0 auto; width: 160px; height: 160px; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .pic img{ width: 160px; height: 160px; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .d-n{ width: 274px; margin: 20px auto 0; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .d-n .num{ float: left; width: 117px; padding-right:18px; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .d-n .num .num-name{ width: 117px; height: 24px; line-height: 24px; color: #666666; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .d-n .num .num-cont{ width: 117px; line-height: 16px; color: #333333; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .d-n .date{ float: right; width: 102px; border-left: 1px solid #e8e8e8; padding: 0 18px; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .d-n .date .date-name{ width: 102px; height: 24px; line-height: 24px; color: #666666; overflow: hidden; }
+.prom-list .mc .cart-box .cart-list li .d-n .date .date-cont{ width: 102px; line-height: 16px; color: #333333; overflow: hidden; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

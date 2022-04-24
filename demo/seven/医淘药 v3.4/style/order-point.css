@@ -1,0 +1,87 @@
+.main-bg{width: 100%; min-width: 1190px; background-color:#eeeeee; }
+.main-bg .main{width: 1190px; margin: 0 auto; overflow: hidden; }
+
+.main-bg .main .p-order-box{width: 950px; float: right; overflow: hidden; }
+.main-bg .main .p-order-box .mt{width: 920px; height: 50px; line-height: 50px; font-size: 20px; color: #2448ab; padding-left: 30px; border-bottom: 1px solid #e8e8e8; background-color: #ffffff; overflow: hidden; }
+
+.main-bg .main .p-order-box .mc{ width: 930px; min-height: 865px;padding: 0 10px; background-color: #ffffff; overflow: hidden; position: relative; }
+
+.main-bg .main .p-order-box .mc .filter-search { padding-top: 10px; margin-top: 8px; }
+.main-bg .main .p-order-box .mc .filter-search input[type='text'] {clear: both; width: 208px; height: 30px; padding-left: 26px; line-height: 30px; color: #333; border: 1px solid #dbdbdb; background: #fff url('../images/list-icon.png') no-repeat 5px -29px; }
+.main-bg .main .p-order-box .mc .filter-search .btn {display: none;}
+.main-bg .main .p-order-box .mc .filter-search.focus { left: 3px; position: absolute; top: -8px; width: 250px; height: 83px; border: 1px solid #f0f0f0; box-shadow: 0 0 1px 1px rgba(0,0,0,.1); background-color: #fff;}
+.main-bg .main .p-order-box .mc .filter-search.focus input[type="text"] {margin: 7px 0 10px 6px;}
+.main-bg .main .p-order-box .mc .filter-search.focus .btn {display: block; float: right;width: 44px; height: 22px;color: #666; text-align: center; line-height: 20px;border: 1px solid #dbdbdb;}
+.main-bg .main .p-order-box .mc .filter-search.focus a:hover.btn {background-color: #fcfcfc;}
+.main-bg .main .p-order-box .mc .filter-search.focus .btn-submit {width: 46px;height: 22px; margin-right: 13px;margin-left: 6px; border: none; color: #fff;background-color: #2448ab;}
+.main-bg .main .p-order-box .mc .filter-search.focus a:hover.btn-submit {background-color: #1c3e9c;}
+
+.main-bg .main .p-order-box .mc .mct{ width: 928px; height: 38px; margin: 62px 0 10px 0; background-color: #fafafa; border: 1px solid #e8e8e8;}
+.main-bg .main .p-order-box .mc .mct .g-msg{ float: left; width: 308px; height: 38px; line-height: 38px; padding-left: 20px;  color: #666666; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mct .g-points{ float: left; width: 110px; height: 38px; line-height: 38px; text-align: center;  color: #666666; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mct .g-num{ float: left; width: 110px; height: 38px; line-height: 38px; text-align: center;  color: #666666; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mct .g-pay{ float: left; width: 140px; height: 38px; line-height: 38px; text-align: center;  color: #666666; overflow: hidden; }
+
+.main-bg .main .p-order-box .mc .mct .g-stu{ position: relative; float: left; width: 120px; height: 38px; line-height: 38px; text-align: center;  color: #666666; }
+
+.main-bg .main .p-order-box .mc .mct .g-stu .popover-toggle { display: inline-block; width: 108px; height: 24px; line-height: 24px; transition: none; text-align: center; border: 1px solid #e8e8e8; background-color: #fff; }
+.main-bg .main .p-order-box .mc .mct .g-stu .popover-toggle i { display: inline-block; width: 7px; height: 4px; margin-left: 5px; vertical-align: middle; background: url('../images/arrows.png') no-repeat; }
+.main-bg .main .p-order-box .mc .mct .g-stu .popover-toggle.hover { width: 110px; height: 26px; line-height: 26px; color: #fff; border: none; background-color: #f60; }
+.main-bg .main .p-order-box .mc .mct .g-stu .popover-toggle.hover i { background: url('../images/arr-icon2.png') no-repeat -6px -7px; }
+.main-bg .main .p-order-box .mc .mct .g-stu .popover { position: absolute; top: 32px; left: 5px; width: 108px; border: 1px solid #e8e8e8; border-top: 0; background-color: #fff; }
+.main-bg .main .p-order-box .mc .mct .g-stu .popover li { line-height: 26px; }
+.main-bg .main .p-order-box .mc .mct .g-stu .popover a { display: block; }
+.main-bg .main .p-order-box .mc .mct .g-stu .popover a:hover { color: #f60; background-color: #fafafa; }
+
+
+.main-bg .main .p-order-box .mc .mct .g-op{ float: left; width: 120px; height: 38px; line-height: 38px; text-align: center;  color: #666666; overflow: hidden; }
+
+.main-bg .main .p-order-box .mc .mct .g-stu a.choose{ display: block; padding: 0 22px 0 10px; margin: 6px 5px; width: 76px; height: 24px; line-height: 24px; text-align: center; background: #ffffff url("../images/arr-icon4.png") no-repeat 80px center; color: #666666; border: 1px solid #e8e8e8; overflow: hidden; }
+
+
+.main-bg .main .p-order-box .mc .mcc{ width: 930px;  background-color: #ffffff; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc .mcc-t{ width: 928px; height: 38px; border: 1px solid #e8e8e8; border-bottom: none; background-color: #fafafa;  overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc .mcc-t .g-order-num{ float: left; width: 230px; height: 38px; line-height: 38px; padding-left: 20px;  color: #666666; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc .mcc-t .g-order-time{ float: left; width: 280px; height: 38px; line-height: 38px; padding-left: 20px; color: #666666; overflow: hidden; }
+
+.main-bg .main .p-order-box .mc .mcc-c{ width: 928px; height: 125px;  margin-bottom:  20px; border: 1px solid #e8e8e8;  overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-msg{ float: left; width: 308px; height: 125px; line-height: 38px; padding-left: 20px;  color: #666666; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-msg .title{ width: 308px; height: 48px; line-height: 48px; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-msg .title a{ font-size: 16px; color: #2d415a; }
+.main-bg .main .p-order-box .mc .mcc-c .g-msg .title a:hover{ color: #f60; }
+.main-bg .main .p-order-box .mc .mcc-c .g-msg .att{  width: 308px; height: 20px; line-height: 20px; font-size: 14px; color: #666666; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-points{ float: left; width: 110px; height: 125px; line-height: 51px; text-align: center; font-size: 14px;  color: #333333; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-num{ float: left; width: 109px; height: 125px; line-height: 52px; border-right: 1px solid #e8e8e8; text-align: center;  color: #333333; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-pay{ float: left; width: 139px; height: 125px; line-height: 50px; font-size: 18px; font-weight: bold; border-right: 1px solid #e8e8e8; text-align: center;  color: #333333; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-stu{ float: left; width: 119px; height: 125px; line-height: 38px; border-right: 1px solid #e8e8e8; text-align: center;  color: #666666; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-op{ float: left; width: 120px; height: 125px; line-height: 38px; text-align: center;  color: #666666; overflow: hidden; }
+
+.main-bg .main .p-order-box .mc .mcc-c .g-stu .w-receiving{ width: 119px; height: 44px; line-height: 52px; text-align: center;  color: #666666; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-stu .desc{ width: 119px; height: 16px; line-height: 16px; text-align: center; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-stu .desc a{ color: #2448ab; }
+.main-bg .main .p-order-box .mc .mcc-c .g-stu .desc a:hover{ color: #f60; }
+
+.main-bg .main .p-order-box .mc .mcc-c .g-op a.h-receiving{ display: block; width: 80px; height: 30px; line-height: 30px; text-align: center;  color: #ffffff; background-color: #ff6600; margin: 22px 0 0 21px; overflow: hidden; }
+.main-bg .main .p-order-box .mc .mcc-c .g-op a.h-receiving:hover{ text-decoration: underline; }
+
+/*03-28*/
+.main-bg .main .p-order-box .mc .mct .g-stu .popover-toggle.hover { background-color: #2448ab; }
+.main-bg .main .p-order-box .mc .mct .g-stu .popover a:hover { color: #2448ab;  }
+.main-bg .main .p-order-box .mc .mcc-c .g-stu .desc a:hover{ color: #2448ab; }
+.main-bg .main .p-order-box .mc .filter-search.focus a:hover.btn {background-color: inherit; color: #2448ab; }
+.main-bg .main .p-order-box .mc .filter-search.focus a:hover.btn-submit {background-color: #1c3e9c; color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

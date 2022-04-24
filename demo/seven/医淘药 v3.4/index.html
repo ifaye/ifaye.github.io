@@ -1,0 +1,2322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+    <script src="./script/common/jquery-1.8.3.min.js"></script>
+    <script src="./script/common/common-func.js"></script>
+	<title>医淘药首页</title>
+	<link rel="stylesheet" href="style/base.css">
+	<link rel="stylesheet" href="style/header.css">
+	<link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+	<div class="header">
+		<div class="shortcut">
+			<div class="sh-cont">
+				<div class="fl">您好，欢迎来到易淘药，开启智赢新机遇！</div>
+				<ul class="fr">
+					<li class="item log"><a href="">请登录</a></li>
+					<li class="item register"><a href="">注册成为采购商</a></li>
+					<li>|</li>
+					<li class="item my-list">
+							<a href="">我的进货单</a>
+							<span><i></i>23</span>
+					</li>
+					<li>|</li>
+					<li class="item member" id="member"><!-- 鼠标经过 cur -->
+						<div class="dt">
+							<i class="arr"></i>
+							<a title="我的医淘药" href="">我的医淘药</a>
+						</div>
+						<div class="dd not-log" style="display: none;"><!--登陆前-->
+							<span class="arrows"></span>
+							<div class="mt">
+								<div class="pic"><img src="case/pic60x60-02.jpg"></div>
+								<h5>HI，下午好！</h5>
+								<span>欢迎来到乐商批发商城！</span>
+							</div>
+							<div class="btns">
+								<a title="" href="javascript:;" class="btn btn-login">登录</a>
+								<a title="" href="javascript:;" class="btn btn-register">注册</a>
+							</div>
+						</div>
+						<div class="dd"><!--登陆后-->
+							<span class="arrows"></span>
+							<div class="mt">
+								<div class="pic"><img src="case/pic60x60.jpg"></div>
+								<h5>您好，<a href="" class="link-user" target="_blank" >乐商邓君</a>！</h5>
+								<p>上次登录：2016-01-18 16:34</p>
+								<a href=""class="news">您有&nbsp;&nbsp;<i>6</i>&nbsp;&nbsp;条未读信息</a>
+							</div>
+							<div class="mc">
+								<div class="mc-li"><a href="">
+									待付款订单
+								</a></div>
+								<div class="mc-li"><a href="">
+									<span>15</span>
+									待发货订单</a></div>
+								<div class="mc-li"><a href="">
+									待确认订单
+								</a></div>
+								<div class="mc-li"><a href="">
+									<span>3</span>
+									退货订单
+								</a></div>
+							</div>
+							<div class="md">
+								<div class="md-li integrals">
+									<span>我的积分</span>
+									<em>分</em>
+									<a href="" target="_blank">1200</a>
+								</div>
+								<div class="md-li coupons">
+									<span>我的优惠券</span>
+									<em>张</em>
+									<a href="" target="_blank">5</a>
+								</div>
+								<div class="md-li advance">
+									<span>预存款账户</span>
+									<em>元</em>
+									<a href="" target="_blank">0</a>
+								</div>
+							</div>
+							<a href="" class="output" >退出登录</a>
+						</div>
+					</li>
+					<li>|</li>
+					<li class="item"><a href="">常购清单</a></li>
+					<li>|</li>
+					<li class="item"><a href="">建议投诉</a></li>
+					<li>|</li>
+					<li class="item">
+						<div class="dt">
+							<i class="arr"></i>
+							<a title="网站导航" href="">网站导航</a>
+						</div>
+					</li>
+					<li class="supplier-in">
+						<a href="">商家入驻</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-mc">
+			<div class="logo"><a href=""><img src="images/logo300x100.png" alt="医淘药"></a></div>
+			<div class="search">
+				<div class="form">
+					<input type="text" placeholder="请输入通用名|准字号|拼音码|厂家|品牌|供应商">
+					<a href="" class="sub01">搜商品</a>
+					<a href="" class="sub02">搜店铺</a>
+				</div>
+				<div class="hotwords elli">
+					<span>热门搜索 :</span>
+					<a href="">阿莫西林</a>
+					<a href="" class="hot">注射液</a>
+					<a href="">厂家直供</a>
+					<a href="">高毛控销</a>
+					<a href="">清开灵</a>
+				</div>
+			</div>
+			<div class="security "><img src="images/pic180x60.png" alt="互联网药品交易证"></div>
+		</div>
+		<!--导航菜单-->
+		<div class="nav-bg">
+			<div class="nav">
+				<div class="category">
+					<div class="dt"><a href="" target="_blank">全部商品分类</a></div>
+					<div class="dc">
+						<div class="dc-inner">
+							<div class="item">
+								<div class="menus">
+									<div class="menu-top">
+										<div class="menu-icon"><img src= "case/pic16x16-01.png" ></div>
+										<h4>中西药品</h4>
+									</div>
+									<div class="menu-cont">
+										<a href="" target="_blank">血压计</a>
+										<a href="" target="_blank">体温计</a>
+										<a href="" target="_blank">助听器</a>
+										<a href="" target="_blank">制氧机</a>
+										<a href="" target="_blank">煎药器</a>
+										<a href="" target="_blank">创伤用品</a>
+									</div>
+									<span class="arrows"></span>
+								</div>
+								<div class="item-sub">
+									<h5>中西药品</h5>
+									<dl>
+										<dt><a href="">消化系统药物</a></dt>
+										<dd>
+											<a href="" target="_blank">消化系统药物</a>
+											<a href="" target="_blank">抗消化性溃疡药</a>
+											<a href="" target="_blank">助消化药</a>
+											<a href="" target="_blank">胃肠解痉药</a>
+											<a href="" target="_blank">泻药</a>
+											<a href="" target="_blank">止泻药</a>
+											<a href="" target="_blank">止吐药和催吐药</a>
+											<a href="" target="_blank">胃肠推动药</a>
+											<a href="" target="_blank">炎性肠病药</a>
+											<a href="" target="_blank">利胆药</a>
+											<a href="" target="_blank">肝病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">抗感染药物</a></dt>
+										<dd>
+											<a href="" target="_blank">抗细菌药</a>
+											<a href="" target="_blank">抗真菌药</a>
+											<a href="" target="_blank">抗病毒药</a>
+											<a href="" target="_blank">抗寄生虫病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">心血管药</a></dt>
+										<dd>
+											<a href="" target="_blank">抗心绞痛药</a>
+											<a href="" target="_blank">抗心力衰竭药</a>
+											<a href="" target="_blank">抗心律失常药</a>
+											<a href="" target="_blank">抗高血压药</a>
+											<a href="" target="_blank">抗休克药</a>
+											<a href="" target="_blank">降血脂药</a>
+											<a href="" target="_blank">抗血栓药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">生化药品</a></dt>
+										<dd>
+											<a href="" target="_blank">氨基酸类药物</a>
+											<a href="" target="_blank">多肽类药物</a>
+											<a href="" target="_blank">蛋白类药物</a>
+											<a href="" target="_blank">酶类药物</a>
+											<a href="" target="_blank">核酸类药物</a>
+											<a href="" target="_blank">多糖类药物</a>
+											<a href="" target="_blank">脂类药物</a>
+											<a href="" target="_blank">生物胺类</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">抗感染药物 </a></dt>
+										<dd>
+											<a href="" target="_blank">抗细菌药</a>
+											<a href="" target="_blank">抗真菌药</a>
+											<a href="" target="_blank">抗病毒药</a>
+											<a href="" target="_blank">抗寄生虫病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">心血管药</a></dt>
+										<dd>
+											<a href="" target="_blank">抗心绞痛药</a>
+											<a href="" target="_blank">抗心力衰竭药</a>
+											<a href="" target="_blank">抗心律失常药</a>
+											<a href="" target="_blank">抗高血压药</a>
+											<a href="" target="_blank">抗休克药</a>
+											<a href="" target="_blank">降血脂药</a>
+											<a href="" target="_blank">抗血栓药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">生化药品</a></dt>
+										<dd>
+											<a href="" target="_blank">氨基酸类药物</a>
+											<a href="" target="_blank">多肽类药物 </a>
+											<a href="" target="_blank">蛋白类药物</a>
+											<a href="" target="_blank">酶类药物</a>
+											<a href="" target="_blank">脂类药物</a>
+											<a href="" target="_blank">核酸类药物</a>
+											<a href="" target="_blank">多糖类药物</a>
+											<a href="" target="_blank">脂类药物</a>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="item">
+								<div class="menus">
+									<div class="menu-top">
+										<div class="menu-icon"><img src= "case/pic16x16-02.png" ></div>
+										<h4>医疗器械</h4>
+									</div>
+									<div class="menu-cont">
+										<a href="" target="_blank">血压计</a>
+										<a href="" target="_blank">体温计</a>
+										<a href="" target="_blank">助听器</a>
+										<a href="" target="_blank">制氧机</a>
+										<a href="" target="_blank">煎药器</a>
+										<a href="" target="_blank">创伤用品</a>
+									</div>
+									<span class="arrows"></span>
+								</div>
+								<div class="item-sub">
+									<dl>
+										<dt><a href="">消化系统药物</a></dt>
+										<dd>
+											<a href="" target="_blank">消化系统药物</a>
+											<a href="" target="_blank">抗消化性溃疡药</a>
+											<a href="" target="_blank">助消化药</a>
+											<a href="" target="_blank">胃肠解痉药</a>
+											<a href="" target="_blank">泻药</a>
+											<a href="" target="_blank">止泻药</a>
+											<a href="" target="_blank">止吐药和催吐药</a>
+											<a href="" target="_blank">胃肠推动药</a>
+											<a href="" target="_blank">炎性肠病药</a>
+											<a href="" target="_blank">利胆药</a>
+											<a href="" target="_blank">肝病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">抗感染药物</a></dt>
+										<dd>
+											<a href="" target="_blank">抗细菌药</a>
+											<a href="" target="_blank">抗真菌药</a>
+											<a href="" target="_blank">抗病毒药</a>
+											<a href="" target="_blank">抗寄生虫病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">心血管药</a></dt>
+										<dd>
+											<a href="" target="_blank">抗心绞痛药</a>
+											<a href="" target="_blank">抗心力衰竭药</a>
+											<a href="" target="_blank">抗心律失常药</a>
+											<a href="" target="_blank">抗高血压药</a>
+											<a href="" target="_blank">抗休克药</a>
+											<a href="" target="_blank">降血脂药</a>
+											<a href="" target="_blank">抗血栓药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">生化药品</a></dt>
+										<dd>
+											<a href="" target="_blank">氨基酸类药物</a>
+											<a href="" target="_blank">多肽类药物</a>
+											<a href="" target="_blank">蛋白类药物</a>
+											<a href="" target="_blank">酶类药物</a>
+											<a href="" target="_blank">核酸类药物</a>
+											<a href="" target="_blank">多糖类药物</a>
+											<a href="" target="_blank">脂类药物</a>
+											<a href="" target="_blank">生物胺类</a>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="item">
+								<div class="menus">
+									<div class="menu-top">
+										<div class="menu-icon"><img src= "case/pic16x16-03.png" ></div>
+										<h4>保健用品</h4>
+									</div>
+									<div class="menu-cont">
+										<a href="" target="_blank">血压计</a>
+										<a href="" target="_blank">体温计</a>
+										<a href="" target="_blank">助听器</a>
+										<a href="" target="_blank">制氧机</a>
+										<a href="" target="_blank">煎药器</a>
+										<a href="" target="_blank">创伤用品</a>
+									</div>
+									<span class="arrows"></span>
+								</div>
+								<div class="item-sub">
+									<dl>
+										<dt><a href="">消化系统药物</a></dt>
+										<dd>
+											<a href="" target="_blank">消化系统药物</a>
+											<a href="" target="_blank">抗消化性溃疡药</a>
+											<a href="" target="_blank">助消化药</a>
+											<a href="" target="_blank">胃肠解痉药</a>
+											<a href="" target="_blank">泻药</a>
+											<a href="" target="_blank">止泻药</a>
+											<a href="" target="_blank">止吐药和催吐药</a>
+											<a href="" target="_blank">胃肠推动药</a>
+											<a href="" target="_blank">炎性肠病药</a>
+											<a href="" target="_blank">利胆药</a>
+											<a href="" target="_blank">肝病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">抗感染药物</a></dt>
+										<dd>
+											<a href="" target="_blank">抗细菌药</a>
+											<a href="" target="_blank">抗真菌药</a>
+											<a href="" target="_blank">抗病毒药</a>
+											<a href="" target="_blank">抗寄生虫病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">心血管药</a></dt>
+										<dd>
+											<a href="" target="_blank">抗心绞痛药</a>
+											<a href="" target="_blank">抗心力衰竭药</a>
+											<a href="" target="_blank">抗心律失常药</a>
+											<a href="" target="_blank">抗高血压药</a>
+											<a href="" target="_blank">抗休克药</a>
+											<a href="" target="_blank">降血脂药</a>
+											<a href="" target="_blank">抗血栓药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">生化药品</a></dt>
+										<dd>
+											<a href="" target="_blank">氨基酸类药物</a>
+											<a href="" target="_blank">多肽类药物</a>
+											<a href="" target="_blank">蛋白类药物</a>
+											<a href="" target="_blank">酶类药物</a>
+											<a href="" target="_blank">核酸类药物</a>
+											<a href="" target="_blank">多糖类药物</a>
+											<a href="" target="_blank">脂类药物</a>
+											<a href="" target="_blank">生物胺类</a>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="item">
+								<div class="menus">
+									<div class="menu-top">
+										<div class="menu-icon"><img src= "case/pic16x16-04.png" ></div>
+										<h4>计生用品</h4>
+									</div>
+									<div class="menu-cont">
+										<a href="" target="_blank">血压计</a>
+										<a href="" target="_blank">体温计</a>
+										<a href="" target="_blank">助听器</a>
+										<a href="" target="_blank">制氧机</a>
+										<a href="" target="_blank">煎药器</a>
+										<a href="" target="_blank">创伤用品</a>
+									</div>
+									<span class="arrows"></span>
+								</div>
+								<div class="item-sub">
+									<dl>
+										<dt><a href="">消化系统药物</a></dt>
+										<dd>
+											<a href="" target="_blank">消化系统药物</a>
+											<a href="" target="_blank">抗消化性溃疡药</a>
+											<a href="" target="_blank">助消化药</a>
+											<a href="" target="_blank">胃肠解痉药</a>
+											<a href="" target="_blank">泻药</a>
+											<a href="" target="_blank">止泻药</a>
+											<a href="" target="_blank">止吐药和催吐药</a>
+											<a href="" target="_blank">胃肠推动药</a>
+											<a href="" target="_blank">炎性肠病药</a>
+											<a href="" target="_blank">利胆药</a>
+											<a href="" target="_blank">肝病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">抗感染药物</a></dt>
+										<dd>
+											<a href="" target="_blank">抗细菌药</a>
+											<a href="" target="_blank">抗真菌药</a>
+											<a href="" target="_blank">抗病毒药</a>
+											<a href="" target="_blank">抗寄生虫病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">心血管药</a></dt>
+										<dd>
+											<a href="" target="_blank">抗心绞痛药</a>
+											<a href="" target="_blank">抗心力衰竭药</a>
+											<a href="" target="_blank">抗心律失常药</a>
+											<a href="" target="_blank">抗高血压药</a>
+											<a href="" target="_blank">抗休克药</a>
+											<a href="" target="_blank">降血脂药</a>
+											<a href="" target="_blank">抗血栓药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">生化药品</a></dt>
+										<dd>
+											<a href="" target="_blank">氨基酸类药物</a>
+											<a href="" target="_blank">多肽类药物</a>
+											<a href="" target="_blank">蛋白类药物</a>
+											<a href="" target="_blank">酶类药物</a>
+											<a href="" target="_blank">核酸类药物</a>
+											<a href="" target="_blank">多糖类药物</a>
+											<a href="" target="_blank">脂类药物</a>
+											<a href="" target="_blank">生物胺类</a>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="item">
+								<div class="menus">
+									<div class="menu-top">
+										<div class="menu-icon"><img src= "case/pic16x16-05.png" ></div>
+										<h4>基药</h4>
+									</div>
+									<div class="menu-cont">
+										<a href="" target="_blank">血压计</a>
+										<a href="" target="_blank">体温计</a>
+										<a href="" target="_blank">助听器</a>
+										<a href="" target="_blank">制氧机</a>
+										<a href="" target="_blank">煎药器</a>
+										<a href="" target="_blank">创伤用品</a>
+									</div>
+									<span class="arrows"></span>
+								</div>
+								<div class="item-sub">
+									<dl>
+										<dt><a href="">消化系统药物</a></dt>
+										<dd>
+											<a href="" target="_blank">消化系统药物</a>
+											<a href="" target="_blank">抗消化性溃疡药</a>
+											<a href="" target="_blank">助消化药</a>
+											<a href="" target="_blank">胃肠解痉药</a>
+											<a href="" target="_blank">泻药</a>
+											<a href="" target="_blank">止泻药</a>
+											<a href="" target="_blank">止吐药和催吐药</a>
+											<a href="" target="_blank">胃肠推动药</a>
+											<a href="" target="_blank">炎性肠病药</a>
+											<a href="" target="_blank">利胆药</a>
+											<a href="" target="_blank">肝病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">抗感染药物</a></dt>
+										<dd>
+											<a href="" target="_blank">抗细菌药</a>
+											<a href="" target="_blank">抗真菌药</a>
+											<a href="" target="_blank">抗病毒药</a>
+											<a href="" target="_blank">抗寄生虫病药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">心血管药</a></dt>
+										<dd>
+											<a href="" target="_blank">抗心绞痛药</a>
+											<a href="" target="_blank">抗心力衰竭药</a>
+											<a href="" target="_blank">抗心律失常药</a>
+											<a href="" target="_blank">抗高血压药</a>
+											<a href="" target="_blank">抗休克药</a>
+											<a href="" target="_blank">降血脂药</a>
+											<a href="" target="_blank">抗血栓药</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt><a href="">生化药品</a></dt>
+										<dd>
+											<a href="" target="_blank">氨基酸类药物</a>
+											<a href="" target="_blank">多肽类药物</a>
+											<a href="" target="_blank">蛋白类药物</a>
+											<a href="" target="_blank">酶类药物</a>
+											<a href="" target="_blank">核酸类药物</a>
+											<a href="" target="_blank">多糖类药物</a>
+											<a href="" target="_blank">脂类药物</a>
+											<a href="" target="_blank">生物胺类</a>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="all-list">
+							<a href="">查看商品分类导航</a>
+						</div>
+					</div>
+				</div>
+				<ul class="main-nav">
+					<li class="cur"><a href="" target="_blank">首页</a></li>
+					<li><a href="" target="_blank">飞速采</a></li>
+					<li><a href="" target="_blank">药团购</a></li>
+					<li><a href="" target="_blank">药划算</a></li>
+					<li><a href="" target="_blank">积分兑换</a></li>
+					<li><a href="" target="_blank">资讯</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--主体-->
+	<div class="main-bg">
+		<div class="main">
+			<div class="main-top">
+				<div class="fl">
+					<!-- banner -->
+                    <div class="main-banner">
+                        <ul class="mb-cont" id="focus-cont">
+                            <li style="display: block; position: absolute; opacity:1; z-index: 1; background-color: #b6d35d;">
+                                <div class="cont-box">
+                                    <a href="" title="" target="_blank"><img src="case/pic740x500-00.jpg" height="500" width="720"></a>
+                                </div>
+                            </li>
+                            <li style="display: block; position: absolute; opacity:0; z-index: 0; background-color: #e8e8e8;">
+                                <div class="cont-box">
+                                    <a href="" title="" target="_blank"><img src="case/pic740x500-01.jpg" height="500" width="720"></a>
+                                </div>
+                            </li>
+                            <li style="display: block; position: absolute; opacity:0; z-index: 0; background-color: #b6d35d;">
+                                <div class="cont-box">
+                                    <a href="" title="" target="_blank"><img src="case/pic740x500-02.jpg" height="500" width="720"></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="slider" id="focus-slider" style="display: block;">
+                            <a href="" class="cur" title=""></a>
+                            <a href="" title=""></a>
+                            <a href="" title=""></a>
+                        </div>
+                        <div class="slider-page" style="display: block;">
+                            <a href="javascript:;" class="slider-prev" id="focus-prev"><</a>
+                            <a href="javascript:;" class="slider-next" id="focus-next">></a>
+                        </div>
+                    </div>
+					<!--热门推荐-->
+                    <div class="recom">
+                        <div class="nav" id="recommend">
+                            <a href=""  class="cur">热门推荐 <span></span></a>
+                            <a href="">最新促销<span></span></a>
+                            <a href="">每日优惠<span></span></a>
+                            <a href="">热卖批发<span></span></a>
+                        </div>
+                        <div class="cont" id="recommend-cont">
+                            <ul class="cur">
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <label>供货价会员可见</label>
+                                    <div class="pic"><img src="case/pic120x120.jpg"alt=""  ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <label>供货价会员可见</label>
+                                    <div class="pic"><img src="case/pic120x120.jpg"alt=""  ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <label>供货价会员可见</label>
+                                    <div class="pic"><img src="case/pic120x120.jpg"alt=""  ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <span><i>￥</i>16.00</span>
+                                    <del>￥20.00</del>
+                                    <div class="pic"><img src="case/pic120x120.jpg" alt="" ></div>
+                                </a></li>
+                                <li><a href="" title="六味地黄丸浓缩丸">
+                                    <div class="title">六味地黄丸浓缩丸</div>
+                                    <p>北京同仁堂科技发展有限公司</p>
+                                    <label>供货价会员可见</label>
+                                    <div class="pic"><img src="case/pic120x120.jpg"alt=""  ></div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+					<!--促销优惠-->
+					<div class="sales-pro">
+						<div class="sp-lt">
+							<div class="mt">团购专区</div>
+							<div class="mc">
+								<div class="pic"><a href=""><img src="case/pic200x150.jpg" alt=""></a></div>
+								<a href="" class="title" >补肾补气强腰壮肾同仁堂天猫爆款特价优惠5折促销</a>
+								<div class="price">
+									<i>￥</i>
+									<span>16.00</span>
+									<del>￥20.00</del>
+								</div>
+								<a href="" class="btn">参团采购</a>
+								<ul class="mc-par">
+									<li>
+										<label>库存：</label>
+										<span>500件</span>
+									</li>
+									<li>
+										<label>规格：</label>
+										<span>10ml*8支/盒</span>
+									</li>
+									<li>
+										<label>厂家：</label>
+										<span>北京同仁堂科技发展有限公司</span>
+									</li>
+									<li>
+										<label>限时：</label>
+										<div class="time">
+											<span>0</span>
+											<span>6</span>
+											<i>:</i>
+											<span>1</span>
+											<span>3</span>
+											<i>:</i>
+											<span>0</span>
+											<span>5</span>
+											<i>:</i>
+											<span>4</span>
+											<span>8</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="sp-rt">
+							<div class="mt">促销优惠专区<span>限时限量特价促销  </span></div>
+							<div class="mc">
+								<div class="mc-item"><a href="" target="_blank" title="">
+									<div class="pic"><img src="case/pic120x120.jpg" alt=""></div>
+									<div class="title">六味地黄丸浓缩丸</div>
+									<div class="amount">0.5gx12粒x2板/盒</div>
+									<div class="firm">北京同仁堂科技发展有限公司</div>
+									<div class="price">
+										<i>￥</i>
+										<span>2538.00</span>
+										<em>直降30元</em>
+									</div>
+									<div class="time">
+										<span>0</span>
+										<span>6</span>
+										<i>:</i>
+										<span>1</span>
+										<span>3</span>
+										<i>:</i>
+										<span>0</span>
+										<span>5</span>
+										<i>:</i>
+										<span>4</span>
+										<span>8</span>
+									</div>
+								</a></div>
+								<div class="mc-item"><a href="" target="_blank" title="">
+									<div class="pic"><img src="case/pic120x120.jpg" alt=""></div>
+									<div class="title">六味地黄丸浓缩丸</div>
+									<div class="amount">0.5gx12粒x2板/盒</div>
+									<div class="firm">北京同仁堂科技发展有限公司</div>
+									<div class="price">
+										<label>供货价会员可见</label>
+									</div>
+									<div class="time">
+										<span>0</span>
+										<span>6</span>
+										<i>:</i>
+										<span>1</span>
+										<span>3</span>
+										<i>:</i>
+										<span>0</span>
+										<span>5</span>
+										<i>:</i>
+										<span>4</span>
+										<span>8</span>
+									</div>
+								</a></div>
+								<div class="mc-item"><a href="" target="_blank" title="">
+									<div class="pic"><img src="case/pic120x120.jpg" alt=""></div>
+									<div class="title">六味地黄丸浓缩丸</div>
+									<div class="amount">0.5gx12粒x2板/盒</div>
+									<div class="firm">北京同仁堂科技发展有限公司</div>
+									<div class="price">
+										<i>￥</i>
+										<span>2538.00</span>
+										<em>直降30元</em>
+									</div>
+									<div class="time">
+										<span>0</span>
+										<span>6</span>
+										<i>:</i>
+										<span>1</span>
+										<span>3</span>
+										<i>:</i>
+										<span>0</span>
+										<span>5</span>
+										<i>:</i>
+										<span>4</span>
+										<span>8</span>
+									</div>
+								</a></div>
+								<div class="mc-item"><a href="" target="_blank" title="">
+									<div class="pic"><img src="case/pic120x120.jpg" alt=""></div>
+									<div class="title">六味地黄丸浓缩丸</div>
+									<div class="amount">0.5gx12粒x2板/盒</div>
+									<div class="firm">北京同仁堂科技发展有限公司</div>
+									<div class="price">
+										<i>￥</i>
+										<span>2538.00</span>
+										<em>直降30元</em>
+									</div>
+									<div class="time">
+										<span>0</span>
+										<span>6</span>
+										<i>:</i>
+										<span>1</span>
+										<span>3</span>
+										<i>:</i>
+										<span>0</span>
+										<span>5</span>
+										<i>:</i>
+										<span>4</span>
+										<span>8</span>
+									</div>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fr">
+					<div class="show-box">
+                        <div class="slider">
+                            <div class="slider-main" id="slider-main">
+                                <div class="slider-item">
+                                    <img src="case/img_190x100.png" height="100" width="190" alt="">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="case/img_190x100.png" height="100" width="190" alt="">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="case/img_190x100.png" height="100" width="190" alt="">
+                                </div>
+                            </div>
+                            <a class="slider-op slider-prev" id="show-prev" href="javascript:;" title="">&lt;</a>
+                            <a class="slider-op slider-next" id="show-next" href="javascript:;" title="">&gt;</a>
+                        </div>
+						<a class="btn-join" href="javascript:;" title="商家入驻">商家入驻</a>
+					</div>
+					<div class="user-box" style="display: none;"> <!--未登录-->
+						<p class="text-t">登录后，可在当前看您的</p>
+						<p class="text-b">待付款&nbsp;&nbsp;·&nbsp;&nbsp;待发货&nbsp;&nbsp;·&nbsp;&nbsp;发货中</p>
+						<div class="btns">
+							<a class="btn btn-login" href="javascript:;" title="">登录</a>
+							<a class="btn btn-register" href="javascript:;" title="">注册</a>
+						</div>
+					</div>
+					<div class="user-box"><!--已登录-->
+						<div class="ub-mt">
+							<div class="pic"><img src="case/pic60x60.jpg" alt=""></div>
+							<span>欢迎您！</span>
+							<a href="" class="name elli">乐商邓君</a>
+							<em>上次登录：2016.01.18</em>
+						</div>
+						<div class="ub-mc">
+							<div class="mc-list"><a href="">待付款</a><span>2</span></div>
+							<div class="mc-list"><a href="">待发货</a><span>23</span></div>
+							<div class="mc-list"><a href="">待收货</a></div>
+						</div>
+					</div>
+                    <div class="notice-box">
+                        <div class="nav" id="notice">
+                            <a href="javascript:;" class="cur">商城公告</a>
+                            <a href="javascript:;" class="">药监新闻</a>
+                            <a href="javascript:;" class="">质量信息</a>
+                        </div>
+                        <div class="nav-cont" id="notice-cont">
+                            <ul class="cur">
+                                <li><a class="elli" href="javascript:;" target="_blank">警惕注射用头孢硫脒引起用药风险</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">关注非典型抗精神病药的严重不良反应</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">国家药品不良反应监测年度报告</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">关注中西药复方制剂的用药风险</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">警惕甲氧氯普胺引起的锥体外系反应</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">关注中西药复方制剂的用药风险</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">警惕甲氧氯普胺引起的锥体外系反应</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">警惕甲氧氯普胺引起的锥体外系反应</a><span>16-01</span></li>
+                            </ul>
+                            <ul>
+                                <li><a class="elli" href="javascript:;" target="_blank">警惕注射用头孢硫脒引起用药风险</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">关注非典型抗精神病药的严重不良反应</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">国家药品不良反应监测年度报告</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">关注中西药复方制剂的用药风险</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">警惕甲氧氯普胺引起的锥体外系反应</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">关注中西药复方制剂的用药风险</a><span>16-01</span></li>
+                            </ul>
+                            <ul>
+                                <li><a class="elli" href="javascript:;" target="_blank">警惕注射用头孢硫脒引起用药风险</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">关注非典型抗精神病药的严重不良反应</a><span>16-01</span></li>
+                                <li><a class="elli" href="javascript:;" target="_blank">国家药品不良反应监测年度报告</a><span>16-01</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="recommended-box">
+                        <h3 class="recommended-tit">商家推荐</h3>
+                        <div class="recommended-cont">
+                            <div class="recommended-tab-box">
+                                <div class="shop-box" id="recommended-cont-box">
+                                    <ul class="shop-list">
+                                        <li class="shop clearfix">
+                                    <span class="shop-img fl">
+                                        <img src="case/shop1_60x60.png" height="60" width="60" alt="">
+                                    </span>
+                                            <span class="bord"></span>
+                                            <a class="shop-name fr" href="javascript:;" title="">广州千金药业药品有限公司</a>
+                                        </li>
+                                        <li class="shop clearfix">
+                                    <span class="shop-img fl">
+                                        <img src="case/shop2_60x60.png" height="60" width="60" alt="">
+                                    </span>
+                                            <span class="bord"></span>
+                                            <a class="shop-name fr" href="javascript:;" title="">贵州好医生药品药有限公司</a>
+                                        </li>
+                                        <li class="shop clearfix">
+                                    <span class="shop-img fl">
+                                        <img src="case/shop3_60x60.png" height="60" width="60" alt="">
+                                    </span>
+                                            <span class="bord"></span>
+                                            <a class="shop-name fr" href="javascript:;" title="">北京修正药业药品有限公司</a>
+                                        </li>
+                                        <li class="shop clearfix">
+                                    <span class="shop-img fl">
+                                        <img src="case/shop4_60x60.png" height="60" width="60" alt="">
+                                    </span>
+                                            <span class="bord"></span>
+                                            <a class="shop-name fr" href="javascript:;" title="">广州三九医药药业有限公司</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="shop-list">
+                                        <li class="shop clearfix">
+                                    <span class="shop-img fl">
+                                        <img src="case/shop1_60x60.png" height="60" width="60" alt="">
+                                    </span>
+                                            <span class="bord"></span>
+                                            <a class="shop-name fr" href="javascript:;" title="">广州千金药业药品有限公司</a>
+                                        </li>
+                                        <li class="shop clearfix">
+                                    <span class="shop-img fl">
+                                        <img src="case/shop2_60x60.png" height="60" width="60" alt="">
+                                    </span>
+                                            <span class="bord"></span>
+                                            <a class="shop-name fr" href="javascript:;" title="">贵州好医生药品药有限公司</a>
+                                        </li>
+                                        <li class="shop clearfix">
+                                    <span class="shop-img fl">
+                                        <img src="case/shop3_60x60.png" height="60" width="60" alt="">
+                                    </span>
+                                            <span class="bord"></span>
+                                            <a class="shop-name fr" href="javascript:;" title="">北京修正药业药品有限公司</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a class="btn btn-up cur" id="recommended-prev" href="javascript:;" title=""></a>
+                                <a class="btn btn-down" id="recommended-next" href="javascript:;" title=""></a>
+                            </div>
+                        </div>
+                    </div>
+					<div class="record-box">
+						<h3 class="record-tit">最新成交</h3>
+						<div class="record-cont">
+							<div class="record-sub-tit">
+								<span class="name">用户名</span>
+								<span class="num">订单号</span>
+								<span class="time">时间</span>
+							</div>
+							<ul class="record-list">
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name ">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+								<li class="record-item clearfix">
+									<span class="record-name">大森**药房</span>
+									<span class="record-num ">16052651***</span>
+									<span class="record-time ">16-01</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="floor-brand">
+				<a href=""><img src="case/pic100x50-01.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-02.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-03.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-04.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-05.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-01.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-02.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-03.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-04.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-05.jpg" alt=""></a>
+			</div>
+			<div class="floor-ad"><a href="" target="_blank"><img src="case/pic1190x90.jpg" ></a></div>
+       <div class="floor">
+                <div class="fl-lt">
+                    <div class="lt-top">
+                        <span>1F</span>
+                        <h5> 西药</h5>
+                    </div>
+                    <div class="lt-bot">
+                        <img src="case/pic230x540.jpg" >
+                        <div class="lt-nav">
+                            <a href="">骨科疾病</a>
+                            <a href="">皮肤疾病</a>
+                            <a href="">精神神经</a>
+                            <a href="">五官疾病</a>
+                            <a href="">肝胆疾病</a>
+                            <a href="">呼吸疾病</a>
+                            <a href="">心脑血管</a>
+                            <a href="">肿瘤疾病</a>
+                            <a href="">骨科疾病</a>
+                            <a href="">皮肤疾病</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl-mt">
+                    <div class="mt-nav">
+                        <ul id="f1-mt-nav">
+                            <li class="cur"><a href="javascript:;">肠胃用药</a></li>
+                            <li><a href="javascript:;">抗感染</a></li>
+                            <li><a href="javascript:;">呼吸疾病</a></li>
+                            <li><a href="javascript:;">骨科疾病</a></li>
+                            <li><a href="javascript:;">肿瘤疾病</a></li>
+                        </ul>
+                    </div>
+                    <div id="f1-mt-cont">
+                        <div class="mt-cont cur">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f1-ct-top1">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f1-ct-slider1" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f1-ct-prev1" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f1-ct-next1" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-cont">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f1-ct-top2">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f1-ct-slider2" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f1-ct-prev2" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f1-ct-next2" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-cont">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f1-ct-top3">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f1-ct-slider3" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f1-ct-prev3" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f1-ct-next3" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-cont">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f1-ct-top4">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f1-ct-slider4" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f1-ct-prev4" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f1-ct-next4" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-cont">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f1-ct-top5">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f1-ct-slider5" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f1-ct-prev5" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f1-ct-next5" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="fl-rt">
+                    <div class="rt-nav" id="f1-rt-nav">
+                        <a href="" class="cur">热销排行</a>
+                        <a href="">最新上架</a>
+                    </div>
+                    <ul class="rt-cont" id="f1-rt-cont">
+                        <li class="cur">
+                            <div class="ct-item org act">
+                                <span class="ser-num">TOP1<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price"><em>批发价会员可见</em></div>
+                            </div>
+                            <div class="ct-item org">
+                                <span class="ser-num">2<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                            </div>
+                            <div class="ct-item org">
+                                <span class="ser-num">3<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">4<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">5<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">6<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">7<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">8<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ct-item org act">
+                                <span class="ser-num">TOP1<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price"><em>批发价会员可见</em></div>
+                            </div>
+                            <div class="ct-item org">
+                                <span class="ser-num">2<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                            </div>
+                            <div class="ct-item org">
+                                <span class="ser-num">3<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">4<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">5<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">6<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+			<div class="floor-brand">
+				<a href=""><img src="case/pic100x50-01.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-02.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-03.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-04.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-05.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-01.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-02.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-03.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-04.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-05.jpg" alt=""></a>
+			</div>
+			<div class="floor-ad"><a href="" target="_blank"><img src="case/pic1190x90.jpg" ></a></div>
+            <div class="floor">
+                <div class="fl-lt">
+                    <div class="lt-top">
+                        <span>1F</span>
+                        <h5> 西药</h5>
+                    </div>
+                    <div class="lt-bot">
+                        <img src="case/pic230x540.jpg" >
+                        <div class="lt-nav">
+                            <a href="">骨科疾病</a>
+                            <a href="">皮肤疾病</a>
+                            <a href="">精神神经</a>
+                            <a href="">五官疾病</a>
+                            <a href="">肝胆疾病</a>
+                            <a href="">呼吸疾病</a>
+                            <a href="">心脑血管</a>
+                            <a href="">肿瘤疾病</a>
+                            <a href="">骨科疾病</a>
+                            <a href="">皮肤疾病</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl-mt">
+                    <div class="mt-nav">
+                        <ul id="f2-mt-nav">
+                            <li class="cur"><a href="javascript:;">肠胃用药</a></li>
+                            <li><a href="javascript:;">抗感染</a></li>
+                            <li><a href="javascript:;">呼吸疾病</a></li>
+                            <li><a href="javascript:;">骨科疾病</a></li>
+                            <li><a href="javascript:;">肿瘤疾病</a></li>
+                        </ul>
+                    </div>
+                    <div id="f2-mt-cont">
+                        <div class="mt-cont cur">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f2-ct-top1">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f2-ct-slider1" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f2-ct-prev1" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f2-ct-next1" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-cont">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f2-ct-top2">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f2-ct-slider2" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f2-ct-prev2" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f2-ct-next2" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-cont">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f2-ct-top3">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f2-ct-slider3" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f2-ct-prev3" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f2-ct-next3" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-cont">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f2-ct-top4">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f2-ct-slider4" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f2-ct-prev4" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f2-ct-next4" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-cont">
+                            <div class="ct-top">
+                                <div class="item1">
+                                    <div class="slider-body">
+                                        <ul id="f2-ct-top5">
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                            <li><a href=""><img src="case/pic380x220.jpg" ></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-nav" id="f2-ct-slider5" style="display: block;">
+                                        <a class="cur" href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                        <a href="javascript:;" title=""></a>
+                                    </div>
+                                    <div class="slider-page" style="display: block;">
+                                        <a href="javascript:;" id="f2-ct-prev5" class="slider-prev"><</a>
+                                        <a href="javascript:;" id="f2-ct-next5" class="slider-next">></a>
+                                    </div>
+                                </div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-01.jpg" ></a></div>
+                                <div class="item2"><a href=""><img src="case/pic200x220-02.jpg" ></a></div>
+                            </div>
+                            <div class="ct-bot">
+                                <ul>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T;</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <!--<div class="price"><em>供货价会员可见</em></div>-->
+                                            <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                    <li><a href="" title="">
+                                        <div class="cont-lt">
+                                            <h5>六味地黄丸浓缩丸</h5>
+                                            <div class="firm">哈药集团三精制药精股份有限公司</div>
+                                            <div class="norm">规格：30mg*7T</div>
+                                            <div class="norm">中大包装：1/2222</div>
+                                            <div class="price"><em>供货价会员可见</em></div>
+                                            <!--<div class="price">￥<span>238.00</span><del>￥258.00</del></div>-->
+                                        </div>
+                                        <div class="cont-pic"><img alt="" src="case/pic120x120.jpg"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fl-rt">
+                    <div class="rt-nav" id="f2-rt-nav">
+                        <a href="" class="cur">热销排行</a>
+                        <a href="">最新上架</a>
+                    </div>
+                    <ul class="rt-cont" id="f2-rt-cont">
+                        <li class="cur">
+                            <div class="ct-item org act">
+                                <span class="ser-num">TOP1<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price"><em>批发价会员可见</em></div>
+                            </div>
+                            <div class="ct-item org">
+                                <span class="ser-num">2<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                            </div>
+                            <div class="ct-item org">
+                                <span class="ser-num">3<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">4<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">5<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">6<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">7<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">8<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ct-item org act">
+                                <span class="ser-num">TOP1<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price"><em>批发价会员可见</em></div>
+                            </div>
+                            <div class="ct-item org">
+                                <span class="ser-num">2<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span><del>￥258.00</del></div>
+                            </div>
+                            <div class="ct-item org">
+                                <span class="ser-num">3<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">4<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                            <div class="ct-item">
+                                <span class="ser-num">5<i></i></span>
+                                <div class="pic"><a href="" title=""><img src="case/pic120x120.jpg" alt=""></a></div>
+                                <a href="" class="title elli">六味地黄丸浓缩丸</a>
+                                <div class="firm elli">哈药集团三精制药精股份有限公司</div>
+                                <div class="norm elli">中大包装：1/2222</div>
+                                <div class="price">￥<span>238.00</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+			<div class="floor-brand">
+				<a href=""><img src="case/pic100x50-01.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-02.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-03.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-04.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-05.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-01.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-02.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-03.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-04.jpg" alt=""></a>
+				<a href=""><img src="case/pic100x50-05.jpg" alt=""></a>
+			</div>
+			<div class="floor-ad"><a href="" target="_blank"><img src="case/pic1190x90.jpg" ></a></div>
+			<!--行业资讯-->
+			<div class="floor-news">
+				<div class="item">
+					<div class="pic">
+						<img src="case/pic370x90-01.jpg">
+						<h5>行业资讯</h5>
+					</div>
+					<div class="mc">
+						<ul>
+							<li><a href="" class="elli" target="_blank">小儿患肾炎，竟是母乳在作怪！</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">为什么那些人就是吃不胖？</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">2016年移动医疗发展趋势预测</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">中药提取物从严管控不达标企业勒令停产</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">连锁药店：并购硝烟弥漫区域保卫战打响</a> <span>2015.02.02</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="pic">
+						<img src="case/pic370x90-02.jpg">
+						<h5>法律法规</h5>
+					</div>
+					<div class="mc">
+						<ul>
+							<li><a href="" class="elli" target="_blank">保健食品注册与备案管理办法解读</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">《保健食品注册与备案管理办法》</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">食品药品投诉举报管理办法问题解读 </a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">总局关于解决药品注册申请积压实行优化产业</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">总局办公厅关于医用分子筛制氧相关问题的研究</a> <span>2015.02.02</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<div class="pic">
+						<img src="case/pic370x90-03.jpg">
+						<h5>医药电商</h5>
+					</div>
+					<div class="mc">
+						<ul>
+							<li><a href="" class="elli" target="_blank">小儿患肾炎，竟是母乳在作怪！</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">为什么那些人就是吃不胖？</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">2016年移动医疗发展趋势预测</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">中药提取物从严管控不达标企业勒令停产</a> <span>2015.02.02</span></li>
+							<li><a href="" class="elli" target="_blank">连锁药店：并购硝烟弥漫区域保卫战打响</a> <span>2015.02.02</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            <!--友情链接-->
+            <div class="f-links">
+                <div class="mt">
+                    <ul id="f-links-mt">
+                        <li class="cur"><a href="">友情链接</a></li>
+                        <li><a href="">热门商品</a></li>
+                        <li><a href="">品牌推荐</a></li>
+                    </ul>
+                </div>
+                <div id="f-links-cont">
+                    <div class="mc cur">
+                        <a href="">医疗器械招商</a>
+                        <span>|</span>
+                        <a href="">药品价格315网</a>
+                        <span>|</span>
+                        <a href="">快易捷药品网</a>
+                        <span>|</span>
+                        <a href="">网上药店</a>
+                        <span>|</span>
+                        <a href="">中医养生</a>
+                        <span>|</span>
+                        <a href="">医药卫生</a>
+                        <span>|</span>
+                        <a href="">保健品网站</a>
+                        <span>|</span>
+                        <a href="">药房网</a>
+                        <span>|</span>
+                        <a href="">快速问医生</a>
+                        <span>|</span>
+                        <a href="">两性健康</a>
+                        <span>|</span>
+                        <a href="">城市论坛</a>
+                        <span>|</span>
+                        <a href="">药品库</a>
+                        <span>|</span>
+                        <a href="">医药招商</a>
+                        <span>|</span>
+                        <a href="">菜瓢谷养生网</a>
+                        <span>|</span>
+                        <a href="">食疗保健</a>
+                        <span>|</span>
+                        <a href="">求医问药</a><br>
+                        <a href="">健康之路</a>
+                        <span>|</span>
+                        <a href="">求医问药</a>
+                        <span>|</span>
+                        <a href="">药品网</a>
+                        <span>|</span>
+                        <a href="">健康族</a>
+                        <span>|</span>
+                        <a href="">网上114</a>
+                        <span>|</span>
+                        <a href="">养生小常识</a>
+                        <span>|</span>
+                        <a href="">中国制药设备网</a>
+                        <span>|</span>
+                        <a href="">hao123健康</a>
+                        <span>|</span>
+                        <a href="">网医健康网</a>
+                        <span>|</span>
+                        <a href="">疾病查询</a>
+                        <span>|</span>
+                        <a href="">康之家网上药店</a>
+                        <span>|</span>
+                        <a href="">39健康频道</a>
+                        <span>|</span>
+                        <a href="">医院信息</a>
+                        <span>|</span>
+                        <a href="">预约挂</a>
+                        <span>|</span>
+                        <a href="">康爱多网上药店</a>
+                        <span>|</span>
+                        <a href="">药比价</a>
+                    </div>
+                    <div class="mc">
+                        <a href="">医疗器械招商</a>
+                        <span>|</span>
+                        <a href="">药品价格315网</a>
+                        <span>|</span>
+                        <a href="">快易捷药品网</a>
+                        <span>|</span>
+                        <a href="">网上药店</a>
+                        <span>|</span>
+                        <a href="">中医养生</a>
+                        <span>|</span>
+                        <a href="">医药卫生</a>
+                        <span>|</span>
+                        <a href="">两性健康</a>
+                        <span>|</span>
+                        <a href="">城市论坛</a>
+                        <span>|</span>
+                        <a href="">药品库</a>
+                        <span>|</span>
+                        <a href="">医药招商</a>
+                        <span>|</span>
+                        <a href="">菜瓢谷养生网</a>
+                        <span>|</span>
+                        <a href="">食疗保健</a>
+                        <span>|</span>
+                        <a href="">求医问药</a><br>
+                        <a href="">健康之路</a>
+                        <span>|</span>
+                        <a href="">求医问药</a>
+                        <span>|</span>
+                        <a href="">药品网</a>
+                        <span>|</span>
+                        <a href="">健康族</a>
+                        <span>|</span>
+                        <a href="">网上114</a>
+                        <span>|</span>
+                        <a href="">养生小常识</a>
+                        <span>|</span>
+                        <a href="">中国制药设备网</a>
+                        <span>|</span>
+                        <a href="">hao123健康</a>
+                        <span>|</span>
+                        <a href="">网医健康网</a>
+                    </div>
+                    <div class="mc">
+                        <a href="">医疗器械招商</a>
+                        <span>|</span>
+                        <a href="">药品价格315网</a>
+                        <span>|</span>
+                        <a href="">快易捷药品网</a>
+                        <span>|</span>
+                        <a href="">网上药店</a>
+                        <span>|</span>
+                        <a href="">中医养生</a>
+                        <span>|</span>
+                        <a href="">医药卫生</a>
+                        <span>|</span>
+                        <a href="">保健品网站</a>
+                        <span>|</span>
+                        <a href="">药房网</a>
+                        <span>|</span>
+                        <a href="">快速问医生</a>
+                        <span>|</span>
+                        <a href="">两性健康</a>
+                        <span>|</span>
+                        <a href="">城市论坛</a>
+                        <span>|</span>
+                        <a href="">药品库</a>
+                        <span>|</span>
+                        <a href="">医药招商</a>
+                        <span>|</span>
+                        <a href="">菜瓢谷养生网</a>
+                        <span>|</span>
+                        <a href="">食疗保健</a>
+                        <span>|</span>
+                        <a href="">求医问药</a><br>
+                        <a href="">健康之路</a>
+                        <span>|</span>
+                        <a href="">求医问药</a>
+                        <span>|</span>
+                        <a href="">药品网</a>
+                        <span>|</span>
+                        <a href="">健康族</a>
+                        <span>|</span>
+                        <a href="">网上114</a>
+                        <span>|</span>
+                        <a href="">养生小常识</a>
+                    </div>
+                </div>
+
+            </div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<a href="" class="user-center"></a>
+		<a href="" class="dt-list"><span>36</span></a>
+		<a href="" class="service"></a>
+		<a href="" class="ewm"><span><img src="case/ewm110x110.jpg" alt=""></span></a>
+		<a href="javascript:;" class="backtop"></a>
+	</div>
+
+	<div class="total-container" id="total-container">
+		<div class="search-container">
+			<div class="logo"><a href=""><img src="images/logo160x50.png" alt=""></a></div>
+			<div class="search">
+				<input type="text" placeholder="请输入通用名|准字号|拼音码|厂家|品牌|供应商">
+				<a class="sub01" href="">搜商品</a>
+				<a class="sub02" href="">搜店铺</a>
+			</div>
+		</div>
+	</div>
+
+<!--页脚-->
+	<div class="footer">
+		<div class="slogen-bg">
+			<div class="slogen">
+				<div class="item"><img src="images/slogen01.png"><p>权威荣誉</p></div>
+				<div class="item"><img src="images/slogen02.png"><p>免费入驻</p></div>
+				<div class="item"><img src="images/slogen03.png"><p>极速开店</p></div>
+				<div class="item"><img src="images/slogen04.png"><p>放心交易</p></div>
+				<div class="item"><img src="images/slogen05.png"><p>药品控销</p></div>
+				<div class="item"><img src="images/slogen06.png"><p>安全保障</p></div>
+				<div class="item"><img src="images/slogen07.png"><p>飞速采购</p></div>
+			</div>
+		</div>
+
+		<div class="w">
+			<dl class="fore">
+				<dt>新手入门</dt>
+				<dd>
+					<a href="">免费注册</a>
+					<a href="">采购商入门</a>
+					<a href="">供应商入门</a>
+					<a href="">常见问题</a>
+				</dd>
+			</dl>
+			<dl class="fore">
+				<dt>交易安全</dt>
+				<dd>
+					<a href="">交易规则</a>
+					<a href="">资金安全</a>
+					<a href="">交易结算</a>
+					<a href="">支付方式</a>
+				</dd>
+			</dl>
+			<dl class="fore">
+				<dt>我是采购商</dt>
+				<dd>
+					<a href="">采购流程</a>
+					<a href="">产品搜索</a>
+					<a href="">品牌查找</a>
+					<a href="">价格说明</a>
+				</dd>
+			</dl>
+			<dl class="fore">
+				<dt>我是供应商</dt>
+				<dd>
+					<a href="">销售流程</a>
+					<a href="">销售技巧</a>
+					<a href="">物流说明</a>
+				</dd>
+			</dl>
+			<dl class="fore">
+				<dt>售后服务</dt>
+				<dd>
+					<a href="">退款说明</a>
+					<a href="">退换货保障</a>
+					<a href="">发票制度</a>
+					<a href="">纠纷处理</a>
+				</dd>
+			</dl>
+			<div class="ft-ewm">
+				<img src="case/ewm110x110.jpg" alt=""><br>
+				<span>扫一扫关注官方微信</span>
+			</div>
+			<div class="service">
+				<span>客服热线  Counseling hotline</span>
+				<h5>020-3206 9480</h5>
+				<p> 周一至周五 9:00-22:00 </p>
+				<a href="" class="ser-btn" >供应商入驻商城</a>
+			</div>
+		</div>
+
+		<div class="info">
+			<div class="links">
+				<a href="">关于我们</a>
+				<span>|</span>
+				<a href="">关于我们</a>
+				<span>|</span>
+				<a href="">商家入驻</a>
+				<span>|</span>
+				<a href="">联系我们</a>
+				<span>|</span>
+				<a href="">广告联盟</a>
+				<span>|</span>
+				<a href="">帮助中心</a>
+				<span>|</span>
+				<a href="">法律声明</a>
+				<span>|</span>
+				<a href="">在售商品索引</a>
+			</div>
+			<div class="copyright">
+				互联网药品信息发布许可证号：(粤)-非经营性-2013-0182&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备12070328号
+				<br>
+				乐商软件 版权所有 Copyright © 2010-2015 imall.com.cn&nbsp;&nbsp;iloosen.com All rights reserved
+			</div>
+			<div class="authentication">
+				<a href=""><img src="case/pic100x40-01.jpg" ></a>
+				<a href=""><img src="case/pic100x40-02.jpg" ></a>
+				<a href=""><img src="case/pic100x40-03.jpg" ></a>
+				<a href=""><img src="case/pic100x40-04.jpg" ></a>
+				<a href=""><img src="case/pic100x40-05.jpg" ></a>
+				<a href=""><img src="case/pic100x40-06.jpg" ></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!--页面专享-->
+<script src="./script/index.js"></script>
+
+
+
+<!--公共函数-->
+
+<!--回到顶部-->
+<script>
+    goTop($(".sidebar .backtop"),1000);
+</script>
+
+<!--我的医药网，鼠标经过显示，离开隐藏-->
+<script>
+    onlyHover($("#member"));
+</script>
+
+<!--左侧导航分类鼠标经过显示右侧子菜单-->
+<script>
+    navShow($(".dc-inner"),".item");
+</script>
+
+<!--焦点图-->
+<script>
+    TabLT(1,"z",$("#focus-cont"),$("#focus-cont li"),2,$("#focus-prev"),$("#focus-next"),1,$("#focus-slider"),"a",0,"","",1,"",300,1,2500);
+</script>
+
+<!--焦点图旁边广告切换-->
+<script>
+    TabLT(1,"x",$("#slider-main"),$("#slider-main .slider-item"),2,$("#show-prev"),$("#show-next"),0,"","",0,"","",1,190,300,1,2500);
+</script>
+
+<!--右边，商家推荐广告切换-->
+<script>
+    TabLT(1,"y",$("#recommended-cont-box"),$("#recommended-cont-box ul"),1,$("#recommended-prev"),$("#recommended-next"),0,"","",0,"","",1,300,300,0,"");
+</script>
+
+<!--鼠标经过切换子区域-->
+<script>
+    hoverTab($("#recommend"),"a",$("#recommend-cont"),"ul");
+    hoverTab($("#notice"),"a",$("#notice-cont"),"ul");
+    hoverTab($("#f-links-mt"),"li",$("#f-links-cont"),".mc");
+    hoverTab($("#f1-mt-nav"),"li",$("#f1-mt-cont"),".mt-cont");
+    hoverTab($("#f2-mt-nav"),"li",$("#f2-mt-cont"),".mt-cont");
+    hoverTab($("#f1-rt-nav"),"a",$("#f1-rt-cont"),"li");
+    hoverTab($("#f2-rt-nav"),"a",$("#f2-rt-cont"),"li");
+</script>
+
+<!--中间楼层区域内商品切换-->
+<script>
+    TabLT(1,"x",$("#f1-ct-top1"),$("#f1-ct-top1 li"),2,$("#f1-ct-prev1"),$("#f1-ct-next1"),1,$("#f1-ct-slider1"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f1-ct-top2"),$("#f1-ct-top2 li"),2,$("#f1-ct-prev2"),$("#f1-ct-next2"),1,$("#f1-ct-slider2"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f1-ct-top3"),$("#f1-ct-top3 li"),2,$("#f1-ct-prev3"),$("#f1-ct-next3"),1,$("#f1-ct-slider3"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f1-ct-top4"),$("#f1-ct-top4 li"),2,$("#f1-ct-prev4"),$("#f1-ct-next4"),1,$("#f1-ct-slider4"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f1-ct-top5"),$("#f1-ct-top5 li"),2,$("#f1-ct-prev5"),$("#f1-ct-next5"),1,$("#f1-ct-slider5"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f2-ct-top1"),$("#f2-ct-top1 li"),2,$("#f2-ct-prev1"),$("#f2-ct-next1"),1,$("#f2-ct-slider1"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f2-ct-top2"),$("#f2-ct-top2 li"),2,$("#f2-ct-prev2"),$("#f2-ct-next2"),1,$("#f2-ct-slider2"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f2-ct-top3"),$("#f2-ct-top3 li"),2,$("#f2-ct-prev3"),$("#f2-ct-next3"),1,$("#f2-ct-slider3"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f2-ct-top4"),$("#f2-ct-top4 li"),2,$("#f2-ct-prev4"),$("#f2-ct-next4"),1,$("#f2-ct-slider4"),"a",0,"","",1,380,300,1,2500);
+    TabLT(1,"x",$("#f2-ct-top5"),$("#f2-ct-top5 li"),2,$("#f2-ct-prev5"),$("#f2-ct-next5"),1,$("#f2-ct-slider5"),"a",0,"","",1,380,300,1,2500);
+</script>

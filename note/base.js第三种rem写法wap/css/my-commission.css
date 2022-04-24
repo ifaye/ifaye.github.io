@@ -1,0 +1,7 @@
+.main {padding: 4.5rem 1rem 0; text-align: center; }
+.yj-icon {display: block; width: 15rem; height: 12.5rem; margin: 0 auto 2rem; }
+.yj-desc {font-size: 1.4rem; line-height: 1.5rem; color: #333; }
+.yj-val {margin-bottom: 2rem; font-size: 1.8rem; color: #333; }
+.yj-val strong {font-size: 2.4rem; font-weight: normal; }
+.yj-btn {display: block; width: 100%; height: 4rem; margin-bottom: 1rem; font-size: 1.5rem; line-height: 4rem; text-align: center; color: #82b43c; background-color: #fff; border: 1px solid #82b43c; border-radius: 2px; }
+.yj-btn.cur {color: #fff; border: none; background-color: #82b43c; }

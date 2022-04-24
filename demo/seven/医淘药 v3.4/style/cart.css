@@ -1,0 +1,139 @@
+.shortcut .sh-cont .fl { width: 280px; }
+.shortcut .sh-cont .fr .item.back a { display: inline-block; width: 118px; height: 28px; line-height: 28px; text-align: center; color: #2448ab; border: 1px solid #e8e8e8; border-radius: 2px; background-color: #fff; }
+.shortcut .sh-cont .fr .item.back a:hover { text-decoration: underline; color: #2448ab; }
+
+/*03-14 用户注册页头 */
+.header02 { overflow: hidden; width: 1190px; height: 100px; margin: 0 auto; padding-top: 20px; }
+.header02 .logo { float: left; overflow: hidden; width: 300px; height: 80px; }
+.header02 h5 { float: left; margin-left: 10px; font-size: 24px; line-height: 80px; color: #333; }
+.header02 .step { position: relative; float: right; width: 400px; height: 12px; margin: 24px 60px 0 0; border-radius: 6px; background-color: #f5f5f5; }
+.header02 .step li { position: relative; display: block; width: 12px; height: 12px; border-radius: 50%; background-color: #dadada; box-shadow: 0 0 0 2px #fff; }
+.header02 .step li:before { position: absolute; z-index: 1; top: 6px; right: 14px; display: inline-block; width: 178px; height: 1px; content: ''; background-color: #f5f5f5; }
+.header02 .step li:first-child:before { display: none; }
+.header02 .step li span { position: absolute; top: 24px; left: -44px; display: block; width: 100px; height: 18px; font-size: 14px; line-height: 18px; text-align: center; color: #999; }
+.header02 .step .m1 { position: absolute; z-index: 2; top: 0; left: 0; }
+.header02 .step .m2 { position: absolute; z-index: 2; top: 0; left: 194px; }
+.header02 .step .m3 { position: absolute; z-index: 2; top: 0; right: 0; }
+
+.header02 .step01 li.m1,
+.header02 .step02 li.m1,
+.header02 .step03 li.m1,
+.header02 .step02 li.m2,
+.header02 .step03 li.m2,
+.header02 .step03 li.m3 { background-color: #2448ab; }
+
+.header02 .step01 li.m1 span,
+.header02 .step02 li.m1 span,
+.header02 .step03 li.m1 span,
+.header02 .step02 li.m2 span,
+.header02 .step03 li.m2 span,
+.header02 .step03 li.m3 span { color: #2448ab; }
+
+.header02 .step01 li.m2:before,
+.header02 .step02 li.m2:before,
+.header02 .step03 li.m2:before,
+.header02 .step02 li.m3:before,
+.header02 .step03 li.m3:before { background-color: #2448ab; }
+
+
+/*主体*/
+.main-bg { width: 100%; min-width: 1190px; padding: 2px 0 30px; background-color: #eee; }
+.cart-main { width: 1190px; margin: 0 auto; padding-top: 20px; }
+
+.cart-thead { height: 50px; line-height: 50px; }
+.cart-thead .column { float: left; color: #666; }
+.cart-thead .t-chk { width: 135px; padding-left: 30px; }
+.cart-thead .t-goods { width: 290px; }
+.cart-thead .t-sku { width: 130px; }
+.cart-thead .t-price { width: 110px; }
+.cart-thead .t-quantity { width: 170px; padding-left: 45px; }
+.cart-thead .t-sum { width: 150px; }
+.cart-thead .t-action { width: 125px; }
+.cart-thead .t-chk .chk { margin-top: -4px; margin-right: 10px; }
+
+.cart-item-list { margin-bottom: 20px; border-top: 1px solid #2448ab; background-color: #fff; }
+.cart-item-list .shop { height: 50px; padding-left: 30px; font-size: 14px; line-height: 50px; color: #666; border-bottom: 1px solid #e8e8e8; }
+.cart-item-list .shop-name:hover { color: #2448ab; }
+.cart-item-list .service { display: inline-block; width: 68px; height: 26px; margin-left: 10px; padding-left: 38px; line-height: 26px; color: #2448ab; border: 1px solid #e8e8e8; background: url('../images/qq-icon.png') no-repeat 12px center; background-color: #fff; }
+.cart-item-list .item-single { border-bottom: 1px solid #e8e8e8; }
+.cart-item-list .item-single.selected {background-color: #f3fbff;}
+.cart-item-list .item-form { overflow: hidden; }
+.cart-item-list .item-form .cell { float: left; padding-top: 30px; padding-bottom: 40px; font-size: 14px; color: #666; }
+.cart-item-list .item-form .p-chk { width: 35px; padding-left: 30px; }
+.cart-item-list .item-form .p-goods { overflow: hidden; width: 370px; padding-right: 20px; }
+.cart-item-list .item-form .p-sku { width: 130px; line-height: 32px; }
+.cart-item-list .item-form .p-price { width: 110px; line-height: 32px; }
+.cart-item-list .item-form .p-quantity { width: 215px; }
+.cart-item-list .item-form .p-sum { width: 150px; font-size: 18px; line-height: 32px; color: #f60; }
+.cart-item-list .item-form .p-action { width: 125px; }
+.cart-item-list .item-form .p-goods-img { float: left; overflow: hidden; width: 80px; height: 80px; }
+.cart-item-list .item-form .p-goods-img img { width: 100%; height: auto; }
+.cart-item-list .item-form .p-goods-name { display: block; margin-left: 90px; font-size: 18px; line-height: 30px; color: #2d415a; }
+.cart-item-list .item-form .p-goods-desc { margin-left: 90px; font-size: 12px; line-height: 18px; color: #666; }
+.cart-item-list .item-form .p-goods-desc span {margin-right: 20px;}
+.cart-item-list .item-form .p-price i { font-family: 'Microsoft YaHei'; }
+.cart-item-list .item-form .p-action a { display: block; font-size: 12px; line-height: 32px; }
+.cart-item-list .item-form .p-action a:hover { text-decoration: underline; }
+
+.cart-item-list .item-gifts { overflow: hidden; width: 1120px; margin: 0 auto 15px; padding-top: 17px; border-top: 1px dashed #e8e8e8; background-color: #fafafa; }
+.cart-item-list .item-gifts .lab { float: left; width: 80px; height: 19px; margin-right: 20px; margin-left: 36px; line-height: 19px; text-align: center; color: #fff; background-color: #00b4c8; }
+.cart-item-list .item-gifts .val { float: left; color: #666; }
+.cart-item-list .item-gifts .val p { max-width: 900px; margin-bottom: 5px; line-height: 19px; }
+.cart-item-list .item-gifts .val a { margin-right: 20px; }
+.cart-item-list .item-gifts .val a:hover { text-decoration: underline; color: #00b4c8; }
+
+.gift-list { margin-bottom: 20px; background-color: #fff; }
+.gift-list-tit { height: 50px; padding-left: 30px; font-size: 16px; line-height: 50px; color: #2d415a; border-bottom: 1px solid #e8e8e8; }
+.gift-item-list { padding: 0 30px; }
+.gift-item-list .gift-item { overflow: hidden; height: 50px; font-size: 14px; line-height: 50px; color: #666; border-bottom: 1px dashed #e8e8e8; }
+.gift-item-list .gift-item .cell { float: left; }
+.gift-item-list .gift-item .p-goods { width: 535px; padding-right: 20px; }
+.gift-item-list .gift-item .p-price { width: 150px; }
+.gift-item-list .gift-item .p-action { float: right; }
+.gift-item-list .gift-item .p-price i { font-family: 'Microsoft YaHei'; }
+.gift-item-list .gift-item .p-quantity span { display: inline-block; width: 60px; height: 32px; line-height: 32px; text-align: center; background-color: #fafafa; }
+.gift-item-list .gift-item .p-goods a { display: block; font-size: 12px; color: #333; }
+.gift-item-list .gift-item .p-goods a:hover { text-decoration: underline; color: #2448ab; }
+.gift-item-list .gift-item .p-action a { margin-right: 72px; }
+.gift-item-list .gift-item .p-action a:hover { text-decoration: underline; }
+
+.gift-rule { margin-bottom: 20px; background-color: #fff; }
+.gift-rule .tab-nav { height: 40px; line-height: 40px; border-bottom: 1px solid #e8e8e8; background-color: #fafafa; }
+.gift-rule .tab-nav-item { position: relative; float: left; width: 200px; height: 40px; font-size: 14px; line-height: 40px; text-align: center; color: #333; border-right: 1px solid #e8e8e8; }
+.gift-rule .tab-nav-item:hover { color: #2448ab; }
+.gift-rule .tab-nav-item.cur { height: 41px; color: #fff; background-color: #2448ab; }
+.gift-rule .tab-nav-item.cur:after { position: absolute; bottom: 0; left: 50%; width: 0; height: 0; margin-left: -2px; content: ''; border-right: 4px solid transparent; border-bottom: 4px solid #fff; border-left: 4px solid transparent; }
+.gift-rule .good-list { overflow: hidden; padding: 30px 0 35px 50px; }
+.gift-rule .good-item { float: left; overflow: hidden; width: 300px; padding-right: 80px; }
+.gift-rule .good-img { float: left; overflow: hidden; width: 80px; height: 80px; }
+.gift-rule .good-img img { width: 100%; height: auto; }
+.gift-rule .good-name { display: block; width: 200px; margin-left: 100px; line-height: 26px; color: #333; }
+.gift-rule .good-name:hover { text-decoration: underline; color: #2448ab; }
+.gift-rule .good-quantity { display: block; margin-bottom: 5px; margin-left: 100px; line-height: 20px; color: #666; }
+.gift-rule .btn-cho { display: block; width: 108px; height: 24px; margin-left: 100px; line-height: 24px; text-align: center; color: #2448ab; border: 1px solid #2448ab; }
+.gift-rule .btn-cho:hover {text-decoration: underline;}
+
+.cart-floatbar { width: 100%; height: 60px; margin-bottom: 20px; }
+.cart-floatbar .w { width: 1190px; margin: 0 auto; }
+.cart-floatbar .option-box { width: 100%; height: 60px; background-color: #fff; }
+.cart-floatbar .option-box .f-chk { margin: 0 30px; line-height: 60px; color: #666; }
+.cart-floatbar .option-box .f-chk .chk { margin-top: -4px; margin-right: 10px; }
+.cart-floatbar .option-box .f-action { line-height: 60px; }
+.cart-floatbar .option-box .f-action a { margin-right: 30px; }
+.cart-floatbar .option-box .f-action a:hover { text-decoration: underline; }
+.cart-floatbar .option-box .f-check a { display: block; width: 120px; height: 60px; font-size: 20px; line-height: 60px; text-align: center; color: #fff; background-color: #2448ab; }
+.cart-floatbar .option-box .f-plan a { display: block; height: 60px; margin: 0 12px; padding: 0 25px; font-size: 20px; line-height: 60px; color: #2448ab; border-right: 1px solid #2448ab; border-left: 1px solid #2448ab; background-color: #f5f5fa; }
+
+.cart-floatbar .option-box .f-total { padding-top: 5px; text-align: right; color: #333; }
+.cart-floatbar .option-box .f-total-t { margin-bottom: 5px; line-height: 18px; }
+.cart-floatbar .option-box .f-total strong { font-family: 'Microsoft YaHei'; font-size: 22px; font-weight: 400; color: #f60; }
+
+.chk {overflow: hidden; display: inline-block; width: 14px; height: 14px; vertical-align: middle; border: 1px solid #d3d5d9; background-color: #fff; }
+.chk:active,
+.chk.selected { width: 16px; height: 16px; border: none; background: url("../images/chked.png") no-repeat; }
+.quantity-form { width: 138px; height: 30px; font-size: 0; line-height: 30px; border: 1px solid #e8e8e8; background-color: #fff;}
+.quantity-form a { display: inline-block; float: left; width: 38px; font-size: 22px; text-align: center; color: #999; }
+.quantity-form a:hover {color: #666;}
+.quantity-form .inp-txt { display: inline-block; float: left; width: 62px; height: 30px; font-size: 14px; line-height: 30px; text-align: center; color: #666; border: none; outline: none; }
+
+.bd-no { border-bottom: none !important; }

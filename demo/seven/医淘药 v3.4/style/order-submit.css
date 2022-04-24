@@ -1,0 +1,31 @@
+
+
+.main-bg{width: 100%; min-width: 1190px; padding: 20px 0; background-color:#eeeeee; }
+.main-bg .main{width: 1190px; margin: 0 auto; overflow: hidden; }
+
+
+.main .submit-suc-box{width: 1190px; background-color: #ffffff; padding-top: 45px; padding-bottom: 45px; overflow: hidden; }
+.main .submit-suc-box .suc-bg{ float: left; width: 190px; height:115px; background: url("../images/suc-icon.png") no-repeat 100px 0; overflow: hidden; }
+.main .submit-suc-box .suc-bg1{ float: left; width: 190px; height: 115px; background: url("../images/err-icon.png") no-repeat 100px 0; overflow: hidden; }
+
+.main .submit-suc-box .sub-msg{ float: left;  width: 1000px; overflow: hidden; }
+.main .submit-suc-box .sub-msg .suc-title{ font-size: 22px; color: #2d415a; width: 740px; margin-top: 7px; }
+.main .submit-suc-box .sub-msg .suc-tice{ font-size: 14px; color: #666666; margin-top: 8px; width: 740px;}
+.main .submit-suc-box .sub-msg .check-btn{ margin-top: 20px; height: 30px; width: 740px;}
+.main .submit-suc-box .sub-msg .check-btn a.to-page{ float: left; width: 98px; height: 28px; line-height: 28px; border: 1px solid #e8e8e8; background-color: #ffffff; color: #2448ab; text-align: center; margin-right: 10px; overflow: hidden;}
+.main .submit-suc-box .sub-msg .check-btn a.to-page:hover{ background-color: #2448ab; border: 1px  solid  #2052dd; color: #ffffff; }
+
+
+.main .address{width: 1070px; margin: 2px 0; padding: 25px 0 25px 120px; background-color: #ffffff; overflow: hidden; }
+.main .address .to-where,.main .address .to-who{ color: #333333; line-height: 24px;}
+.main .address .to-where span,.main .address .to-who span{ color: #666666; margin-right: 37px;}
+
+
+.main .notice-box{width: 1190px;  margin-bottom: 43px; background-color: #ffffff; overflow: hidden; }
+.main .notice-box .notice-title{ float: left; width: 190px; overflow: hidden; }
+.main .notice-box .notice-title p{ width: 82px; color: #666666; margin: 30px 0 0 108px; }
+
+.main .notice-box .notice-msg{ float: left; margin: 25px 0; width: 1000px; overflow: hidden; }
+.main .notice-box .notice-msg p{ color: #333333; line-height: 24px; width: 730px; overflow: hidden; }
+
+.main .submit-suc-box .sub-msg .top-more{ margin-top: 30px;}

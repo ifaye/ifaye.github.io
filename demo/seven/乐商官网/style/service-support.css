@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+.service-main{width: 100%; min-width: 1280px;}
+.service-main .nav-top-div{height: 127px;}
+.service-main .top-pic{width: 100%; min-width: 1280px; height: 270px; padding-top: 150px; background: url(../image/pic1920x740.jpg) no-repeat center 0 / cover;}
+.service-main .top-pic p{text-align: center; color: #fff; font-size: 30px; font-family: "Microsoft YaHei"; font-weight:100;}
+.service-main .top-pic p:first-child{margin-bottom: 20px;}
+
+.service-main .support-cont{margin-top: 10px; height: 300px; overflow: hidden;}
+.service-main .support-cont .item{width: 25%; height: 100%; box-sizing:border-box; float: left;}
+.service-main .support-cont .box{width: 100%; height: 100%; box-sizing:border-box; padding-top: 55px; position: relative;}
+.service-main .support-cont .box p{color: #ffffff; font-size: 16px; line-height: 24px; margin-bottom: 24px; text-align: center;}
+.service-main .support-cont .more{display: block; width: 146px; border: 2px solid #ffa200; text-align: center; color: #ffa200; position: absolute; bottom: 38px; left: 50%; margin-left: -75px; height: 38px; line-height: 38px; font-size: 14px; border-radius: 10px;}
+.service-main .support-cont .more:hover{color: #fff; background-color: #ffa200;}
+.service-main .support-cont .m1{padding-right: 10px;}
+.service-main .support-cont .m1 .box{background: url(../image/pic470x300-1.jpg) no-repeat center 0 / cover;}
+.service-main .support-cont .m2{padding-right: 5px;}
+.service-main .support-cont .m2 .box{background: url(../image/pic470x300-2.jpg) no-repeat center 0 / cover;}
+.service-main .support-cont .m3{padding-left: 5px;}
+.service-main .support-cont .m3 .box{background: url(../image/pic470x300-3.jpg) no-repeat center 0 / cover;}
+.service-main .support-cont .m4{padding-left: 10px;}
+.service-main .support-cont .m4 .box{background: url(../image/pic470x300-4.jpg) no-repeat center 0 / cover;}
+@media screen and (max-width: 1496px) {
+.service-main .support-cont .box p {font-size: 14px;}
+}
+@media screen and (max-width: 1396px) {
+.service-main .support-cont .box p {font-size: 13px;}
+}
+
+
+
+/*2019-4-28*/
+.service-main .top-pic{padding-top: 130px;}
+.service-main .top-pic p{font-size: 16px;}
+.service-main .top-pic .cus-btn{display: block; margin: 40px auto 0; color: #fff; font-size: 18px; width: 156px; height: 48px; line-height: 48px; text-align: center; border: 2px solid #ffffff; border-radius: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

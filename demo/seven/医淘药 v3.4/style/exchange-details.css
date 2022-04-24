@@ -1,0 +1,100 @@
+
+/*主体*/
+.main-bg{width: 100%; min-width: 1190px;background-color: #fafafa; }
+.main-bg .m-top{width: 1190px; margin: 0 auto; padding: 20px 0; overflow: hidden;}
+.main-bg .fl{width: 220px;}
+.main-bg .fl .mt{width: 220px; height: 300px; text-align: center; margin-bottom: 10px; background: url("../images/user-info-bg2.png") no-repeat; overflow: hidden;}
+.main-bg .fl .mt .pic{width: 100px; height: 100px; margin: 29px auto 20px; background-color: #eeeeee; border-radius: 50%; box-shadow: 0 0 0 8px rgba(0,0,0,0.15); overflow: hidden;}
+.main-bg .fl .mt .pic img{min-width: 100%; min-height: 100%;}
+.main-bg .fl .mt .name{font-size: 18px; color: #fff; height: 26px; line-height: 26px; width: 200px; margin: 0 auto;}
+.main-bg .fl .mt .num{font-size: 30px; color: #fff;  height: 38px; line-height: 38px; width: 200px; margin: 20px auto 0;}
+.main-bg .fl .mt span{font-size: 14px; line-height: 28px; color: #fff;}
+.main-bg .fl .back{display: block; width: 218px; height: 38px; background-color: #fff; font-size: 14px; border: 1px solid #e8e8e8; text-align: center; line-height: 38px; color: #354aa7; float: left;}
+.main-bg .fl a:hover.back{color: #ff6600;}
+
+
+.main-bg .fr{width: 958px; border: 1px solid #e8e8e8; background-color: #fff;}
+.main-bg .fr .pic{width: 360px; height: 360px; overflow: hidden; float: left; padding: 20px; }
+.main-bg .fr .fr-cont{width: 557px; border-left: 1px solid #e8e8e8; min-height: 400px; float: left;}
+.main-bg .fr .fr-cont .title{color: #2d415a; font-size: 20px; overflow: hidden; padding: 32px 0 0 20px; width: 500px; line-height: 35px;}
+.main-bg .fr .fr-cont .bot{width: 538px; line-height: 21px; color: #363636; border-top: 1px solid #e8e8e8; margin-top: 35px; padding: 16px 0 19px 19px; overflow: hidden; background-color: #fafafa;}
+.main-bg .fr .fr-cont .bot span{float: left; width: 73px; color: #989898;}
+.main-bg .fr .fr-cont .bot p{float: left; width: 440px;}
+.main-bg .fr .fr-cont .mid{width: 557px; padding-top: 25px; border-top: 1px solid #e8e8e8; margin-top: 14px;}
+.main-bg .fr .fr-cont .mid .im-btn{display: block; font-size: 20px; margin: 30px 0 0 92px; color: #fff; width: 190px; height: 48px; background-color: #3549a7; text-align: center; line-height: 48px;}
+.main-bg .fr .fr-cont .mid a:hover.im-btn{background-color: #1c3e9c;}
+.main-bg .fr .fr-cont .mid .price{height: 33px; line-height: 33px; overflow: hidden;}
+.main-bg .fr .fr-cont .mid .price label{float: left; width: 73px; padding-left: 19px; color: #999;}
+.main-bg .fr .fr-cont .mid .price span{float: left; font-size: 32px; color: #e06618; margin-right: 15px;}
+.main-bg .fr .fr-cont .mid .price i{color: #363636;}
+
+.main-bg .fr .fr-cont .mid .num{width: 557px; margin-top: 25px; overflow: hidden;}
+.main-bg .fr .fr-cont .mid .num label{float: left; width: 73px; line-height: 32px; padding-left: 19px; color: #999;}
+.main-bg .fr .fr-cont .mid .num .wrap-input{width: 88px; height: 32px; float: left; position: relative; }
+.main-bg .fr .fr-cont .mid .num .wrap-input input{float: left; width: 53px; height: 30px; border: 1px solid #dbdbdb; border-radius: 2px; padding-left: 12px; line-height: 30px; font-size: 16px; color: #1a1a1a;}
+.main-bg .fr .fr-cont .mid .num .wrap-input .add{display: block; width: 19px; height: 15px; background: url("../images/detail-01-allbg.png") no-repeat -43px -21px; position: absolute; top: 0; right: 0;}
+.main-bg .fr .fr-cont .mid .num .wrap-input .sub{display: block; width: 19px; height: 15px; background: url("../images/detail-01-allbg.png") no-repeat -43px -37px; position: absolute; bottom: 0; right: 0;}
+.main-bg .fr .fr-cont .mid .num .wrap-input .disabled{display: block; width: 19px; height: 15px; cursor: default; background: url("../images/detail-01-allbg2.png") no-repeat -43px -37px; position: absolute; bottom: 0; right: 0;}
+
+
+/*主体*/
+.main{width: 1190px; margin: 20px auto 30px; overflow: hidden;}
+.main .fl{width: 208px; border: 1px solid #dddddd; border-top: none; margin-bottom: 10px;}
+.main .fl h4{height: 33px; border-top: 2px solid #2448ab; text-align: center;  background-color: #f7f7f7; border-bottom: 1px solid #ddd; line-height: 33px; font-size: 14px; color: #333;}
+.main .fl ul{width: 180px; margin: 0 auto; overflow: hidden;}
+.main .fl ul li{width: 180px; height: 220px; padding-top: 20px; border-bottom: 1px solid #e8e8e8; margin-bottom: -1px;}
+.main .fl .title{display:block; width: 160px; height: 40px; margin: 15px auto 8px; font-size: 14px; text-align: center; line-height: 20px; color: #37435a; overflow: hidden; }
+.main .fl a:hover.title{color: #ff4400;}
+.main .fl .pic{width: 120px; height: 120px; margin: 0 auto; overflow: hidden;}
+.main .fl .price{text-align: center; margin: 5px auto 8px; color: #666666; font-size: 14px; }
+.main .fl .price span{font-size: 18px; color: #dd4610; padding-right: 5px;}
+
+
+/*右边nav*/
+.main .fr{width: 960px;}
+.main .minute-menu{width: 958px; height: 41px; border: 1px solid #ddd; border-top: 2px solid #2448ab; background-color: #fbfbfb;}
+.main .minute-menu li{width: 140px; height: 41px; border-right: 1px solid #dddddd; float: left;}
+.main .minute-menu li a{display: block; width: 140px; height: 41px; text-align: center; font-size: 16px; line-height: 41px;color: #2d415a;}
+.main .minute-menu li span{display: none; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 4px solid #fff; position: absolute; left: 66px; bottom: 0; }
+.main .minute-menu .cur{position: relative; }
+.main .minute-menu .cur a{ position: absolute; background-color: #2448ab; height: 42px; color: #fff; left: 0; top: 0; }
+.main .minute-menu .cur a:hover{color: #fff;}
+.main .minute-menu .cur span{display: inline-block;}
+/*商品详情*/
+.main .dt-cont{width: 960px; padding-top: 10px;}
+.main .dt-post{width: 960px; padding-top: 15px; text-align: center;}
+.main .dt-post img{max-width: 100%; height: auto;}
+
+
+/*弹出层*/
+.layer{width: 100%; height: 100%; z-index: 100; position: fixed; left: 0; top:0; background: url("../images/bg-40.png") repeat;}
+/*新增采购计划*/
+.ex-tips{width: 708px; border: 1px solid #e3e3e3; box-shadow: 0 0 5px rgba(0,0,0,0.15); position: absolute; left: 50%; top:50%; margin: -200px 0 0 -354px; border-radius: 4px; background-color: #fff;}
+.ex-tips .mt{width: 708px; height:48px; line-height: 48px; background-color: #fafafa; border-bottom: 1px solid #e3e3e3; }
+.ex-tips .mt span{float: left; font-size: 16px; color: #333; font-weight: bold; padding-left: 12px;}
+.ex-tips .mt .del{display: inline-block; width: 36px; height: 48px; text-align: center; color: #777; font-size: 32px; line-height: 48px; float: right; margin-right:14px; }
+.ex-tips .mt a:hover.del{color: #444;}
+
+.ex-tips .mc {width: 658px; padding-top: 32px; padding-left: 50px; height: 240px;}
+.ex-tips .mc h5{color: #37435a; font-size: 24px;}
+.ex-tips .mc .cont{width: 600px;border-top: 1px solid #e8e8e8; margin-top: 26px; }
+.ex-tips .mc .cont dt{width: 580px; height: 39px; line-height: 39px; padding-left: 20px; color: #666666; font-size: 14px; background-color: #fafafa;}
+.ex-tips .mc .cont dd{width: 600px; height: 135px; overflow: hidden; overflow-y: auto;}
+.ex-tips .mc .cont .addr-item { overflow: hidden; padding: 12px 0 12px 20px; font-size: 14px; line-height: 20px; color: #666; border-bottom: 1px dashed #e8e8e8; }
+.ex-tips .mc .cont .addr-item .radio { float: left; width: 12px; height: 12px; border-radius: 50%; border: 1px solid #cdcdcd; margin: 3px 28px 0 0; }
+.ex-tips .mc .cont .addr-item .addr-name { float: left; min-width: 70px; margin-right: 3px;}
+.ex-tips .mc .cont .addr-item .addr-tel { float: left;  width: 115px;}
+.ex-tips .mc .cont .addr-item .addr-detail { float: left; max-width: 330px; }
+.ex-tips .mc .cont .addr-item.selected { color: #3549a7; }
+.ex-tips .mc .cont .addr-item.selected .radio{border: 1px solid #3549a7; background-color: #3549a7;}
+
+.ex-tips .mb{width: 708px; height: 56px; padding-top: 24px; background-color: #fafafa; text-align: center;}
+.ex-tips .mb a{display: inline-block; width: 120px; text-align: center; height: 34px; line-height: 34px; font-size: 14px; color: #fff; background-color: #2448ab;}
+.ex-tips .mb a:hover{background-color: #1c3e9c;}
+
+
+
+
+
+
+

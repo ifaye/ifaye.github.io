@@ -1,0 +1,34 @@
+/* CSS Document */
+html{ background:white; color:#333;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td,hr,button,article,footer,header,menu,nav,section{margin:0; padding:0;}
+body,button,input,select,textarea,pre {font-size:12px; font-family: 'PingFang SC',tahoma,arial,"Hiragino Sans GB","Microsoft YaHei", sans-serif;}
+h1,h2,h3,h4,h5,h6,textarea{font-weight:normal; font-size:12px;}
+b,textarea{font-style:normal; font-weight:400;}
+table{ border-collapse:collapse; border-spacing:0;}/* 去掉 table cell 的边距并让其边重合 */
+pre{white-space: pre-wrap;word-wrap: break-word;}/* pre 可以换行*/
+img{border:none; vertical-align:middle;}
+input,select,textarea {font-size:100%;}
+del{text-decoration:line-through;}/* 一致的 del 样式 */
+a{color:#666;text-decoration:none;}
+a:focus,*:focus {outline:none;}/* 去除 ie6 & ie7 焦点点状线 */
+a:hover,a:link, a:visited, a:active,input:focus{text-decoration: none;}
+a:hover{transition:color 120ms,text-decoration 120ms;}
+ul,li,ol{ list-style:none;}
+input{font-family:inherit; margin: 0; padding: 0;}
+th {text-align:inherit;}/* ie bug：th 不继承 text-align */
+iframe{display:block;}/* ie6 7 8(q) bug 显示为行内表现 */
+i,em{font-style: normal;}
+
+.elli{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}/* 单行多出省略号.... */
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1; /* for ie6 & ie7 */}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+.main-bg { width: 100%; min-width: 1190px; background-color: #eee; }
+.main-bg .main { width: 1190px; margin: 0 auto; padding-bottom: 30px; }
+
+.c-main { width: 950px; }
+
+.main-tab { margin-bottom: 10px; background-color: #fff; }
+.main-tab .tab-nav { height: 50px; padding-left: 10px; font-size: 0; border-bottom: 1px solid #ccc; }
+.main-tab .tab-nav li {position: relative; display: inline-block; width: 110px; height: 50px; padding: 0 5px; }
+.main-tab .tab-nav li:after {position: absolute; top: 17px;right: 0;content: "";width: 1px;height: 16px;background-color: #e8e8e8;}
+.main-tab .tab-nav li a { display: block; width: 110px; height: 49px; font-size: 16px; line-height: 49px; text-align: center; color: #2d415a; }
+.main-tab .tab-nav li a:hover { color: #f60; }
+.main-tab .tab-nav .cur { border-bottom: 1px solid #fff; }
+.main-tab .tab-nav .cur a { font-weight: 700; color: #2448ab; border-bottom: 2px solid #2448ab; }
+.main-tab dl { padding: 15px 30px; }
+.main-tab dt { margin-bottom: 5px; font-size: 16px; line-height: 24px; color: #2d415a; }
+.main-tab dd { line-height: 20px; color: #666; }
+
+.c-main .order-box { margin-bottom: 20px; padding: 10px 10px 20px; background-color: #fff; }
+
+.c-main .order-thead { width: 928px; height: 38px; margin-bottom: 10px; line-height: 38px; color: #666; border: 1px solid #e8e8e8; background-color: #fafafa; }
+.c-main .order-thead .column { float: left; text-align: center; }
+.c-main .order-thead .t-chk { width: 35px; }
+.c-main .order-thead .t-goods { width: 320px; text-align: left; }
+.c-main .order-thead .t-price { width: 110px; }
+.c-main .order-thead .t-count { width: 63px; }
+.c-main .order-thead .t-batch { width: 140px; }
+.c-main .order-thead .t-sta { position: relative; width: 140px; }
+.c-main .order-thead .t-action { width: 120px; }
+.c-main .order-thead .t-chk .chk { vertical-align: middle; }
+
+.c-main .order-thead .t-sta .popover-toggle { display: inline-block; width: 108px; height: 24px; line-height: 24px; transition: none; text-align: center; border: 1px solid #e8e8e8; background-color: #fff; }
+.c-main .order-thead .t-sta .popover-toggle i { display: inline-block; width: 7px; height: 4px; margin-left: 5px; vertical-align: middle; background: url('../images/arrows.png') no-repeat; }
+/*.c-main .order-thead .t-sta .popover-toggle:hover { border: none; width: 110px; height: 26px; line-height: 26px; background-color: #f60; color: #fff; }*/
+.c-main .order-thead .t-sta .popover-toggle.hover { width: 110px; height: 26px; line-height: 26px; color: #fff; border: none; background-color: #f60; }
+.c-main .order-thead .t-sta .popover-toggle.hover i { background: url('../images/arr-icon2.png') no-repeat -6px -7px; }
+.c-main .order-thead .t-sta .popover { position: absolute; top: 32px; left: 15px; width: 108px; border: 1px solid #e8e8e8; border-top: 0; background-color: #fff; }
+.c-main .order-thead .t-sta .popover li { line-height: 26px; }
+.c-main .order-thead .t-sta .popover a { display: block; }
+.c-main .order-thead .t-sta .popover a:hover { color: #f60; background-color: #fafafa; }
+
+.c-main .order-item-list { margin-bottom: 10px; border: 1px solid #e8e8e8; background-color: #fff; }
+.c-main .order-tbody .order-info { height: 38px; padding-left: 18px; line-height: 38px; color: #666; border-bottom: 1px solid #e8e8e8; background-color: #fafafa; }
+.c-main .order-tbody .order-info span { margin-right: 30px; }
+.c-main .order-tbody .order-info .order-log { position: relative; display: inline-block; }
+.c-main .order-tbody .order-info .log-tit { display: inline-block; width: 110px; height: 24px; line-height: 24px; text-align: center; color: #fff; background-color: #f60; }
+.c-main .order-tbody .order-info .log-tit i { display: inline-block; width: 7px; height: 4px; margin-left: 5px; vertical-align: middle; background: url('../images/arr-icon2.png') no-repeat -6px -28px; }
+
+.c-main .order-tbody .order-info .log-cont { position: absolute; top: 38px; left: -110px; display: none; width: 300px; padding: 8px 15px 5px 15px; border: 1px solid #ddd; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,.1); }
+.c-main .order-tbody .order-info .log-cont i { position: absolute; top: -8px; left: 160px; display: block; width: 14px; height: 8px; vertical-align: middle; background: url('../images/mc-icon.png') no-repeat -37px -32px; }
+.c-main .order-tbody .order-info .log-mt { width: 292px; height: 36px; padding-left: 8px; font-size: 14px; line-height: 36px; color: #666; border-bottom: 1px dotted #dcdcdc; }
+.c-main .order-tbody .order-info .log-mb { width: 292px; height: 41px; padding-left: 8px; line-height: 41px; color: #999; border-top: 1px dotted #dcdcdc; }
+.c-main .order-tbody .order-info .log-mc { width: 288px; margin: 0 auto; padding: 5px 0; }
+.c-main .order-tbody .order-info .log-mc .lm-item { width: 288px; margin: 10px 0; line-height: 22px; text-align: left; color: #333; }
+
+.c-main .order-tbody .order-info .log-tit:hover i { background: #f60 url('../images/arr-icon2.png') no-repeat -6px -7px; }
+.c-main .order-tbody .order-info .log-tit:hover + .log-cont { display: block; }
+
+
+.c-main .order-tbody table { width: 100%; }
+.c-main .order-tbody td { overflow: hidden; text-align: center; vertical-align: top; }
+.c-main .order-tbody .p-detail { border-right: 1px solid #e8e8e8; }
+.c-main .order-tbody .p-detail tr { border-bottom: 1px solid #e8e8e8; }
+.c-main .order-tbody .p-detail tr:last-child { border-bottom: none; }
+.c-main .order-tbody .p-detail .show-more a { display: block; line-height: 36px; color: #2448ab; border-top: 1px solid #e8e8e8; background-color: #fafafa; }
+.c-main .order-tbody .p-detail .show-more a:hover { text-decoration: underline; }
+
+.c-main .order-tbody .p-chk { width: 35px; padding-top: 15px; }
+.c-main .order-tbody .p-goods { overflow: hidden; width: 312px; padding: 15px 18px 15px 0; text-align: left; }
+.c-main .order-tbody .good-name { overflow: hidden; margin-bottom: 5px; line-height: 24px; }
+.c-main .order-tbody .good-name img { display: inline-block; float: left; margin-right: 10px; }
+.c-main .order-tbody .good-name a { float: left; max-width: 160px; font-size: 16px; color: #2d415a; }
+.c-main .order-tbody .good-name a:hover {color: #f60;}
+.c-main .order-tbody .good-detail { overflow: hidden; width: 238px; line-height: 20px; color: #666; }
+
+.c-main .order-tbody .p-price { width: 110px; padding-top: 15px; font-family: 'Microsoft YaHei'; font-size: 14px; line-height: 24px; }
+.c-main .order-tbody .p-count { width: 62px; padding-top: 15px; font-family: 'Microsoft YaHei'; line-height: 24px; border-right: 1px solid #e8e8e8;}
+.c-main .order-tbody .p-often { width: 100px; padding-top: 15px; }
+.c-main .order-tbody .p-often a { display: inline-block; width: 68px; height: 22px; line-height: 22px; text-align: center; color: #2448ab; border: 1px solid #e8e8e8; }
+.c-main .order-tbody .p-often span { display: inline-block; width: 70px; height: 24px; line-height: 24px; text-align: center; color: #fff; background-color: #2448ab; }
+
+.c-main .order-tbody .p-batch { width: 140px; padding-top: 15px; font-family: 'Microsoft YaHei'; line-height: 24px;}
+.c-main .order-tbody .p-batch span { font-size: 18px; font-weight: bold; }
+.c-main .order-tbody .p-sta { width: 139px; padding-top: 15px; line-height: 24px; border-right: 1px solid #e8e8e8; }
+.c-main .order-tbody .p-sta p { color: #666; }
+.c-main .order-tbody .p-sta a { color: #2448ab; }
+.c-main .order-tbody .p-sta a:hover { color: #f60; }
+
+.c-main .order-tbody .p-action { width: 120px; padding-top: 15px; }
+.c-main .order-tbody .p-action .btn-link { display: block; line-height: 24px; color: #333; }
+.c-main .order-tbody .p-action .btn-link:hover { text-decoration: underline; }
+.c-main .order-tbody .p-action .btn { display: inline-block; width: 90px; height: 30px; margin: 5px 0; line-height: 30px; text-align: center; color: #fff; background-color: #fafafa; }
+.c-main .order-tbody .p-action .btn-primary { background-color: #2448ab; }
+.c-main .order-tbody .p-action .btn-warning { background-color: #f60; }
+.c-main .order-tbody .p-action .btn-default { display: inline-block; width: 88px; height: 28px; line-height: 28px; text-align: center; color: #2448ab; border: 1px solid #e8e8e8; background-color: #fff; }
+.c-main .order-tbody .p-action .btn-default:hover { color: #f60; }
+
+.chk { display: inline-block; width: 14px; height: 14px; border: 1px solid #e8e8e8; background-color: #fff; }
+.chk:active,
+.chked { width: 16px; height: 16px; border: none; background: url('../images/chked.png') no-repeat; }
+
+/*物流信息*/
+.layer-bg { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: url('../images/bg-40.png') repeat; }
+.layer { position: absolute; top: 50%; left: 50%; background-color: #fff; }
+.logistics { width: 700px; height: 300px; margin-top: -150px; margin-left: -350px; }
+
+.layer-header { height: 34px; padding: 0 20px; line-height: 34px; border-bottom: 1px solid #e8e8e8; background-color: #fafafa; }
+.layer-header h2 { float: left; font-size: 16px; color: #2d415a; }
+.layer-header .btn-close { float: right; font-size: 24px; color: #999; }
+.layer-header .btn-close:hover { color: #666; }
+
+.logistics-form { padding-top: 45px; padding-left: 80px; }
+.logistics-form .inp-group { overflow: hidden; margin-bottom: 15px; }
+.logistics-form .lab { display: inline-block; width: 120px; font-size: 14px; line-height: 40px; color: #333; }
+.logistics-form .lab em { color: #f00; }
+.logistics-form .inp-txt { width: 388px; height: 38px; padding: 0 10px; font-size: 14px; line-height: 38px; border: 1px solid #e8e8e8; }
+.logistics-form .inp-txt:focus { border-color: #2448ab; }
+.logistics-form .inp-submit { display: inline-block; width: 120px; height: 34px; margin-top: 15px; margin-left: 120px; font-size: 14px; line-height: 34px; text-align: center; color: #fff; border: none; background-color: #2448ab; }
+
+
+/*03-28*/
+.main-tab .tab-nav li a:hover { color: #2448ab; }
+.c-main .order-tbody .order-info .log-cont i { background: url('../images/mc-icon.png') no-repeat -2px -112px; }
+
+.c-main .order-thead .t-sta .popover-toggle.hover {background-color: #2448ab; }
+.c-main .order-thead .t-sta .popover a:hover { color: #2448ab; background-color: #fafafa; }
+
+
+.c-main .order-tbody .p-sta a:hover { color: #2448ab; }
+.c-main .order-tbody .p-action .btn-default:hover { color: #fff; border: 1px solid #2448ab; background-color: #2448ab; }
+
+.c-main .order-tbody .order-info .log-tit { background-color: #2448ab; }
+.c-main .order-tbody .order-info .log-tit:hover i { background: #2448ab url('../images/arr-icon2.png') no-repeat -6px -7px; }
+
+
+
+
+
+
+
+
+
+
+

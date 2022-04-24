@@ -1,0 +1,5 @@
+body{background-color: #333;}
+
+.code-wrap{width: 85%;margin: 4rem auto;background-color: #fff;border-radius: .25rem;padding-top: 2.5rem;padding-bottom: 1rem; text-align: center;}
+.code-wrap .code-img{display: block;width:88.8888%;margin: 0 auto;}
+.code-wrap p{font-size: 1.7rem;color: #666;margin-top: 1rem;}

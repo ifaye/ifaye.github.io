@@ -1,0 +1,20 @@
+
+.main {margin-top: 1rem; }
+
+.shop-info {margin-bottom: 1rem; padding-bottom: 1rem; padding-left: 1rem; background-color: #fff; }
+.shop-info li {overflow: hidden; height: 4rem; line-height: 4rem; border-bottom: 1px solid #ddd; }
+.shop-info li .label {float: left; width: 25%; font-size: 1.1rem; color: #999; }
+.shop-info li .val {float: right; width: 75%; padding-right: 1rem; font-size: 1.3rem; text-align: right; color: #666; }
+
+.js-box {margin-bottom: 1rem; padding-left: 1rem; border-top: 1px solid #eee; border-bottom: 1px solid #eee; background-color: #fff; }
+.js-box-tit {height: 3.5rem; font-size: 1.4rem; line-height: 3.5rem; color: #666; border-bottom: 1px solid #ddd; }
+.tit-icon {position: relative;top: .35rem; display: inline-block; width: 1.6rem; height: 1.6rem; margin-right: .75rem;}
+.tit-icon-order {background: url(../images/tit-order.png) no-repeat center center / 1.6rem 1.6rem; }
+.tit-icon-yj {background: url(../images/tit-yj.png) no-repeat center center / 1.6rem 1.6rem; }
+.js-box-content {overflow: hidden; padding-top: 2rem; padding-bottom: 2rem; }
+.js-box-content .inner {float: left; width: 50%; text-align: center; }
+.js-box-content .inner .top {margin-bottom: 1rem; font-size: 1.1rem; color: #999; }
+.js-box-content .inner .bot {font-family: Arial; font-size: 1.5rem; }
+.js-box-content .left {border-right: 1px solid #ddd; }
+.js-box-content .left .bot {color: #82b43c; }
+.js-box-content .right .bot {color: #f09600; }

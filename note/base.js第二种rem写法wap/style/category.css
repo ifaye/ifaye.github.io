@@ -1,0 +1,25 @@
+body { line-height: 1; background-color: #f2f4f5; }
+
+.hide { display: none; }
+
+/* 搜索 */
+.m-category .search-sec { margin-bottom: 1.0rem; padding: 0.75rem 1.2rem; background-color: #fff; }
+.m-category .search-sec .btn { float: right; width: 5.0rem; height: 3.0rem; padding: 0; font-size: 1.5rem; line-height: 3.0rem; text-align: center; color: #fff; border-radius: 0.2rem; background-color: #00a0a0; }
+.m-category .search-sec .input-group { height: 3.0rem; margin-right: 6.0rem; padding: 0.5rem 0.5rem 0.5rem 2.5rem; color: #efefef; border-radius: 0.2rem; background: currentColor url(../image/secrch-icon_27x27.png) no-repeat 0.75rem center / 1.35rem auto;}
+.m-category .search-sec .form-control { width: 100%; height: 100%; font-size: 1.2rem; color: #999; background-color: #efefef; }
+
+/* 分类列表 */
+.m-category .cate-sec { background-color: #fff; }
+.m-category .cate-primary { position: relative; height: 5.0rem; padding: 0 1.2rem;}
+.m-category .cate-primary:after { content: ''; position: absolute; bottom: 0; left: 1.2rem; right: 1.2rem; height: 1px; background-color: #eee; }
+.m-category .cate-primary-tit { margin-left: 3.5rem; font-size: 1.6rem; color: #333; line-height: 5.0rem;}
+.m-category .cate-primary-img { position: absolute; left: 1.2rem; top: 50%; width: 2.5rem; height: 2.5rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.m-category .cate-primary-img  img { width: 100%; height: auto; }
+.m-category .cate-primary .icon-hint { position: absolute; right: 1.2rem; top: 50%; width: 1.3rem; height: 0.75rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: url(../image/icon-hint-down.png) no-repeat center center / 100% auto;}
+.m-category .cate-primary .open {background-image: url(../image/icon-hint-up.png);}
+.m-category .cate-secondary { position: relative; font-size: 0;}
+.m-category .cate-secondary:after { content: ''; position: absolute; bottom: 0; left: 1.2rem; right: 1.2rem; height: 1px; background-color: #eee; }
+.m-category .cate-secondary li {position: relative; display: inline-block; width: 33.333%; margin: 1.0rem 0; font-size: 1.4rem; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.m-category .cate-secondary li:after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 1px; background-color: #e5e5e5; }
+.m-category .cate-secondary li:nth-child(3n):after { visibility: hidden; }
+.m-category .cate-secondary a { color: #666; }

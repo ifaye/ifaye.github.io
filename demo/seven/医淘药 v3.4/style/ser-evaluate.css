@@ -1,0 +1,104 @@
+
+.evaluate{width: 950px;  background-color: #fff; float: right;}
+.evaluate .mt{width: 950px;}
+.evaluate .mt .top{width: 950px; height: 50px; overflow: hidden;}
+.evaluate .mt .top span{color: #2448ab; font-size: 20px; line-height: 50px; float: left; margin-left: 30px;}
+
+.evaluate .mc{width: 932px; border-top: 1px solid #e8e8e8; padding: 0 9px 110px 9px;}
+.evaluate .mc h5{color: #333333; padding-left: 30px; line-height: 41px;}
+
+.evaluate .order-mc{width: 928px; border: 1px solid #e8e8e8; margin: 0 auto;}
+.evaluate .order-mc .label{color: #333; background-color: #fafafa; padding-left: 20px; line-height: 38px; border-bottom: 1px solid #e8e8e8;}
+.evaluate .order-mc .mc-top{width: 890px; padding: 0 10px 20px 10px; margin: 10px auto 0;}
+.evaluate .order-mc .mc-top .m1{width: 880px; border-bottom: 1px solid #e8e8e8; height: 58px; padding-left: 10px;}
+.evaluate .order-mc .mc-top .m1 span{float: left; color: #2d415a; font-size: 16px; line-height: 58px; margin-right: 15px;}
+.evaluate .order-mc .mc-top .m1 a{display: none; background-color: #fff; float: left; color: #2448ab; width: 88px; height: 26px; border: 1px solid #e8e8e8; text-align: center; line-height: 26px; margin-top: 15px;}
+.evaluate .order-mc .mc-top .m1 a:hover{color: #ff6600;}
+.evaluate .order-mc .mc-top .m2{width: 880px; padding-top: 15px; padding-left: 10px; overflow: hidden;}
+.evaluate .order-mc .mc-top .m2 a{display: block; float: left; color: #fff; width: 120px; font-size: 14px; height: 30px; text-align: center; line-height: 30px; background-color: #ff6600; margin-left: 10px;}
+.evaluate .order-mc .mc-top .m2 a:hover{background-color: #ee6000;}
+.evaluate .order-mc .mc-top .m2 .stars{float: left; width: 173px; height: 30px; overflow: hidden;}
+.evaluate .order-mc .mc-top .m2 .stars label{float: left; line-height: 30px; color: #333333; margin-right: 10px;}
+.evaluate .order-mc .mc-top .m2 .stars em{display: block; width: 75px; height: 14px; float: left; margin-top: 8px; background: url("../images/detail-01-star.png") no-repeat;}
+.evaluate .order-mc .mc-top .m2 .stars .star4{background: url("../images/detail-01-star.png") no-repeat -15px 0;}
+.evaluate .order-mc .mc-top .m2 .stars .star3{background: url("../images/detail-01-star.png") no-repeat -30px 0;}
+.evaluate .order-mc .mc-top .m2 .stars .star2{background: url("../images/detail-01-star.png") no-repeat -45px 0;}
+.evaluate .order-mc .mc-top .m2 .stars .star1{background: url("../images/detail-01-star.png") no-repeat -60px 0;}
+.evaluate .order-mc .mc-top .m2 .stars .star0{background: url("../images/detail-01-star.png") no-repeat -75px 0;}
+
+.evaluate .order-mc div:hover.mc-top{background-color: #fafafa;}
+.evaluate .order-mc div:hover.mc-top .m1 a{display: block;}
+
+.evaluate .order-mc .goods{width: 928px; margin-top: 10px; border-top: 1px solid #e8e8e8;}
+.evaluate .order-mc .goods .g-item{width: 928px; margin-bottom: -1px; border-bottom: 1px solid #e8e8e8; overflow: hidden;}
+.evaluate .order-mc .goods .gmt{padding: 20px 25px 20px 20px; overflow: hidden;}
+.evaluate .order-mc .goods .gmt .pic{width: 60px; height: 60px; overflow: hidden; border: 1px solid #e8e8e8; float: left; margin-right: 20px;}
+.evaluate .order-mc .goods .gmt .title{width: 260px; height: 52px; line-height: 26px; float: left; overflow: hidden; padding-top: 3px; color: #2d415a; font-size: 14px;}
+.evaluate .order-mc .goods .gmt .title img{display: inline-block; vertical-align: sub; margin-right: 5px;}
+.evaluate .order-mc .goods .gmt a:hover.title{color: #ff6600;}
+.evaluate .order-mc .goods .gmt span{float: left; margin: 20px 0 0 225px; color: #333333; font-size: 14px;}
+.evaluate .order-mc .goods .gmt .open{display: block; color: #2448ab; width: 78px; height: 28px; border: 1px solid #e8e8e8; text-align: center; line-height: 28px; float: right; margin-top: 13px;}
+.evaluate .order-mc .goods .gmt a:hover.open{color: #ff6600;}
+.evaluate .order-mc .goods .gmt .close{color: #ff6600;}
+.evaluate .order-mc .goods .gmt a:hover.close{color: #2448ab;}
+
+
+.evaluate .order-mc .goods .gmc{width: 928px; border-top: 1px solid #e8e8e8; padding: 30px 0 40px; background-color: #fafafa; position: relative;}
+.evaluate .order-mc .goods .gmc .triangle-icon{display: block; width: 14px; height: 8px; background: url("../images/arrows.png") no-repeat 0 -187px; position: absolute; left: 44px; top:-7px;}
+.evaluate .order-mc .goods .gmc .form-group {overflow: hidden; margin-bottom: 20px;}
+.evaluate .order-mc .goods .gmc .form-group .lab {display: inline-block;float: left;width: 100px;margin-right: 30px;line-height: 32px; text-align: right; color: #333;}
+.evaluate .order-mc .goods .gmc .form-group .g-star {line-height: 32px;}
+.evaluate .order-mc .goods .gmc .form-group ul {overflow: hidden; float: left; width: 700px;}
+.evaluate .order-mc .goods .gmc .form-group .block {float: left;padding: 8px 10px; margin-bottom: 10px;margin-right: 10px; border: 1px solid #ccc;background-color: #fff;}
+.evaluate .order-mc .goods .gmc .form-group .block:hover {border-color: #f60;}
+.evaluate .order-mc .goods .gmc .form-group .block a {color: #333; }
+.evaluate .order-mc .goods .gmc .form-group .block a i {display: inline-block; width: 12px; height: 12px; margin-right: 10px; background: url(../images/selector-icon01.png) no-repeat 0 -8px;}
+.evaluate .order-mc .goods .gmc .form-group .block.cur {padding: 8px 10px; border: 1px solid #f60;}
+.evaluate .order-mc .goods .gmc .form-group .block.cur a i {background: url(../images/selector-icon02.png) no-repeat 0 -8px;}
+.evaluate .order-mc .goods .gmc .form-group .s-block {float: left; min-width: 100px;height: 32px; margin-right: 10px; border: 1px solid #ccc;text-align: center;line-height: 32px;background-color: #fff;}
+.evaluate .order-mc .goods .gmc .form-group .s-block:hover a {color: #f60;}
+.evaluate .order-mc .goods .gmc .form-group .s-block input[type="text"] {display: none; width: 102px; height: 32px; line-height: 30px; padding-left: 5px; border: 1px solid #f60;}
+.evaluate .order-mc .goods .gmc .form-group .s-block.edit {border: none;}
+.evaluate .order-mc .goods .gmc .form-group .s-block.edit a {display: none;}
+.evaluate .order-mc .goods .gmc .form-group .s-block.edit input[type="text"] {display: block;}
+.evaluate .order-mc .goods .gmc .form-group .tip {display: block;clear: both;width: 140px; line-height: 26px; background-color: #ffe6e3;color: #f33;text-align: center;}
+.evaluate .order-mc .goods .gmc .form-group textarea {float: left;width: 328px;height: 110px; border: 1px solid #ccc; padding: 5px;color: #000;}
+.evaluate .order-mc .goods .gmc .form-group .up-img {float: left; border: 1px solid #e8e8e8; background-color: #fff; position: relative; display: inline-block; width: 100px;height: 100px;margin-right: 10px; overflow: hidden; }
+.evaluate .order-mc .goods .gmc .form-group .up-img a{position: absolute;left: 0;bottom: 0; display: none; width: 100px;height: 30px;text-align: center;line-height: 30px;background-color: rgba(0,0,0,.6);color: #fff;background-color: #333\9;}
+.evaluate .order-mc .goods .gmc .form-group .up-img:hover a{display: block;}
+.evaluate .order-mc .goods .gmc .form-group .btn-up { display: inline-block; float: left; width: 96px; height: 41px; padding-top: 55px; font-size: 16px; text-align: center; color: #333; border: 2px dashed #dcdcdc; background: url(../images/up.png) no-repeat center 25px; }
+.evaluate .order-mc .goods .gmc .form-group .num{float: left; margin-left: 10px;}
+.evaluate .order-mc .goods .gmc .form-group .tips{width: 700px; color: #999999; padding-left: 130px; padding-top: 8px; float: left;}
+
+.evaluate .order-mc .goods .gmc .btn {display: block;width: 120px; height: 28px; margin-left: 130px; line-height: 28px; text-align: center; border: 1px solid #e0e0e0;color: #333;}
+.evaluate .order-mc .goods .gmc .btn:hover {background-color: #e0e0e0;}
+.evaluate .order-mc .goods .gmc .btn-org {color: #fff; border: 1px solid #fa6400;background-color: #fa6400;}
+.evaluate .order-mc .goods .gmc .btn-org:hover {border: 1px solid #f85127; background-color: #f85127;}
+
+.evaluate .order-mc .goods .gmc .form-group .com-star {position: relative; overflow: hidden; zoom:1;  display: inline-block; width: 110px; height: 22px; background: url(../images/c-star.png) repeat-x 0 -22px; top: 3px;}
+.evaluate .order-mc .goods .gmc .form-group .com-star a { width: 20%; cursor: pointer; position: absolute; top: 0; left: 0; display: inline-block; height: 22px;}
+.evaluate .order-mc .goods .gmc .form-group .com-star a:hover {background: url(../images/c-star.png) repeat-x 0 0;}
+.evaluate .order-mc .goods .gmc .form-group .com-star .star1 {z-index: 9;width: 20%;}
+.evaluate .order-mc .goods .gmc .form-group .com-star .star2 {z-index: 8;width: 40%;}
+.evaluate .order-mc .goods .gmc .form-group .com-star .star3 {z-index: 7;width: 60%;}
+.evaluate .order-mc .goods .gmc .form-group .com-star .star4 {z-index: 6;width: 80%;}
+.evaluate .order-mc .goods .gmc .form-group .com-star .star5 {z-index: 5;width: 100%;}
+
+
+/*03-28*/
+.evaluate .order-mc .mc-top .m1 a:hover{color: #fff; background-color: #2448ab; border: 1px solid #2448ab;}
+.evaluate .order-mc .goods .gmt .open{display: block; color: #2448ab; width: 78px; height: 28px; border: 1px solid #e8e8e8; text-align: center; line-height: 28px; float: right; margin-top: 13px;}
+.evaluate .order-mc .goods .gmt a:hover.open{color: #fff; border: 1px solid #2448ab; background-color: #2448ab;}
+.evaluate .order-mc .goods .gmt .close{color: #2448ab;}
+.evaluate .order-mc .goods .gmt a:hover.close{color: #fff; border: 1px solid #2448ab; background-color: #2448ab;}
+
+
+
+
+
+
+
+
+
+
+

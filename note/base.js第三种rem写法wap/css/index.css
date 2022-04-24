@@ -1,0 +1,10 @@
+.main {width: 100%; margin-top: 1rem; }
+.form {width: 100%; padding-bottom: 1rem; padding-left: 3.125%; background-color: #fff; }
+.form-item {height: 4rem; line-height: 4rem; }
+.form-item-label {display: inline-block; float: left; width: 25%; height: 4rem; font-size: 1.2rem; color: #666; border-bottom: 1px solid #ddd; }
+.form-item-inp {float: left; width: 75%; height: 4rem; font-size: 1.2rem; color: #333; border-bottom: 1px solid #ddd; }
+.form-item-inp:focus {outline: none;}
+.form-tip {position: relative; font-size: 1.1rem; text-align: center; color: #bbb; }
+.form-tip .left {position: absolute; top: 50%; left: 1rem; width: 6rem; height: 1px; background-color: #ddd; }
+.form-tip .right {position: absolute; top: 50%; right: 1rem; width: 6rem; height: 1px; background-color: #ddd; }
+.form-item-btn {display: block; width: 96%; height: 4rem; font-size: 1.5rem; text-align: center; color: #fff; background-color: rgba(130, 180, 60, 1.0); }

@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+    <title>列表-医淘药</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/list.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="shortcut">
+            <div class="sh-cont">
+                <div class="fl">您好，欢迎来到易淘药，开启智赢新机遇！</div>
+                <ul class="fr">
+                    <li class="item log"><a href="">请登录</a></li>
+                    <li class="item register"><a href="">注册成为采购商</a></li>
+                    <li>|</li>
+                    <li class="item my-list">
+                            <a href="">我的进货单</a>
+                            <span><i></i>23</span>
+                    </li>
+                    <li>|</li>
+                    <li class="item member"> <!-- 鼠标经过 cur -->
+                        <div class="dt">
+                            <i class="arr"></i>
+                            <a title="我的医淘药" href="">我的医淘药</a>
+                        </div>
+                        <div class="dd not-log" style="display: none;"><!--登陆前-->
+                            <span class="arrows"></span>
+                            <div class="mt">
+                                <div class="pic"><img src="case/pic60x60-02.jpg"></div>
+                                <h5>HI，下午好！</h5>
+                                <span>欢迎来到乐商批发商城！</span>
+                            </div>
+                            <div class="btns">
+                                <a title="" href="javascript:;" class="btn btn-login">登录</a>
+                                <a title="" href="javascript:;" class="btn btn-register">注册</a>
+                            </div>
+                        </div>
+                        <div class="dd" style="display: none;"><!--登陆后-->
+                            <span class="arrows"></span>
+                            <div class="mt">
+                                <div class="pic"><img src="case/pic60x60.jpg"></div>
+                                <h5>您好，<a href="" class="link-user" target="_blank" >乐商邓君</a>！</h5>
+                                <p>上次登录：2016-01-18 16:34</p>
+                                <a href=""class="news">您有&nbsp;&nbsp;<i>6</i>&nbsp;&nbsp;条未读信息</a>
+                            </div>
+                            <div class="mc">
+                                <div class="mc-li"><a href="">
+                                    待付款订单
+                                </a></div>
+                                <div class="mc-li"><a href="">
+                                    <span>15</span>
+                                    待发货订单</a></div>
+                                <div class="mc-li"><a href="">
+                                    待确认订单
+                                </a></div>
+                                <div class="mc-li"><a href="">
+                                    <span>3</span>
+                                    退货订单
+                                </a></div>
+                            </div>
+                            <div class="md">
+                                <div class="md-li integrals">
+                                    <span>我的积分</span>
+                                    <em>分</em>
+                                    <a href="" target="_blank">1200</a>
+                                </div>
+                                <div class="md-li coupons">
+                                    <span>我的优惠券</span>
+                                    <em>张</em>
+                                    <a href="" target="_blank">5</a>
+                                </div>
+                                <div class="md-li advance">
+                                    <span>预存款账户</span>
+                                    <em>元</em>
+                                    <a href="" target="_blank">0</a>
+                                </div>
+                            </div>
+                            <a href="" class="output" >退出登录</a>
+                        </div>
+                    </li>
+                    <li>|</li>
+                    <li class="item"><a href="">常购清单</a></li>
+                    <li>|</li>
+                    <li class="item"><a href="">建议投诉</a></li>
+                    <li>|</li>
+                    <li class="item">
+                        <div class="dt">
+                            <i class="arr"></i>
+                            <a title="网站导航" href="">网站导航</a>
+                        </div>
+                    </li>
+                    <li class="supplier-in">
+                        <a href="">商家入驻</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-mc">
+            <div class="logo"><a href=""><img src="images/logo300x100.png" alt="医淘药"></a></div>
+            <div class="search">
+                <div class="form">
+                    <input type="text" placeholder="请输入通用名|准字号|拼音码|厂家|品牌|供应商">
+                    <a href="" class="sub01">搜商品</a>
+                    <a href="" class="sub02">搜店铺</a>
+                </div>
+                <div class="hotwords elli">
+                    <span>热门搜索 :</span>
+                    <a href="">阿莫西林</a>
+                    <a href="" class="hot">注射液</a>
+                    <a href="">厂家直供</a>
+                    <a href="">高毛控销</a>
+                    <a href="">清开灵</a>
+                </div>
+            </div>
+            <div class="security "><img src="images/pic180x60.png" alt="互联网药品交易证"></div>
+        </div>
+        <!--导航菜单-->
+        <div class="nav-bg">
+            <div class="nav">
+                <div class="category">
+                    <div class="dt"><a href="" target="_blank">全部商品分类</a></div>
+                    <div class="dc" style="display: none;">
+                        <div class="dc-inner">
+                            <div class="item cur">
+                                <div class="menus">
+                                    <div class="menu-top">
+                                        <div class="menu-icon"><img src= "case/pic16x16-01.png" ></div>
+                                        <h4>中西药品</h4>
+                                    </div>
+                                    <div class="menu-cont">
+                                        <a href="" target="_blank">血压计</a>
+                                        <a href="" target="_blank">体温计</a>
+                                        <a href="" target="_blank">助听器</a>
+                                        <a href="" target="_blank">制氧机</a>
+                                        <a href="" target="_blank">煎药器</a>
+                                        <a href="" target="_blank">创伤用品</a>
+                                    </div>
+                                    <span class="arrows"></span>
+                                </div>
+                                <div class="item-sub">
+                                    <h5>中西药品</h5>
+                                    <dl>
+                                        <dt><a href="">消化系统药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">消化系统药物</a>
+                                            <a href="" target="_blank">抗消化性溃疡药</a>
+                                            <a href="" target="_blank">助消化药</a>
+                                            <a href="" target="_blank">胃肠解痉药</a>
+                                            <a href="" target="_blank">泻药</a>
+                                            <a href="" target="_blank">止泻药</a>
+                                            <a href="" target="_blank">止吐药和催吐药</a>
+                                            <a href="" target="_blank">胃肠推动药</a>
+                                            <a href="" target="_blank">炎性肠病药</a>
+                                            <a href="" target="_blank">利胆药</a>
+                                            <a href="" target="_blank">肝病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">抗感染药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗细菌药</a>
+                                            <a href="" target="_blank">抗真菌药</a>
+                                            <a href="" target="_blank">抗病毒药</a>
+                                            <a href="" target="_blank">抗寄生虫病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">心血管药</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗心绞痛药</a>
+                                            <a href="" target="_blank">抗心力衰竭药</a>
+                                            <a href="" target="_blank">抗心律失常药</a>
+                                            <a href="" target="_blank">抗高血压药</a>
+                                            <a href="" target="_blank">抗休克药</a>
+                                            <a href="" target="_blank">降血脂药</a>
+                                            <a href="" target="_blank">抗血栓药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">生化药品</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">氨基酸类药物</a>
+                                            <a href="" target="_blank">多肽类药物</a>
+                                            <a href="" target="_blank">蛋白类药物</a>
+                                            <a href="" target="_blank">酶类药物</a>
+                                            <a href="" target="_blank">核酸类药物</a>
+                                            <a href="" target="_blank">多糖类药物</a>
+                                            <a href="" target="_blank">脂类药物</a>
+                                            <a href="" target="_blank">生物胺类</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">抗感染药物 </a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗细菌药</a>
+                                            <a href="" target="_blank">抗真菌药</a>
+                                            <a href="" target="_blank">抗病毒药</a>
+                                            <a href="" target="_blank">抗寄生虫病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">心血管药</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗心绞痛药</a>
+                                            <a href="" target="_blank">抗心力衰竭药</a>
+                                            <a href="" target="_blank">抗心律失常药</a>
+                                            <a href="" target="_blank">抗高血压药</a>
+                                            <a href="" target="_blank">抗休克药</a>
+                                            <a href="" target="_blank">降血脂药</a>
+                                            <a href="" target="_blank">抗血栓药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">生化药品</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">氨基酸类药物</a>
+                                            <a href="" target="_blank">多肽类药物 </a>
+                                            <a href="" target="_blank">蛋白类药物</a>
+                                            <a href="" target="_blank">酶类药物</a>
+                                            <a href="" target="_blank">脂类药物</a>
+                                            <a href="" target="_blank">核酸类药物</a>
+                                            <a href="" target="_blank">多糖类药物</a>
+                                            <a href="" target="_blank">脂类药物</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="menus">
+                                    <div class="menu-top">
+                                        <div class="menu-icon"><img src= "case/pic16x16-02.png" ></div>
+                                        <h4>医疗器械</h4>
+                                    </div>
+                                    <div class="menu-cont">
+                                        <a href="" target="_blank">血压计</a>
+                                        <a href="" target="_blank">体温计</a>
+                                        <a href="" target="_blank">助听器</a>
+                                        <a href="" target="_blank">制氧机</a>
+                                        <a href="" target="_blank">煎药器</a>
+                                        <a href="" target="_blank">创伤用品</a>
+                                    </div>
+                                    <span class="arrows"></span>
+                                </div>
+                                <div class="item-sub">
+                                    <dl>
+                                        <dt><a href="">消化系统药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">消化系统药物</a>
+                                            <a href="" target="_blank">抗消化性溃疡药</a>
+                                            <a href="" target="_blank">助消化药</a>
+                                            <a href="" target="_blank">胃肠解痉药</a>
+                                            <a href="" target="_blank">泻药</a>
+                                            <a href="" target="_blank">止泻药</a>
+                                            <a href="" target="_blank">止吐药和催吐药</a>
+                                            <a href="" target="_blank">胃肠推动药</a>
+                                            <a href="" target="_blank">炎性肠病药</a>
+                                            <a href="" target="_blank">利胆药</a>
+                                            <a href="" target="_blank">肝病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">抗感染药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗细菌药</a>
+                                            <a href="" target="_blank">抗真菌药</a>
+                                            <a href="" target="_blank">抗病毒药</a>
+                                            <a href="" target="_blank">抗寄生虫病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">心血管药</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗心绞痛药</a>
+                                            <a href="" target="_blank">抗心力衰竭药</a>
+                                            <a href="" target="_blank">抗心律失常药</a>
+                                            <a href="" target="_blank">抗高血压药</a>
+                                            <a href="" target="_blank">抗休克药</a>
+                                            <a href="" target="_blank">降血脂药</a>
+                                            <a href="" target="_blank">抗血栓药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">生化药品</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">氨基酸类药物</a>
+                                            <a href="" target="_blank">多肽类药物</a>
+                                            <a href="" target="_blank">蛋白类药物</a>
+                                            <a href="" target="_blank">酶类药物</a>
+                                            <a href="" target="_blank">核酸类药物</a>
+                                            <a href="" target="_blank">多糖类药物</a>
+                                            <a href="" target="_blank">脂类药物</a>
+                                            <a href="" target="_blank">生物胺类</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="menus">
+                                    <div class="menu-top">
+                                        <div class="menu-icon"><img src= "case/pic16x16-03.png" ></div>
+                                        <h4>保健用品</h4>
+                                    </div>
+                                    <div class="menu-cont">
+                                        <a href="" target="_blank">血压计</a>
+                                        <a href="" target="_blank">体温计</a>
+                                        <a href="" target="_blank">助听器</a>
+                                        <a href="" target="_blank">制氧机</a>
+                                        <a href="" target="_blank">煎药器</a>
+                                        <a href="" target="_blank">创伤用品</a>
+                                    </div>
+                                    <span class="arrows"></span>
+                                </div>
+                                <div class="item-sub">
+                                    <dl>
+                                        <dt><a href="">消化系统药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">消化系统药物</a>
+                                            <a href="" target="_blank">抗消化性溃疡药</a>
+                                            <a href="" target="_blank">助消化药</a>
+                                            <a href="" target="_blank">胃肠解痉药</a>
+                                            <a href="" target="_blank">泻药</a>
+                                            <a href="" target="_blank">止泻药</a>
+                                            <a href="" target="_blank">止吐药和催吐药</a>
+                                            <a href="" target="_blank">胃肠推动药</a>
+                                            <a href="" target="_blank">炎性肠病药</a>
+                                            <a href="" target="_blank">利胆药</a>
+                                            <a href="" target="_blank">肝病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">抗感染药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗细菌药</a>
+                                            <a href="" target="_blank">抗真菌药</a>
+                                            <a href="" target="_blank">抗病毒药</a>
+                                            <a href="" target="_blank">抗寄生虫病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">心血管药</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗心绞痛药</a>
+                                            <a href="" target="_blank">抗心力衰竭药</a>
+                                            <a href="" target="_blank">抗心律失常药</a>
+                                            <a href="" target="_blank">抗高血压药</a>
+                                            <a href="" target="_blank">抗休克药</a>
+                                            <a href="" target="_blank">降血脂药</a>
+                                            <a href="" target="_blank">抗血栓药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">生化药品</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">氨基酸类药物</a>
+                                            <a href="" target="_blank">多肽类药物</a>
+                                            <a href="" target="_blank">蛋白类药物</a>
+                                            <a href="" target="_blank">酶类药物</a>
+                                            <a href="" target="_blank">核酸类药物</a>
+                                            <a href="" target="_blank">多糖类药物</a>
+                                            <a href="" target="_blank">脂类药物</a>
+                                            <a href="" target="_blank">生物胺类</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="menus">
+                                    <div class="menu-top">
+                                        <div class="menu-icon"><img src= "case/pic16x16-04.png" ></div>
+                                        <h4>计生用品</h4>
+                                    </div>
+                                    <div class="menu-cont">
+                                        <a href="" target="_blank">血压计</a>
+                                        <a href="" target="_blank">体温计</a>
+                                        <a href="" target="_blank">助听器</a>
+                                        <a href="" target="_blank">制氧机</a>
+                                        <a href="" target="_blank">煎药器</a>
+                                        <a href="" target="_blank">创伤用品</a>
+                                    </div>
+                                    <span class="arrows"></span>
+                                </div>
+                                <div class="item-sub">
+                                    <dl>
+                                        <dt><a href="">消化系统药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">消化系统药物</a>
+                                            <a href="" target="_blank">抗消化性溃疡药</a>
+                                            <a href="" target="_blank">助消化药</a>
+                                            <a href="" target="_blank">胃肠解痉药</a>
+                                            <a href="" target="_blank">泻药</a>
+                                            <a href="" target="_blank">止泻药</a>
+                                            <a href="" target="_blank">止吐药和催吐药</a>
+                                            <a href="" target="_blank">胃肠推动药</a>
+                                            <a href="" target="_blank">炎性肠病药</a>
+                                            <a href="" target="_blank">利胆药</a>
+                                            <a href="" target="_blank">肝病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">抗感染药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗细菌药</a>
+                                            <a href="" target="_blank">抗真菌药</a>
+                                            <a href="" target="_blank">抗病毒药</a>
+                                            <a href="" target="_blank">抗寄生虫病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">心血管药</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗心绞痛药</a>
+                                            <a href="" target="_blank">抗心力衰竭药</a>
+                                            <a href="" target="_blank">抗心律失常药</a>
+                                            <a href="" target="_blank">抗高血压药</a>
+                                            <a href="" target="_blank">抗休克药</a>
+                                            <a href="" target="_blank">降血脂药</a>
+                                            <a href="" target="_blank">抗血栓药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">生化药品</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">氨基酸类药物</a>
+                                            <a href="" target="_blank">多肽类药物</a>
+                                            <a href="" target="_blank">蛋白类药物</a>
+                                            <a href="" target="_blank">酶类药物</a>
+                                            <a href="" target="_blank">核酸类药物</a>
+                                            <a href="" target="_blank">多糖类药物</a>
+                                            <a href="" target="_blank">脂类药物</a>
+                                            <a href="" target="_blank">生物胺类</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="menus">
+                                    <div class="menu-top">
+                                        <div class="menu-icon"><img src= "case/pic16x16-05.png" ></div>
+                                        <h4>基药</h4>
+                                    </div>
+                                    <div class="menu-cont">
+                                        <a href="" target="_blank">血压计</a>
+                                        <a href="" target="_blank">体温计</a>
+                                        <a href="" target="_blank">助听器</a>
+                                        <a href="" target="_blank">制氧机</a>
+                                        <a href="" target="_blank">煎药器</a>
+                                        <a href="" target="_blank">创伤用品</a>
+                                    </div>
+                                    <span class="arrows"></span>
+                                </div>
+                                <div class="item-sub">
+                                    <dl>
+                                        <dt><a href="">消化系统药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">消化系统药物</a>
+                                            <a href="" target="_blank">抗消化性溃疡药</a>
+                                            <a href="" target="_blank">助消化药</a>
+                                            <a href="" target="_blank">胃肠解痉药</a>
+                                            <a href="" target="_blank">泻药</a>
+                                            <a href="" target="_blank">止泻药</a>
+                                            <a href="" target="_blank">止吐药和催吐药</a>
+                                            <a href="" target="_blank">胃肠推动药</a>
+                                            <a href="" target="_blank">炎性肠病药</a>
+                                            <a href="" target="_blank">利胆药</a>
+                                            <a href="" target="_blank">肝病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">抗感染药物</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗细菌药</a>
+                                            <a href="" target="_blank">抗真菌药</a>
+                                            <a href="" target="_blank">抗病毒药</a>
+                                            <a href="" target="_blank">抗寄生虫病药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">心血管药</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">抗心绞痛药</a>
+                                            <a href="" target="_blank">抗心力衰竭药</a>
+                                            <a href="" target="_blank">抗心律失常药</a>
+                                            <a href="" target="_blank">抗高血压药</a>
+                                            <a href="" target="_blank">抗休克药</a>
+                                            <a href="" target="_blank">降血脂药</a>
+                                            <a href="" target="_blank">抗血栓药</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">生化药品</a></dt>
+                                        <dd>
+                                            <a href="" target="_blank">氨基酸类药物</a>
+                                            <a href="" target="_blank">多肽类药物</a>
+                                            <a href="" target="_blank">蛋白类药物</a>
+                                            <a href="" target="_blank">酶类药物</a>
+                                            <a href="" target="_blank">核酸类药物</a>
+                                            <a href="" target="_blank">多糖类药物</a>
+                                            <a href="" target="_blank">脂类药物</a>
+                                            <a href="" target="_blank">生物胺类</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-list">
+                            <a href="">查看商品分类导航</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="main-nav">
+                    <li class="cur"><a href="" target="_blank">首页</a></li>
+                    <li><a href="" target="_blank">飞速采</a></li>
+                    <li><a href="" target="_blank">药团购</a></li>
+                    <li><a href="" target="_blank">药划算</a></li>
+                    <li><a href="" target="_blank">积分兑换</a></li>
+                    <li><a href="" target="_blank">资讯</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--主体-->
+    <div class="main-bg">
+        <div class="main">
+            <div class="breadcrumb clearfix">
+                <a class="breadcrumb-first fl"  href="javascript:;" title="">易淘药</a>
+                <span class="breadcrumb-arr fl">&gt;</span>
+                <div class="breadcrumb-item fl">
+                    <a class="breadcrumb-item-tit" href="javascript:;" title="">中西药品</a>
+                    <div class="breadcrumb-item-cont">
+                        <div class="cate-list">
+                            <a class="elli" href="javascript:;" title="">抗感染药物</a>
+                            <a class="elli" href="javascript:;" title="">心血管药</a>
+                            <a class="elli" href="javascript:;" title="">血液系统药</a>
+                            <a class="elli" href="javascript:;" title="">呼吸系统药物</a>
+                        </div>
+                    </div>
+                </div>
+                <span class="breadcrumb-arr fl">&gt;</span>
+                <div class="breadcrumb-item fl">
+                    <a class="breadcrumb-item-tit" href="javascript:;" title="">中西药品</a>
+                    <div class="breadcrumb-item-cont">
+                        <div class="cate-list clearfix">
+                            <a class="elli" href="javascript:;" title="">抗感染药物</a>
+                            <a class="elli" href="javascript:;" title="">心血管药</a>
+                            <a class="elli" href="javascript:;" title="">血液系统药</a>
+                            <a class="elli" href="javascript:;" title="">呼吸系统药物</a>
+                        </div>
+                    </div>
+                </div>
+                <span class="breadcrumb-arr fl">&gt;</span>
+                <a href="" class="breadcrumb-sel">注射剂</a>
+                <span class="breadcrumb-arr fl">&gt;</span>
+                <span class="breadcrumb-last fl">克拉霉素分散</span>
+                <span class="breadcrumb-count fr">共<em>1558</em>个商品</span>
+            </div>
+            <div class="selector">
+                <div class="sel-line">
+                    <div class="sl-key">中西药品:</div>
+                    <div class="sl-value">
+                        <ul>
+                            <li><a href="#"><i></i>解热镇痛</a></li>
+                            <li><a href="#"><i></i>胃肠疾病</a></li>
+                            <li><a href="#"><i></i>皮肤用药</a></li>
+                            <li><a href="#"><i></i>风湿跌打</a></li>
+                            <li><a href="#"><i></i>神经系统</a></li>
+                            <li><a href="#"><i></i>心脑血管</a></li>
+                            <li><a href="#"><i></i>糖尿病类</a></li>
+                            <li><a href="#"><i></i>妇科用药</a></li>
+                            <li><a href="#"><i></i>儿科用药</a></li>
+                            <li><a href="#"><i></i>妇科用药</a></li>
+                            <li><a href="#"><i></i>男科用药 </a></li>
+                            <li><a href="#"><i></i>皮肤用药</a></li>
+                            <li><a href="#"><i></i>风湿跌打</a></li>
+                            <li><a href="#"><i></i>神经系统</a></li>
+                            <li><a href="#"><i></i>心脑血管</a></li>
+                            <li><a href="#"><i></i>糖尿病类</a></li>
+                        </ul>
+                    </div>
+                    <div class="sl-ext">
+                        <a href="#" class="sl-more">更多<i></i></a>
+                        <a href="#" class="sl-multiple">多选<i></i></a>
+                    </div>
+                </div>
+                <div class="sel-line multiple"><!--点击 多选 按钮，新增 multiple 类-->
+                    <div class="sl-key">生产厂家:</div>
+                    <div class="sl-value">
+                        <ul>
+                            <li class="cur"><a href="#"><i></i>解热镇痛</a></li><!--点击 a 标签，li新增 cur 类-->
+                            <li><a href="#"><i></i>胃肠疾病</a></li>
+                            <li><a href="#"><i></i>皮肤用药</a></li>
+                            <li><a href="#"><i></i>风湿跌打</a></li>
+                            <li><a href="#"><i></i>神经系统</a></li>
+                            <li><a href="#"><i></i>心脑血管</a></li>
+                            <li><a href="#"><i></i>糖尿病类</a></li>
+                            <li><a href="#"><i></i>妇科用药</a></li>
+                            <li><a href="#"><i></i>儿科用药</a></li>
+                            <li><a href="#"><i></i>妇科用药</a></li>
+                            <li><a href="#"><i></i>男科用药 </a></li>
+                            <li><a href="#"><i></i>皮肤用药</a></li>
+                            <li><a href="#"><i></i>风湿跌打</a></li>
+                            <li><a href="#"><i></i>神经系统</a></li>
+                            <li><a href="#"><i></i>心脑血管</a></li>
+                            <li><a href="#"><i></i>糖尿病类</a></li>
+                        </ul>
+                    </div>
+                    <div class="sl-ext">
+                        <a href="#" class="primary ">收起</a>
+                        <a href="#" class="sl-multiple mul-open">确定<i></i></a>
+                    </div>
+                </div>
+                <div class="sel-line">
+                    <div class="sl-key">剂型:</div>
+                    <div class="sl-value">
+                        <ul>
+                            <li><a href="#"><i></i>太极制药</a></li>
+                            <li><a href="#"><i></i>云南白药</a></li>
+                            <li><a href="#"><i></i>李时珍医药</a></li>
+                            <li><a href="#"><i></i>桂龙药业</a></li>
+                            <li><a href="#"><i></i>灵方生物</a></li>
+                            <li><a href="#"><i></i>三九医药</a></li>
+                            <li><a href="#"><i></i>杨森制药</a></li>
+                            <li><a href="#"><i></i>贵州百灵</a></li>
+                            <li><a href="#"><i></i>滇虹药业</a></li>
+                        </ul>
+                    </div>
+                    <div class="sl-ext">
+                        <a href="#" class="sl-more more-open">隐藏<i></i></a>
+                        <a href="#" class="sl-multiple">多选<i></i></a>
+                    </div>
+                </div>
+                <a class="btn-more" href="javascript:;" title="">更多筛选条件</a>
+            </div>
+            <div class="list-box">
+                <div class="filter clearfix">
+                    <div class="filter-sort fl">
+                        <a class="cur" href="javascript:;" title="">默认排序</a>
+                        <a href="javascript:;" title="">销量<i class="sort-icon up"></i></a>
+                        <a href="javascript:;" title="">价格<i class="sort-icon"></i></a>
+                        <a href="javascript:;" title="">最新上架</a>
+                    </div>
+                    <div class="filter-search fl focus"> <!--默认没有focus,点击输入框增加focus类-->
+                        <input type="text" name="" value="" placeholder="品名|助记码|规格|厂家">
+                        <a class="btn btn-submit" href="javascript:;" title="">确定</a>
+                        <a class="btn" href="javascript:;" title="">取消</a>
+                    </div>
+                    <div class="filter-page fr">
+                        <div class="page-change fr clearfix">
+                            <a class="disabled fl" href="javascript:;" title="">&lt;</a>
+                            <span class="fl"><em>1</em>/30</span>
+                            <a class="fl" href="javascript:;" title="">&gt;</a>
+                        </div>
+                        <span class="fr">共<em>8</em>页</span>
+                    </div>
+                </div>
+                <div class="good-list">
+                    <ul>
+                        <li class="good">
+                            <a class="good-img" href="javascript:;" title="咳喘宁口服液">
+                                <img src="case/pic150x150.jpg" height="150" width="150" alt="">
+                            </a>
+                            <div class="good-top">
+                                <div class="good-tit elli" href="javascript:;" title="咳喘宁口服液">
+                                    <img src="images/OTC-J.png" height="22" alt="">
+                                    <a href="">咳喘宁口服液</a>
+                                </div>
+                                <!-- <a class="good-lab" href="javascript:;" title="">我的常购商品</a> -->
+                                <a class="btn btn-often" href="javascript:;" title="">添加常购清单</a>
+                                <a class="btn btn-plan" href="javascript:;" title="">添加采购计划</a>
+                            </div>
+                            <div class="good-btm">
+                                <ul class="good-desc">
+                                    <li class="li-left elli">
+                                        <span class="lab">通用名称：</span>
+                                        <span class="lab">利巴韦林氯化钠注射液</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品剂型：</span>
+                                        <span class="lab">糖衣片</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">门店零售：</span>
+                                        <span class="lab">&yen;60.00</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">批准文号：</span>
+                                        <span class="lab">国药准字J20100003</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品规格：</span>
+                                        <span class="lab">2ml:1mg</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">库存情况：</span>
+                                        <span class="lab">&gt;100</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">CMP认证：</span>
+                                        <span class="lab">已认证</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品单位：</span>
+                                        <span class="lab">盒</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">是否可拆零：</span>
+                                        <span class="lab">拆零</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">生产厂家：</span>
+                                        <span class="lab">福建三爱药业有限公司</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">中/大包装：</span>
+                                        <span class="lab">10/300</span>
+                                    </li>
+                                </ul>
+                                <span class="good-price">&yen;<strong>80.00</strong></span>
+                                <div class="good-extra">
+                                    <div class="good-count">
+                                        <a href="javascript:;" title="">-</a>
+                                        <input type="text" name="" value="1" >
+                                        <a href="javascript:;" title="">+</a>
+                                    </div>
+                                    <a class="btn-buy" href="javascript:;">加入进货单</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="good">
+                            <a class="good-img" href="javascript:;" title="咳喘宁口服液">
+                                <img src="case/pic150x150.jpg" height="150" width="150" alt="">
+                            </a>
+                            <div class="good-top">
+                                <div class="good-tit elli" href="javascript:;" title="咳喘宁口服液">
+                                    <img src="images/J.png" height="22" alt="">
+                                    <a href="">咳喘宁口服液</a>
+                                </div>
+                                <a class="good-lab" href="javascript:;" title="">我的常购商品</a>
+                                <a class="btn btn-often" href="javascript:;" title="">添加常购清单</a>
+                                <a class="btn btn-plan" href="javascript:;" title="">添加采购计划</a>
+                            </div>
+                            <div class="good-btm">
+                                <ul class="good-desc">
+                                    <li class="li-left elli">
+                                        <span class="lab">通用名称：</span>
+                                        <span class="lab">利巴韦林氯化钠注射液</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品剂型：</span>
+                                        <span class="lab">糖衣片</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">门店零售：</span>
+                                        <span class="lab">&yen;60.00</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">批准文号：</span>
+                                        <span class="lab">国药准字J20100003</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品规格：</span>
+                                        <span class="lab">2ml:1mg</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">库存情况：</span>
+                                        <span class="lab">&gt;100</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">CMP认证：</span>
+                                        <span class="lab">已认证</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品单位：</span>
+                                        <span class="lab">盒</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">是否可拆零：</span>
+                                        <span class="lab">拆零</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">生产厂家：</span>
+                                        <span class="lab">福建三爱药业有限公司</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">中/大包装：</span>
+                                        <span class="lab">10/300</span>
+                                    </li>
+                                </ul>
+                                <span class="good-price"><em>批发价会员可见</em></span>
+                                <div class="good-extra">
+                                    <div class="good-count">
+                                        <a href="javascript:;" title="">-</a>
+                                        <input type="text" name="" value="1">
+                                        <a href="javascript:;" title="">+</a>
+                                    </div>
+                                    <a class="btn-buy" href="javascript:;">加入进货单</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="good">
+                            <a class="good-img" href="javascript:;" title="咳喘宁口服液">
+                                <img src="case/pic150x150.jpg" height="150" width="150" alt="">
+                            </a>
+                            <div class="good-top">
+                                <div class="good-tit elli" href="javascript:;" title="咳喘宁口服液">
+                                    <img src="images/X.png" height="22" alt="">
+                                    <a href="">咳喘宁口服液</a>
+                                </div>
+                                <!-- <a class="good-lab" href="javascript:;" title="">我的常购商品</a> -->
+                                <a class="btn btn-often" href="javascript:;" title="">添加常购清单</a>
+                                <a class="btn btn-plan" href="javascript:;" title="">添加采购计划</a>
+                            </div>
+                            <div class="good-btm">
+                                <ul class="good-desc">
+                                    <li class="li-left elli">
+                                        <span class="lab">通用名称：</span>
+                                        <span class="lab">利巴韦林氯化钠注射液</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品剂型：</span>
+                                        <span class="lab">糖衣片</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">门店零售：</span>
+                                        <span class="lab">&yen;60.00</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">批准文号：</span>
+                                        <span class="lab">国药准字J20100003</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品规格：</span>
+                                        <span class="lab">2ml:1mg</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">库存情况：</span>
+                                        <span class="lab">&gt;100</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">CMP认证：</span>
+                                        <span class="lab">已认证</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品单位：</span>
+                                        <span class="lab">盒</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">是否可拆零：</span>
+                                        <span class="lab">拆零</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">生产厂家：</span>
+                                        <span class="lab">福建三爱药业有限公司</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">中/大包装：</span>
+                                        <span class="lab">10/300</span>
+                                    </li>
+                                </ul>
+                                <span class="good-price"><em>批发价会员可见</em></span>
+                                <div class="good-extra">
+                                    <div class="good-count">
+                                        <a href="javascript:;" title="">-</a>
+                                        <input type="text" name="" value="1">
+                                        <a href="javascript:;" title="">+</a>
+                                    </div>
+                                    <a class="btn-buy" href="javascript:;">加入进货单</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="good">
+                            <a class="good-img" href="javascript:;" title="咳喘宁口服液">
+                                <img src="case/pic150x150.jpg" height="150" width="150" alt="">
+                            </a>
+                            <div class="good-top">
+                                <div class="good-tit elli" href="javascript:;" title="咳喘宁口服液">
+                                    <img src="images/Z.png" height="22" alt="">
+                                    <a href="">咳喘宁口服液</a>
+                                </div>
+                                <!-- <a class="good-lab" href="javascript:;" title="">我的常购商品</a> -->
+                                <a class="btn btn-often" href="javascript:;" title="">添加常购清单</a>
+                                <a class="btn btn-plan" href="javascript:;" title="">添加采购计划</a>
+                            </div>
+                            <div class="good-btm">
+                                <ul class="good-desc">
+                                    <li class="li-left elli">
+                                        <span class="lab">通用名称：</span>
+                                        <span class="lab">利巴韦林氯化钠注射液</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品剂型：</span>
+                                        <span class="lab">糖衣片</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">门店零售：</span>
+                                        <span class="lab">&yen;60.00</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">批准文号：</span>
+                                        <span class="lab">国药准字J20100003</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品规格：</span>
+                                        <span class="lab">2ml:1mg</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">库存情况：</span>
+                                        <span class="lab">&gt;100</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">CMP认证：</span>
+                                        <span class="lab">已认证</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品单位：</span>
+                                        <span class="lab">盒</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">是否可拆零：</span>
+                                        <span class="lab">拆零</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">生产厂家：</span>
+                                        <span class="lab">福建三爱药业有限公司</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">中/大包装：</span>
+                                        <span class="lab">10/300</span>
+                                    </li>
+                                </ul>
+                                <span class="good-price">&yen;<strong>90.00</strong></span>
+                                <div class="good-extra">
+                                    <div class="good-count">
+                                        <a href="javascript:;" title="">-</a>
+                                        <input type="text" name="" value="1">
+                                        <a href="javascript:;" title="">+</a>
+                                    </div>
+                                    <a class="btn-buy" href="javascript:;">加入进货单</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="good">
+                            <a class="good-img" href="javascript:;" title="咳喘宁口服液">
+                                <img src="case/pic150x150.jpg" height="150" width="150" alt="">
+                            </a>
+                            <div class="good-top">
+                                <div class="good-tit elli" href="javascript:;" title="咳喘宁口服液">
+                                    <img src="images/OTC-J.png" height="22" alt="">
+                                    <a href="">咳喘宁口服液</a>
+                                </div>
+                                <!-- <a class="good-lab" href="javascript:;" title="">我的常购商品</a> -->
+                                <a class="btn btn-often" href="javascript:;" title="">添加常购清单</a>
+                                <a class="btn btn-plan" href="javascript:;" title="">添加采购计划</a>
+                            </div>
+                            <div class="good-btm">
+                                <ul class="good-desc">
+                                    <li class="li-left elli">
+                                        <span class="lab">通用名称：</span>
+                                        <span class="lab">利巴韦林氯化钠注射液</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品剂型：</span>
+                                        <span class="lab">糖衣片</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">门店零售：</span>
+                                        <span class="lab">&yen;60.00</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">批准文号：</span>
+                                        <span class="lab">国药准字J20100003</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品规格：</span>
+                                        <span class="lab">2ml:1mg</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">库存情况：</span>
+                                        <span class="lab">&gt;100</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">CMP认证：</span>
+                                        <span class="lab">已认证</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品单位：</span>
+                                        <span class="lab">盒</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">是否可拆零：</span>
+                                        <span class="lab">拆零</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">生产厂家：</span>
+                                        <span class="lab">福建三爱药业有限公司</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">中/大包装：</span>
+                                        <span class="lab">10/300</span>
+                                    </li>
+                                </ul>
+                                <span class="good-price"><em>批发价会员可见</em></span>
+                                <div class="good-extra">
+                                    <div class="good-count">
+                                        <a href="javascript:;" title="">-</a>
+                                        <input type="text" name="" value="1">
+                                        <a href="javascript:;" title="">+</a>
+                                    </div>
+                                    <a class="btn-buy" href="javascript:;">加入进货单</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="good">
+                            <a class="good-img" href="javascript:;" title="咳喘宁口服液">
+                                <img src="case/pic150x150.jpg" height="150" width="150" alt="">
+                            </a>
+                            <div class="good-top">
+                                <div class="good-tit elli" href="javascript:;" title="咳喘宁口服液">
+                                    <img src="images/OTC-Y.png" height="22" alt="">
+                                    <a href="">咳喘宁口服液</a>
+                                </div>
+                                <!-- <a class="good-lab" href="javascript:;" title="">我的常购商品</a> -->
+                                <a class="btn btn-often" href="javascript:;" title="">添加常购清单</a>
+                                <a class="btn btn-plan" href="javascript:;" title="">添加采购计划</a>
+                            </div>
+                            <div class="good-btm">
+                                <ul class="good-desc">
+                                    <li class="li-left elli">
+                                        <span class="lab">通用名称：</span>
+                                        <span class="lab">利巴韦林氯化钠注射液</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品剂型：</span>
+                                        <span class="lab">糖衣片</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">门店零售：</span>
+                                        <span class="lab">&yen;60.00</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">批准文号：</span>
+                                        <span class="lab">国药准字J20100003</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品规格：</span>
+                                        <span class="lab">2ml:1mg</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">库存情况：</span>
+                                        <span class="lab">&gt;100</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">CMP认证：</span>
+                                        <span class="lab">已认证</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品单位：</span>
+                                        <span class="lab">盒</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">是否可拆零：</span>
+                                        <span class="lab">拆零</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">生产厂家：</span>
+                                        <span class="lab">福建三爱药业有限公司</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">中/大包装：</span>
+                                        <span class="lab">10/300</span>
+                                    </li>
+                                </ul>
+                                <span class="good-price">&yen;<strong>85.00</strong></span>
+                                <div class="good-extra">
+                                    <div class="good-count">
+                                        <a href="javascript:;" title="">-</a>
+                                        <input type="text" name="" value="1">
+                                        <a href="javascript:;" title="">+</a>
+                                    </div>
+                                    <a class="btn-buy" href="javascript:;">加入进货单</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="good">
+                            <a class="good-img" href="javascript:;" title="咳喘宁口服液">
+                                <img src="case/pic150x150.jpg" height="150" width="150" alt="">
+                            </a>
+                            <div class="good-top">
+                                <div class="good-tit elli" href="javascript:;" title="咳喘宁口服液">
+                                    <img src="images/RX.png" height="22" alt="">
+                                    <a href="">咳喘宁口服液</a>
+                                </div>
+                                <!-- <a class="good-lab" href="javascript:;" title="">我的常购商品</a> -->
+                                <a class="btn btn-often" href="javascript:;" title="">添加常购清单</a>
+                                <a class="btn btn-plan" href="javascript:;" title="">添加采购计划</a>
+                            </div>
+                            <div class="good-btm">
+                                <ul class="good-desc">
+                                    <li class="li-left elli">
+                                        <span class="lab">通用名称：</span>
+                                        <span class="lab">利巴韦林氯化钠注射液</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品剂型：</span>
+                                        <span class="lab">糖衣片</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">门店零售：</span>
+                                        <span class="lab">&yen;60.00</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">批准文号：</span>
+                                        <span class="lab">国药准字J20100003</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品规格：</span>
+                                        <span class="lab">2ml:1mg</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">库存情况：</span>
+                                        <span class="lab">&gt;100</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">CMP认证：</span>
+                                        <span class="lab">已认证</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">产品单位：</span>
+                                        <span class="lab">盒</span>
+                                    </li>
+                                    <li class="li-right elli">
+                                        <span class="lab">是否可拆零：</span>
+                                        <span class="lab">拆零</span>
+                                    </li>
+                                    <li class="li-left elli">
+                                        <span class="lab">生产厂家：</span>
+                                        <span class="lab">福建三爱药业有限公司</span>
+                                    </li>
+                                    <li class="li-mid elli">
+                                        <span class="lab">中/大包装：</span>
+                                        <span class="lab">10/300</span>
+                                    </li>
+                                </ul>
+                                <span class="good-price">&yen;<strong>90.00</strong></span>
+                                <div class="good-extra">
+                                    <div class="good-count">
+                                        <a href="javascript:;" title="">-</a>
+                                        <input type="text" name="" value="1">
+                                        <a href="javascript:;" title="">+</a>
+                                    </div>
+                                    <a class="btn-buy" href="javascript:;">加入进货单</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pager">
+                    <div id="infoPage">
+                        <ul>
+                            <li><a href="" class="upPage" title="上一页">上一页</a></li>
+                            <li><a href="" class="everyPage">1</a></li>
+                            <li><span class="nowPage">2</span></li>
+                            <li><a href="" class="everyPage">3</a></li>
+                            <li><a href="" class="everyPage">4</a></li>
+                            <li><a href="" class="everyPage">5</a></li>
+                            <li><a href="" class="everyPage">6</a></li>
+                            <li><a href="" class="downPage" title="下一页">下一页</a></li>
+                            <li><div id="page-skip">&nbsp;&nbsp;第&nbsp;<input id="inputPage" value="3">&nbsp;页/128页<button href="javascript:;" onclick="" class="goToPage">确定</button><div></div></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--页脚-->
+    <div class="footer">
+        <div class="slogen-bg">
+            <div class="slogen">
+                <div class="item"><img src="images/slogen01.png"><p>权威荣誉</p></div>
+                <div class="item"><img src="images/slogen02.png"><p>免费入驻</p></div>
+                <div class="item"><img src="images/slogen03.png"><p>极速开店</p></div>
+                <div class="item"><img src="images/slogen04.png"><p>放心交易</p></div>
+                <div class="item"><img src="images/slogen05.png"><p>药品控销</p></div>
+                <div class="item"><img src="images/slogen06.png"><p>安全保障</p></div>
+                <div class="item"><img src="images/slogen07.png"><p>飞速采购</p></div>
+            </div>
+        </div>
+
+        <div class="w">
+            <dl class="fore">
+                <dt>新手入门</dt>
+                <dd>
+                    <a href="">免费注册</a>
+                    <a href="">采购商入门</a>
+                    <a href="">供应商入门</a>
+                    <a href="">常见问题</a>
+                </dd>
+            </dl>
+            <dl class="fore">
+                <dt>交易安全</dt>
+                <dd>
+                    <a href="">交易规则</a>
+                    <a href="">资金安全</a>
+                    <a href="">交易结算</a>
+                    <a href="">支付方式</a>
+                </dd>
+            </dl>
+            <dl class="fore">
+                <dt>我是采购商</dt>
+                <dd>
+                    <a href="">采购流程</a>
+                    <a href="">产品搜索</a>
+                    <a href="">品牌查找</a>
+                    <a href="">价格说明</a>
+                </dd>
+            </dl>
+            <dl class="fore">
+                <dt>我是供应商</dt>
+                <dd>
+                    <a href="">销售流程</a>
+                    <a href="">销售技巧</a>
+                    <a href="">物流说明</a>
+                </dd>
+            </dl>
+            <dl class="fore">
+                <dt>售后服务</dt>
+                <dd>
+                    <a href="">退款说明</a>
+                    <a href="">退换货保障</a>
+                    <a href="">发票制度</a>
+                    <a href="">纠纷处理</a>
+                </dd>
+            </dl>
+            <div class="ft-ewm">
+                <img src="case/ewm110x110.jpg" alt=""><br>
+                <span>扫一扫关注官方微信</span>
+            </div>
+            <div class="service">
+                <span>客服热线  Counseling hotline</span>
+                <h5>020-3206 9480</h5>
+                <p> 周一至周五 9:00-22:00 </p>
+                <a href="" class="ser-btn" >供应商入驻商城</a>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="links">
+                <a href="">关于我们</a>
+                <span>|</span>
+                <a href="">关于我们</a>
+                <span>|</span>
+                <a href="">商家入驻</a>
+                <span>|</span>
+                <a href="">联系我们</a>
+                <span>|</span>
+                <a href="">广告联盟</a>
+                <span>|</span>
+                <a href="">帮助中心</a>
+                <span>|</span>
+                <a href="">法律声明</a>
+                <span>|</span>
+                <a href="">在售商品索引</a>
+            </div>
+            <div class="copyright">
+                互联网药品信息发布许可证号：(粤)-非经营性-2013-0182&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备12070328号
+                <br>
+                乐商软件 版权所有 Copyright © 2010-2015 imall.com.cn&nbsp;&nbsp;iloosen.com All rights reserved
+            </div>
+            <div class="authentication">
+                <a href=""><img src="case/pic100x40-01.jpg" ></a>
+                <a href=""><img src="case/pic100x40-02.jpg" ></a>
+                <a href=""><img src="case/pic100x40-03.jpg" ></a>
+                <a href=""><img src="case/pic100x40-04.jpg" ></a>
+                <a href=""><img src="case/pic100x40-05.jpg" ></a>
+                <a href=""><img src="case/pic100x40-06.jpg" ></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
