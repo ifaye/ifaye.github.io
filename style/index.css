@@ -20,17 +20,28 @@ justify-content: center; /* 相对父元素水平居中 */}
 /* 页脚 */
 .foot{height:36px; line-height: 36px; font-size: 12px; padding-right: 40px; text-align: center; color: #999;}
 
-
-
 .main{padding: 20px 18% 50px; background-color: #fff;}
 
 
 /* 前端路上 */
-.item-note{}
-
+.item-note{padding-top: 20px;}
+.item-note .post{border-bottom: 1px solid #efefef; margin-bottom: 30px; padding:0 0.5em 1.5em; position: relative;}
+.item-note .post:before{position: absolute;
+    content: "";
+    left: -0.5em;
+    top: 5px;
+    width: 5px;height: 50px;
+    border-radius: 2px;
+    background: #fb4e4e;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 50%), 0 1px 1px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 50%), 0 1px 1px rgb(255 255 255 / 30%);
+	}
+.item-note .post a{font-size: 1.5em;}
+.item-note .post a:hover{color: #fb4e4e;}
+.item-note .post p{line-height: 1.5;}
 
 /* 前端作品 */
-.item-demos{color: #555; padding-bottom: 100px;}
+.item-demos{color: #555; }
 .item-demos h2{margin-bottom: 20px;}
 .item-demos .wrap{ width:500px;font-size:22px; margin: 50px 0; padding:40px 20px;}
 .item-demos .wrap .auto{ width:500px;margin: 0 auto;}

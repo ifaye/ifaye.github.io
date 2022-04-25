@@ -30,69 +30,63 @@
 		</div>
 	</div>
 	<div class="main">
-		<div class="content item-technical">
-			<div>
-				<p>移动端1像素问题及解决方法</p>
-				<p>根据分辨率的兼容写法</p>
-				<p>table 多出省略，要给table设置 table-layout:fixed;</p>
-				<p>垂直居中显示</p>
-				<!-- 元素是div元素垂直水平居中显示
-				.cantainer{text-align: center; vertical-align:middle; display: table-cell;}//添加display属性
-				注意：cantainer这个div不能有float -->
-				
-				<p>多行文本固定高度的居中</p>
-				<!-- 父元素display:table ，子元素  display:table-cell;vertical-align:middle;
-				<div style="display:table;">
-				    <div style="display:table-cell;vertical-align:middle; width:200px; height:200px;">
-				        我是文本文本文本文本文本文本文本文本文本
-				        我是文本文本文本文本文本文本文本文本文本
-				    </div>
-				</div> -->
-				
-				<p>background的基础用法</p>
-				<!-- 只要背景透明        兼容ie8
-				<div class="main">
-				      <div class="cont">呵呵</div>
-				 </div>
-				.main:{background: #fff; background:rgba(255,255,255,0.95); filter:alpha(opacity=95); }
-				. cont {position: relative;} 重要，有了这个属性内容才不会透明。
-				特别注意，main这个div不能有定位，否则会无效 -->
-				
-				<p>火狐浏览器firefox 表格table td th不支持position</p>
-				<!-- 今天下午遇到一个火狐浏览器里的小bug，在表格table里的th加了个相对定位，在里边的某个div里加了绝对定位，但是绝对定位不起作用，并且在ie和谷歌浏览器里正常。解决办法：给th加了个display属性，让它为块状元素，即display:block; -->
-				
-				<p>比较好的一像素解决方案</p>
-				<!-- div { height:1px; background:#000; -webkit-transform: scaleY(0.5); -webkit-transform-origin:0 0; overflow: hidden;} 
-				/* 2倍屏 */@media only screen and (-webkit-min-device-pixel-ratio: 2.0) { .border-bottom::after { -webkit-transform: scaleY(0.5); transform: scaleY(0.5); }}/* 3倍屏 */@media only screen and (-webkit-min-device-pixel-ratio: 3.0) { .border-bottom::after { -webkit-transform: scaleY(0.33); transform: scaleY(0.33); }}
-				-->
-				
-				<p>media和import的学习和使用</p> <!-- 笔记 css参考手册知识整理 -->
-				<p>nimation动画的学习与使用</p>
-				<p>flex布局的学习与使用</p>
-				<p>transform变形的学习与使用</p>
-				<p>grid布局的一些探讨
-				<a href="https://cloud.tencent.com/developer/article/1186773">腾讯云专栏</a>
-				<a href="https://www.html.cn/archives/tag/grid-area">web前端开发</a>
-				<a href="https://cloud.tencent.com/developer/section/1072094">腾讯云文档</a>
-				</p>
-				<p>pc端年月日，时间的选择</p>
-				<p>移动端年月日，时间的选择</p>
-				<p>淘宝wap端页面开发解决方案rem</p>
-				<p>如何搭建本地服务器</p>
-				<p>Sass css预处理器的学习与使用</p>
-				<p>webpage的学习与使用</p>
-				<p>gulp的学习与使用</p>
-				<p>jquery的学习与使用</p>
-				<p>ajax数据交互</p>
-				<p>Avalon框架的学习与使用</p>
-				<p>Swiper插件的学习与使用</p>
-				<p>Bootstrap框架的应用</p>
-				<p>Element桌面端组件库的学习与使用</p>
+		<div class="content item-note">
+			<div class="post">
+				<a href="01/index.html">HTML/CSS的一些笔记</a>
+				<p>记录HTML和CSS学习和开发过程中遇到的问题和解决方法。</p>
 			</div>
-			<div style="height: 400px;"></div>
+			<div class="post">
+				<a href="02/index.html">如何搭建本地服务器</a>
+				<p>有时候在局域网内别的设备浏览开发页面的时候，需要搭建一个本地的服务器。</p>
+			</div>
+			<div class="post">
+				<a href="03/index.html">animation 动画的学习与使用</a>
+				<p>animation 动画我用得不太多，出来的效果还是不错的，而且现在兼容性越来越好了。</p>
+			</div>
+			<div class="post">
+				<a href="04/index.html">flex 布局的学习与使用</a>
+				<p>移动端页面应用得比较多，而且也比较实用。</p>
+			</div>
+			<div class="post">
+				<a href="05/index.html">transform 变形的学习与使用</a>
+				<p>基础用法用得挺多，高级应用比较少。</p>
+			</div>
+			<div class="post">
+				<a href="06/index.html">grid 布局的一些探讨</a>
+				<p>这是一个我很少用到的属性，功能很强大，很多时候都是配合 flex 布局。</p>
+			</div>
+			<div class="post">
+				<a href="07/index.html">wap 移动端解决方案</a>
+				<p>发展历程：从 em 到 rem 再到 vw </p>
+			</div>
+			<div class="post">
+				<a href="08/index.html">Sass css预处理器的学习与使用</a>
+				<p>当初就是想找个 css 预处理器，随便找了个 Sass 学习，效果还行。</p>
+			</div>
+			<div class="post">
+				<a href="09/index.html">jquery 的学习与使用</a>
+				<p>虽然现在前端框架越来越多，但是我觉得 jquery 还是很实用的。</p>
+			</div>
+			<div class="post">
+				<a href="10/index.html">ajax 数据交互</a>
+				<p>用得不多，但这是前后端分离必备知识。</p>
+			</div>
+			<div class="post">
+				<a href="11/index.html">Swiper 插件的学习与使用</a>
+				<p>一个挺实用的轮播图插件，兼容PC和移动端。</p>
+			</div>
+			<div class="post">
+				<a href="12/index.html">Bootstrap 框架的应用</a>
+				<p>功能强大的框架，哪怕用原型都能开发出不错的页面，兼容性好。</p>
+			</div>
+			<div class="post">
+				<a href="13/index.html">Element 桌面端组件库的学习与使用</a>
+				<p>类似 Bootstrap 的组件库，挺流行，而且风格更漂亮一些。</p>
+			</div>
 		</div>
 	</div>
-	
-
+	<div class="foot">
+		<p>© 2022 <span>不要逃避内心的怯懦，敢于面对平淡的人生</span></p>
+	</div>
 </body>
 </html>
