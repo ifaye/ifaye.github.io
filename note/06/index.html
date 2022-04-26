@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>grid布局</title>
+		<link rel="stylesheet" type="text/css" href="../../../style/reset.css"/>
+		<style type="text/css">
+			body{background-color: #fafafa; padding:50px 0 100px;}
+			h2{width: 700px; color: #333333; margin: 0 auto 20px;}
+			h4{margin-top: 20px;}
+			.box{width: 700px; box-sizing: border-box; background-color: #fff; padding: 20px; border-radius: 5px; margin: 0 auto 50px;}
+			.box p{line-height: 1.7;}
+			.box a{color: #00BFFF;}
+			.cutline{
+				margin-top: 10px;
+				padding: 20px;
+			}
+			.test1{width: 700px; margin: 0 auto;}
+			.test1 p{margin: 10px 0;}
+			.category-module{width:100%; box-sizing: border-box; border-radius: 3px; background-color: #fff; padding: 20px;}
+			.category-list-wrap{
+				display: grid; 
+				grid-template-columns: repeat(5,14%);
+				grid-gap: 2vw 7.5%;
+				}
+			.category-wrap{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.category-wrap img{width: 5rem;}
+			.category-wrap span{margin-top: 1rem; font-size: 1rem;}
+		</style>
+	</head>
+	<body>
+		<h2>grid布局 </h2>
+		<div class="box">
+			<p>随着时间的推移，浏览器对flex和grid这种css3的兼容性越来越好，特别是移动端，说有99%也不为过。
+			flex布局是一维布局，要么是横向排列，要么是纵向排列。grid翻译过来就是网格，它可以同时对横向和纵向引导布局。
+			flex是以内容优先，例如对齐元素内的内容；grid则是以布局优先，哪怕是不规则和非对称的设计都能处理。
+			两者经常配合使用，可以达到比较好的视觉效果。关于frid布局已经有许多文章介绍，这里不赘述，参考文章有:<br>
+				<a href="https://cloud.tencent.com/developer/article/1186773">腾讯云专栏</a><br>
+				<a href="https://www.html.cn/archives/tag/grid-area">web前端开发</a><br>
+			</p>
+			<h4>常用基本属性</h4>
+			<ul>
+				<li>display:grid 设置为网格容器</li>
+				<li>grid-template-columns: 40px 50px auto 50px 40px; 纵向分配</li>
+				<li>grid-template-rows: 25% 100px auto;横向分配</li>
+				<li>grid-gap:15px 12px; 第一个值为行间距，第二个值为列间距</li>
+			</ul>
+			<div class="cutline"><img src="../../../case/79acdivocw.png" alt=""></div>
+			<ul>
+				<li>justify-items:star、end、center、strech 网格中的内容纵向对齐方式</li>
+				<li>align-items:star、end、center、strech 网格中的内容横向对齐方式</li>
+				<li>justify-content 网格的横向对齐方式</li>
+				<li>align-content 网格的纵向对齐方式</li>
+			</ul>
+						
+		</div>
+		
+		<div class="test1">
+			<p>移动端常用分类布局，外面用grid 布局，里面内容用flex对齐</p>
+			<div class="category-module">
+				<div class="category-list-wrap">
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/4579713360f6b07c482d475606dcdaf32232.png" alt="" class="category-img" >
+						<span class="category-text">美食</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/36ea5f8aa1429104ef51c9e03fe212a54183.png" alt="" class="category-img" >
+						<span class="category-text">猫眼电影</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/ea0c6fab93f5070dfc7baa50ac9052a02300.png" alt="" class="category-img" >
+						<span class="category-text">酒店</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/7b30434d02d20c4e0428cbc2091499f22631.png" alt="" class="category-img" >
+						<span class="category-text">休闲娱乐</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/f8fc99f79983d96a12889d00ad4df41a2868.png" alt="" class="category-img" >
+						<span class="category-text">外卖</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/982e9a55410baae204a220840b11cc952772.png" alt="" class="category-img" >
+						<span class="category-text">KTV</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/586d25e7f9615a91b831713c5b68fdd62345.png" alt="" class="category-img" >
+						<span class="category-text">周边游</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/862a8ecbcaec80cc827090074c358f882565.png" alt="" class="category-img" >
+						<span class="category-text">丽人</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/51b317553ac233d10e00e22c3b198aac2906.png" alt="" class="category-img" >
+						<span class="category-text">母婴亲子</span>
+					</div>
+					<div class="category-wrap">
+						<img src="https://p0.meituan.net/imeituanbusiness/ad793f3d4b6625b60a9aeb64688739952061.png" alt="" class="category-img" >
+						<span class="category-text">全部分类</span>
+					</div>
+				</div>
+			</div>
+			<p></p>
+		</div>
+		<div class="box">
+			<h4><a href="../../seven/02/index.html">点击跳转到移动端案例页面</a></h4>
+		</div>
+	</body>
+</html>

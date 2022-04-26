@@ -31,39 +31,107 @@
 	</div>
 	<div class="main">
 		<div class="content item-note">
-			<div class="post">
-				<a href="##">HTML/CSS的一些笔记(一)</a>
-				<p></p>
-				移动端1像素问题及解决方法
-				根据分辨率的兼容写法
-				<p>media和import的学习和使用</p> <!-- 笔记 css参考手册知识整理 -->
-				table 多出省略，要给table设置 table-layout:fixed;
-				垂直居中显示
-				<!-- 元素是div元素垂直水平居中显示
-				.cantainer{text-align: center; vertical-align:middle; display: table-cell;}//添加display属性
-				注意：cantainer这个div不能有float -->
-				<p>多行文本固定高度的居中</p>
-				<!-- 父元素display:table ，子元素  display:table-cell;vertical-align:middle;
-				<div style="display:table;">
-				    <div style="display:table-cell;vertical-align:middle; width:200px; height:200px;">
-				        我是文本文本文本文本文本文本文本文本文本
-				        我是文本文本文本文本文本文本文本文本文本
-				    </div>
-				</div> -->
-				<p>background的基础用法</p>
-				<!-- 只要背景透明        兼容ie8
-				<div class="main">
-				      <div class="cont">呵呵</div>
-				 </div>
-				.main:{background: #fff; background:rgba(255,255,255,0.95); filter:alpha(opacity=95); }
-				. cont {position: relative;} 重要，有了这个属性内容才不会透明。
-				特别注意，main这个div不能有定位，否则会无效 -->
-				<p>火狐浏览器firefox 表格table td th不支持position</p>
-				<!-- 今天下午遇到一个火狐浏览器里的小bug，在表格table里的th加了个相对定位，在里边的某个div里加了绝对定位，但是绝对定位不起作用，并且在ie和谷歌浏览器里正常。解决办法：给th加了个display属性，让它为块状元素，即display:block; -->
-				<p>比较好的一像素解决方案</p>
-				<!-- div { height:1px; background:#000; -webkit-transform: scaleY(0.5); -webkit-transform-origin:0 0; overflow: hidden;} 
-				/* 2倍屏 */@media only screen and (-webkit-min-device-pixel-ratio: 2.0) { .border-bottom::after { -webkit-transform: scaleY(0.5); transform: scaleY(0.5); }}/* 3倍屏 */@media only screen and (-webkit-min-device-pixel-ratio: 3.0) { .border-bottom::after { -webkit-transform: scaleY(0.33); transform: scaleY(0.33); }}
-				-->
+			<div class="item-note-box">
+				<h3>移动端1像素问题及解决方法</h3>
+				<p>原因是移动设备分辨率的问题，二倍屏三倍屏，1px渲染出来的效果比实际粗。我常用的解决方案就是伪类 :before:after 和 transform ，优点就是兼容性好。</p>
+				<pre><code>
+.scale-1px{
+	 position: relative;
+	 border:none;
+ } 
+.scale-1px:after{
+	 content: '';
+	 position: absolute; 
+	 bottom: 0; 
+	 background: #000; 
+	 width: 100%; 
+	 height: 1px;
+}
+2倍屏 @media only screen and (-webkit-min-device-pixel-ratio: 2.0) { 
+	.scale-1px:after { -webkit-transform: scaleY(0.5); transform: scaleY(0.5); }
+	}
+3倍屏 @media only screen and (-webkit-min-device-pixel-ratio: 3.0) { 
+	.scale-1px:after { -webkit-transform: scaleY(0.33); transform: scaleY(0.33); }
+	}
+				</code></pre>
+				<h3>@media 和 @import 媒体查询</h3>
+				<pre>
+					<code>
+//语法
+@media mediatype and|not|only (media feature) {
+	CSS-Code;
+}
+or
+&lt;link href="mystylesheet.css" rel="stylesheet" media="mediatype and|not|only (media feature)"&gt;
+					</code></pre>
+				<pre><code>
+//示例
+&lt;link href="../style/m_index.css" rel="stylesheet" media="screen and (max-device-width:480px)"&gt;
+//当设备是电脑屏幕、平板电脑、智能手机，且屏幕分辨率宽度不超过480px时引用改css
+
+@media screen and (min-width: 320px) {
+	.bab_opt_mod {
+		font-size: 14px
+	}
+}
+//分辨率大于320px时
+
+@media screen and (min-width: 440px) {
+	.bab_opt_mod {
+		font-size: 16px
+	}
+}
+//分辨率大于440px时
+
+@media screen and (min-width: 640px) {
+	.bab_opt_mod {
+		font-size: 18px
+	}
+}
+//分辨率大于640px时
+				</code></pre>
+				<pre><code>
+@import url(example.css) screen and (min-width: 320px);
+//分辨率大于320px时引用example.css
+
+@import url(example.css) screen and (min-width: 440px);
+//分辨率大于440px时引用example.css
+
+@import url(example.css) screen and (min-width: 640px);
+//分辨率大于640px时引用example.css
+				</code></pre>
+				<h3>table 里面设置省略号</h3>
+				<p>有时候需要在 table 里面给内容添加多出省略，但是却不起效果，那应该就是没有给 table 设置 table-layout:fixed;</p>
+				<h3>不固定大小的图片垂直居中左右居中</h3>
+				<p>移动端可以用 flex 处理，PC 端则需要用到 vertical-align:middle</p>
+				<pre><code>
+// &amp;nbsp; 和 line-height:200px; 是重点				
+#picbox{width:200px;height:200px; text-align:center; line-height:200px; border:1px #000 solid;}
+#picbox img{vertical-align:middle;}
+
+&lt;div id="picbox"&gt;
+  &lt;img src="" alt="" /&gt;&amp;nbsp;
+&lt;/div&gt;
+				</code></pre>
+				<h3>固定高度内容居中</h3>
+				<p>移动端可以用 flex 处理，PC 端则需要用到 display:table-cell</p>
+				<pre><code>
+父元素 display:table，子元素 display:table-cell;vertical-align:middle;
+&lt;div style="display:table;"&gt;
+	&lt;div style="display:table-cell;vertical-align:middle; width:200px; height:200px;"&gt;
+		我是文本文本文本文本文本文本文本文本文本
+		我是文本文本文本文本文本文本文本文本文本
+	&lt;/div&gt;
+&lt;/div&gt;
+//注意 div 不能有 float 属性
+				</code></pre>
+
+
+				<h3>background 的一些基础应用</h3>
+				<a href="background.html" target="_blank">直接查看我的笔记</a>
+				<h3>火狐浏览器 表格 table td th 不支持 position</h3>
+				<p>遇到一个火狐浏览器里的小 bug，在表格 table 里的 th 加了个相对定位，在里边的某个 div 里加了绝对定位，但是绝对定位不起作用，但在 ie 和谷歌浏览器里正常。解决办法：给 th 加了个 display 属性，让它为块状元素，即 display:block;</p>
+
 			</div>
 		</div>
 	</div>

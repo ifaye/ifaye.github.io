@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>wap 移动端解决方案</title>
+		<link rel="stylesheet" type="text/css" href="../../style/reset.css"/>
+		<style type="text/css">
+			body{background-color: #fafafa; padding-bottom: 100px;}
+			h2,h3{color: #333333; }
+			h3{margin: 20px 0 10px;}
+			pre{background-color: #eee;margin-top: 10px; padding: 20px;padding: 20px;}
+			code{font-family: monaco,menlo,consolas,courier new,courier,monospace;}
+			a{color: #FB4E4E;}
+			.box{max-width: 960px; margin: 0 auto; padding: 50px 20px; background-color: #fff;}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h2>wap 移动端解决方案</h2>
+			<div class="test1">
+				<h3>一 采用 em 为单位</h3>
+				<p>相对单位，相对于父元素尺寸。一般是给 html 设置 font-size: 62.5%; 优点是可以做弹性布局，兼容性也好，字体也能正常显示大小。但也因为是相对于父元素，所以缺点也明显，不方便控制。</p>
+				<h3>二 采用 rem 布局</h3>
+				<p>也是相对单位，但和 em 不同的是它是相对于 html 元素字体大小，直接给 html 设置字体大小，所以它好控制很多。兼容性不错，移动端基本都兼容。</p>
+				<p>1) 用js取设备宽度，小于 320px 时, html 的 font-size=10px ； 大于 320px 时 font-size 为clientWidth* 0.03125 目的是在640尺寸的时候 font-size 为 20px，这样方便换算 rem  。缺点是，不兼容高倍屏</p>
+				<pre><code>
+function resizeFontSize(){
+	var clientWidth = document.body.clientWidth;
+	var x = 0;
+	if(clientWidth <= 320){
+		x = '10px';
+	}else{
+		x = clientWidth * 0.03125 + 'px';
+	}
+	document.querySelector('html').setAttribute('style','font-size: '+ x +';');
+}
+				</code></pre>
+				<p>2) 采用手机淘宝 flexible 方案，很好的移动端适配解决方案。优点是兼容 ios 高倍屏，缺点是不兼容安卓高倍屏。适用于中小型项目，也是我目前一直用的方案。</p>
+				<a href="https://blog.csdn.net/m0_61243965/article/details/121147982" target="_blank">参考资料</a>
+				<h3>三 vw vh 布局 </h3>
+				<p>使用方式跟 flexible 类似，但是更方便实用。缺点是安卓4.4以下不支持，某几款安卓原生浏览器不支持，但是现在随着系统版本更新迭代，兼容性已经越来越好，基本可以忽略其缺点了。</p>
+				<p>原理是 vw：1vw等于window.innerWidth的1% ， vh：和vw类似，1vh等于window.innerHeihgt的1%</p>
+				<a href="https://blog.csdn.net/tja8N2m2G46OMtF/article/details/78213474" target="_blank">参考资料</a>
+			</div>
+			
+			
+		</div>
+	
+	</body>
+</html>

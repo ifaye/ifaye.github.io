@@ -40,6 +40,15 @@ justify-content: center; /* 相对父元素水平居中 */}
 .item-note .post a:hover{color: #fb4e4e;}
 .item-note .post p{line-height: 1.5;}
 
+.item-note-box{max-width: 960px; margin: 0 auto;}
+.item-note-box h3{color: #666; margin: 30px 0 20px;}
+.item-note-box h4{color: #666; font-size: 1.1em; margin: 20px 0 10px;}
+.item-note-box p{line-height: 1.5; margin-bottom: 10px;word-break:keep-all;}
+.item-note-box pre{background-color: #fafafa;margin: 0 0 24px; padding: 8px 16px 6px 56px;}
+.item-note-box a{color: #0078DC;}
+.item-note-box a:hover{text-decoration: underline;}
+
+
 /* 前端作品 */
 .item-demos{color: #555; }
 .item-demos h2{margin-bottom: 20px;}

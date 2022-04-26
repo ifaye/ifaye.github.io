@@ -1,4 +1,0 @@
-[0816/163500:WARNING:dns_config_service_win.cc(520)] Failed to read DnsHosts.
-[0816/163501:INFO:CONSOLE(0)] "XMLHttpRequest cannot load http://lab.rayps.com/lc/info.json. Origin null is not allowed by Access-Control-Allow-Origin.," source: (0)
-[0817/150647:WARNING:dns_config_service_win.cc(520)] Failed to read DnsHosts.
-[0817/150647:INFO:CONSOLE(0)] "XMLHttpRequest cannot load http://lab.rayps.com/lc/info.json. Origin null is not allowed by Access-Control-Allow-Origin.," source: (0)
