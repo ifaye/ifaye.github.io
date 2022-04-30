@@ -2,29 +2,190 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Sass css预处理器</title>
-		<link rel="stylesheet" type="text/css" href="../../style/reset.css"/>
+		<title>Echarts数据可视化学习</title>
+		<script src="echarts.min.js" type="text/javascript" ></script>
 		<style type="text/css">
 			body{background-color: #fafafa; padding-bottom: 100px;}
-			h2,h3{color: #333333; }
-			h3{margin: 20px 0 10px;}
-			pre{background-color: #eee;margin-top: 10px; padding: 20px;padding: 20px;}
-			code{font-family: monaco,menlo,consolas,courier new,courier,monospace;}
-			a{color: #FB4E4E;}
-			.box{max-width: 960px; margin: 0 auto; padding: 50px 20px; background-color: #fff;}
+			h2,h3{color: #FB4E4E; }
+			h3,h4{color: #333333; margin: 20px 0 10px;}
+			h4{font-weight: 400; margin-bottom: 0;}
+			pre{background: rgb(246, 246, 246); padding: 5px; border: 1px solid #ccc;}
+			pre,code{font-family:monaco,menlo,consolas,courier new,courier,monospace; font-size: 1em; }
+			p{margin: 5px 0 10px;}
+			.color-red,a{color: #FB4E4E;}
+			.box{max-width: 960px; margin: 0 auto; padding: 20px; background-color: #fff;}
+			.character img{width: 100%; max-width: 800px;}
+			.main{width: 600px; height: 400px; margin-bottom: 20px; border: 1px solid #ccc; padding: 10px;}
+			#main02{width: 800px;}
 		</style>
 	</head>
 	<body>
 		<div class="box">
-			<h2>Sass css预处理器的学习与使用</h2>
-			<div class="test1">
-				<h3> sass基于 Ruby 语言开发而成，因此安装 sass 前需要安装 Ruby ，通常都是搭配 Compass 使用。</h3>
-				<p>安装和使用教程参照 <a href="http://note.youdao.com/noteshare?id=76106a3b4cee2e07bba27a631f30618a&sub=B0376E1469D34FB4A27FD2B23234851F" target="_blank">我的笔记</a></p><br>
-				<p>快速入门则直接 <a href="https://www.sass.hk/guide/" target="_blank">查看官网教程</a></p>
-			</div>
+			<h2>Echarts数据可视化学习</h2>
+			<a href="https://echarts.apache.org/zh/index.html">官网</a>
+			<h4>echarts是个功能强大的数据可视化图标库，因为业务涉及不多，所以我只是学习了基本的用法，但这也满足许多应用场景了。</h4>
+			<div class="character"><img src="https://echarts.apache.org/handbook/images/feature-v5/echarts-5.png" alt=""></div>
+			<p>详细教程可以<a href="https://echarts.apache.org/handbook/zh/get-started">参见官网文档</a></p>
+			<h3>入门</h3>
+			<p>首先，他依赖 echarts.min.js ，可以到 bootcdn 下载下来，也可以外链，或者 npm install echarts --save 安装。</p>		
+			<p>给图表先定义一个容器</p>
+			<div id="main01"  class="main"></div>
+			<div class="color-red">渲染模式区别： 移动平台优选 SVG, 图表个数很多时优选 SVG, 导出小文件高清晰时使用 SVG ,数据量特别大时推荐使用 Canvas 渲染</div>
+			<pre><code>
+// 使用 Canvas 渲染器（默认）
+var chart = echarts.init(containerDom, null, {renderer: 'canvas'});
+// 等价于：
+var chart = echarts.init(containerDom);
+
+// 使用 SVG 渲染器
+var chart = echarts.init(containerDom, null, {renderer: 'svg'}); 
+			</code></pre>
 			
+			<p>完整版 echarts 体积不小，哪怕是压缩了也接近 1M，而且许多数据也用不到到那么多模块渲染，所以在线定制就很有必要 <a href="https://echarts.apache.org/zh/builder.html" target="_blank">ECharts 在线定制</a></p>
+			<br>
+			<p>图表容器是一个高度为 400px、宽度为页面 100%。你希望在浏览器宽度改变的时候，始终保持图表宽度是页面的 100%。可以监听页面的 window.onresize 事件获取浏览器大小改变的事件，然后调用 echartsInstance.resize 改变图表的大小。</p>
+			<pre><code>
+var myChart = echarts.init(document.getElementById('main'));
+	window.onresize = function() {
+		myChart.resize();
+};
+			</code></pre>
+			<p>如果是设置特定大小可直接myChart.resize({width:800,height:400}); 实现</p>
+			<p class="color-red">小贴士：在容器节点被销毁时，总是应调用 echartsInstance.dispose 以销毁实例释放资源，避免内存泄漏。</p>
 			
+			<h3>概念</h3>
+			<h4>深色主题</h4>	
+			<p>可以直接设置 var chart = echarts.init(dom, 'dark');</p>
+			<h4>数据集</h4>
+			<p>虽然每个系列都可以在 series.data 中设置数据，但是从 ECharts4 开始，更推荐使用 数据集 来管理数据。因为这样，数据可以被多个组件复用，也方便进行 “数据和其他配置” 分离的配置风格。在运行时，数据是最常改变的，而其他配置大多并不会改变。</p>
+			<div id="main02" class="main"></div>
+			<pre><code>
+dataset: [
+	{
+		// 按行的 key-value 形式（对象数组），这是个比较常见的格式。
+		source: [
+			{ product: 'Matcha Latte', count: 823, score: 95.8 },
+			{ product: 'Milk Tea', count: 235, score: 81.4 },
+			{ product: 'Cheese Cocoa', count: 1042, score: 91.2 },
+			{ product: 'Walnut Brownie', count: 988, score: 76.9 }
+		]
+	},
+	{
+		// 按列的 key-value 形式。
+		source: {
+			product: ['Matcha Latte', 'Milk Tea', 'Cheese Cocoa', 'Walnut Brownie'],
+			count: [823, 235, 1042, 988],
+			score: [95.8, 81.4, 91.2, 76.9]
+		}
+	}
+];
+			</code></pre>
+			
+			<h4>数据转换</h4>
+			<p>把数据分成多份用不同的饼图展现,进行一些数据统计运算，并展示结果,去除或直选择数据项等</p>
+			<p>数据转换是这样一种公式：outData = f(inputData)。f 是转换方法，例如：filter、sort、regression、boxplot、cluster、aggregate(todo) 等等</p>
+			
+			<h4>图例</h4>
+			<p>图例一般放在图表的右上角、也可以放在图表的底部</p>
+			<h3>应用篇</h3>
+			<h4>折线图</h4>
+			<h4>饼图</h4>
+			<h4>散点图</h4>
+			
+			<h3>异步数据的加载与动态更新</h3>
+			<h4>异步加载</h4>
+			<p>只要通过 jQuery 等工具异步获取数据后通过 setOption 填入数据和配置项就行 <a href="https://echarts.apache.org/handbook/zh/how-to/data/dynamic-data/">参见</a></p>
+			<h3>过渡动画</h3>
+			<p>通常不需要开发者操心，echars 会自动用合适的动画</p>
 		</div>
+		
+		<script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				
+				var myChart01 = echarts.init(document.getElementById('main01'), null, {renderer: 'svg'});
+				
+				// 当容器是宽100%时 ，让图标宽度随着变化
+				// var myChart = echarts.init(document.getElementById('main'), null, {renderer: 'svg'});
+				//   window.onresize = function() {
+				//     myChart.resize();
+				//   };
+				
+				// 这是指定图标的宽高 可以在后面加 宽高对象参数
+				// var myChart = echarts.init(document.getElementById('main'), null,
+				// {
+				//     width: 600,
+				//     height: 400
+				//   }
+				// ); 
+				
+				// 这是指定图标的宽高 还可以直接指定宽高
+				// myChart.resize({
+				//   width: 800,
+				//   height: 400
+				// });
+				
+				// 指定图表的配置项和数据
+				var option01 = {
+					title: {
+						text: 'ECharts 入门示例'
+					},
+					tooltip: {},
+					legend: {},
+					xAxis: {
+						data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+					},
+					yAxis: {},
+					series: [
+						{
+							name: '销量',
+							type: 'bar',
+							data: [5, 20, 36, 10, 10, 20]
+						},
+						{
+							name: '退货',
+							type: 'bar',
+							data: [1, 2, 5, 3, 3, 2]
+						}
+					]
+				};
 	
+	
+			// 基于准备好的dom，初始化echarts实例
+			var myChart02 = echarts.init(document.getElementById('main02'), null, {renderer: 'svg'});
+							
+			// 指定图表的配置项和数据
+			option02 = {
+				
+				// 图例
+				legend: {
+				    // Try 'horizontal'
+				    orient: 'vertical',
+				    right: 10,
+				    top: 'center'
+				  },
+					
+				tooltip: {},
+				dataset: {
+					// 用 dimensions 指定了维度的顺序。直角坐标系中，如果 X 轴 type 为 category，
+					// 默认把第一个维度映射到 X 轴上，后面维度映射到 Y 轴上。
+					// 如果不指定 dimensions，也可以通过指定 series.encode
+					// 完成映射，参见后文。
+					dimensions: ['product', '2015', '2016', '2017'],
+					source: [
+						{ product: 'Matcha Latte', '2015': 43.3, '2016': 85.8, '2017': 93.7 },
+						{ product: 'Milk Tea', '2015': 83.1, '2016': 73.4, '2017': 55.1 },
+						{ product: 'Cheese Cocoa', '2015': 86.4, '2016': 65.2, '2017': 82.5 },
+						{ product: 'Walnut Brownie', '2015': 72.4, '2016': 53.9, '2017': 39.1 }
+					]
+				},
+				xAxis: { type: 'category' },
+				yAxis: {},
+				series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' }]
+			};
+							
+			// 使用刚指定的配置项和数据显示图表。
+			myChart01.setOption(option01);
+			myChart02.setOption(option02);
+			</script>
 	</body>
 </html>

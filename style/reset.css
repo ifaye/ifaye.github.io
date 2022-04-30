@@ -43,7 +43,7 @@ a{color:#565a5f; cursor: pointer; outline: none; text-decoration:none;}
 a:link, a:visited, a:hover, a:active {text-decoration: none;}
 a:focus,input,textarea{outline-style:none; text-decoration: none;}
 pre{white-space: pre;white-space: pre-wrap;word-wrap: break-word;}
-pre,code{font-family:monaco,menlo,consolas,courier new,courier,monospace}/* pre里面的内容不会继承任何样式 */
+pre,code{font-family:monaco,menlo,consolas,courier new,courier,monospace; font-size: 1em;}/* pre里面的内容不继承任何样式 */
 
 
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
