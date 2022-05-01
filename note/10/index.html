@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap 是全球最受欢迎的前端框架</title>
+		<script src="echarts.min.js" type="text/javascript" ></script>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<script src="jquery.slim.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<style type="text/css">
+			body{background-color: #fafafa; padding-bottom: 100px;}
+			h2,h3{color: #FB4E4E; }
+			h3,h4{color: #333333; margin: 30px 0 10px;}
+			h4{font-weight: 400;}
+			.box{max-width: 960px; margin: 0 auto; padding: 20px; background-color: #fff;}
+			ol{padding: 10px 10px 10px 40px;  background-color: #eee;}
+			li{line-height: 2;}
+			pre{background: rgb(246, 246, 246); padding: 5px; border-radius: 4px; }
+			pre{font-family:monaco,menlo,consolas,courier new,courier,monospace; font-size: 1code; }
+			.show-grid{margin-bottom: 20px;}
+			.show-grid>.col,.show-grid>[class^="col-"]{padding-top: 10px;
+				padding-bottom: 10px;
+				background-color: rgba(86,61,124,.15);
+				border: 1px solid #ddd;
+				border: 1px solid rgba(86,61,124,.2);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h2>Bootstrap 是全球最受欢迎的前端框架</h2>
+			<p>以前就学习和使用过 bootstrap，只不过那时候还是 bootstrap3，而且也没做什么笔记。现在刚好做一下笔记，免得遗忘。bootstrap4功能更加强大，提供了许多很常用的组件。如果要兼容 <mark>ie8-ie10</mark> 建议还是使用 <mark>bootstrap3</mark> ,如果不需要则可以用 <mark>bootstrap4</mark></p>
+			<p>首先是框架 css 和 js 的引用。可以下载源文件，也可以用 CDN 外联。记得先 jquery，再 popper，再 bootstrap。有些组件需要依赖 jq,有些组件需要依赖 popper。</p>
+			<h4>以下是需要依赖 jquery 的组件</h4>
+			<ol>
+				<li>alerts 警告框</li>
+				<li>Buttons checkbox/radio 切换按钮和单选多选</li>
+				<li>所有滑动行为、控件和指示器</li>
+				<li>切换显示操作如 tab 之类</li>
+				<li>用于显示和定位的下拉框 (同样要依赖 Popper)</li>
+				<li>modal 模态框(弹窗)</li>
+				<li>navbar 复杂导航条</li>
+				<li>Tooltips 工具提示框 popovers 弹出框 (同样要依赖 Popper)</li>
+				<li>scrollspy 滚动监听</li>
+			</ol>
+			
+			<p>必须要有的 meta 标签</p>
+			<pre>
+ &lt;meta charset="utf-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</pre>
+			<p>全局 box-size 都是 border-box</p>
+			<p>布局，栅格系统和页面内容需要包裹在 <code>.container</code> 容器(固定宽度，支持响应式)。<code>.container-fluid</code> 用于 100% 宽度，占据全部视口（viewport）的容器。 行 row 必须包含在 <code>.container</code> 或 <code>.container-fluid</code>中，一行最多分为 12 份。</p>
+			<pre>
+ &lt;div class="col-xs-12 col-sm-9 col-md-6 col-lg-3"&gt;测试&lt;/div&gt;
+ 当屏幕尺寸：
+ 小于 768px 的时候，用 col-xs-12 类对应的样式；
+ 在 768px 到 992px 之间的时候，用 col-sm-9 类对应的样式；
+ 在 992px 到 1200px 之间的时候，用 col-md-6 类对应的样式；
+ 大于 1200px 的时候，用 col-lg-3 类对应的样式；
+			</pre>
+			<div class="container">
+				<div class="row show-grid">
+					<div class="col-xs-12 col-sm-9 col-md-6 col-lg-3">col-lg-3</div>
+					<div class="col-xs-12 col-sm-9 col-md-6 col-lg-3">col-lg-3</div>
+					<div class="col-xs-12 col-sm-9 col-md-6 col-lg-3">col-lg-3</div>
+					<div class="col-xs-12 col-sm-9 col-md-6 col-lg-3">col-lg-3</div>
+				</div>
+			</div>
+			<p>&lt;div class="row row-cols-3"&gt; 一行最多展示 4 个 col</p>
+			<div class="container">
+				<div class="row row-cols-3 show-grid">
+				    <div class="col">Column</div>
+				    <div class="col">Column</div>
+				    <div class="col">Column</div>
+				    <div class="col">Column</div>
+				  </div>
+			</div>
+			<p>Vertical alignment</p>
+			<p>可以利用 <a href="https://v4.bootcss.com/docs/utilities/display/">display 工具类</a> 针对不同设备展示或者隐藏内容,bootstrap3 和 bootstrap4 写法是不同的，案例是 bootstrap4,。</p>
+			<code>.d-lg-none</code>
+			<div class="container">
+				<div class="row show-grid">
+				    <div class="col">我右边有个隐藏元素</div>
+				    <div class="col d-lg-none">我出来了</div>
+				    <div class="col">我左边有个隐藏元素</div>
+				    <div class="col">Column</div>
+				  </div>
+			</div>
+			<p><code>col-md-offset-4</code> (bootstrap 3)元素向右偏移 4 个列宽度。</p>
+			<p><code>offset-md-4</code> (bootstrap 4)元素向右偏移 4 个列宽度。</p>
+			<div class="container">
+				<div class="row show-grid">
+					<div class="col-lg-3">col-lg-3</div>
+					<div class="col-lg-3 offset-md-4">col-lg-3 col-lg-offset-4</div>
+				</div>
+			</div>
+			<p>内联样式文本<mark>mark</mark></p>
+			<p><del>被删除的文本</del>使用 <code>&lt;del&gt;</code> 标签。</p>
+			<p><u>为文本添加下划线，使用 <code>&lt;u&gt;</code> 标签</u></p>
+			<p><strong>强调文本使用 <code>&lt;strong&gt;</code></strong> 标签。</p>
+			
+			<p>为<code>&lt;table&gt;</code>标签添加<code>.table</code> 带了一点样式，好看了一点。<code>.table-striped</code> 间隔灰色背景。<code>.table-bordered</code>带边框表格。<code>.table-hover</code>鼠标悬停。<code>.success</code>可以给单元格设置颜色。注意，bootstrap3 和 bootstrap4 有些写法是不同的，具体查看各自版本文档</p>
+			<div class="bs-example">
+			    <table class="table table-bordered table-hover">
+			      <tbody>
+			        <tr>
+			          <th scope="row">1</th>
+			          <td>Mark</td>
+			          <td>Otto</td>
+			          <td>@mdo</td>
+			        </tr>
+			        <tr class="table-success">
+			          <th scope="row">2</th>
+			          <td>Jacob</td>
+			          <td>Thornton</td>
+			          <td>@fat</td>
+			        </tr>
+			        <tr>
+			          <th scope="row">3</th>
+			          <td>Larry</td>
+			          <td>the Bird</td>
+			          <td>@twitter</td>
+			        </tr>
+			      </tbody>
+			    </table>
+			</div>
+			<p>一般响应式布局 img 图片 要加上 <code>.img-fluid</code> 赋予图片 <code>max-width: 100%;</code> 和 <code>height: auto;</code> </p>
+			<h4><a href="https://v3.bootcss.com/css/#forms">bootstrap3 组件</a> 多为基础组件</h4>
+			<h4><a href="https://v4.bootcss.com/docs/components/alerts/">bootstrap4 组件</a> 组件丰富</h4>
+			<p>bootstrap4 提供了常用的 Alert 警告框，Cards 卡片盒子， Carousel 轮播图，Modal 弹窗，Toasts 轻量弹窗等等</p>
+			<p>同时，文档里面的辅助类和工具类也很实用，例如 <code>.clearfix</code></p> 
+		</div>
+		
+	</body>
+</html>
