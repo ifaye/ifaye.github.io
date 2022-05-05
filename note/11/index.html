@@ -3,25 +3,87 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-		<title>bootstrap 学习</title>
-		<!-- Bootstrap中文字体版 -->
+		<title>自动化构建工具</title>
+		<link rel="stylesheet" href="../../style/reset.css">
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
 		<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
 		<script type="text/javascript" src="bootstrap.min.js"></script>
 
-
+		<style type="text/css">
+			body{background-color: #fafafa; padding-bottom: 100px;}
+			h2,h3{color: #FB4E4E; }
+			h3,h4{color: #333333; margin: 20px 0 10px;}
+			h4{margin-bottom: 0;}
+			pre{background: rgb(246, 246, 246); padding: 5px; border: 1px solid #ccc;}
+			pre,code{font-family:monaco,menlo,consolas,courier new,courier,monospace; font-size: 1em; }
+			p{margin: 5px 0 10px;}
+			ol{list-style: decimal; padding-left: 30px; margin-bottom: 20px;}
+			.color-red,a{color: #FB4E4E;}
+			.box{max-width: 960px; margin: 0 auto; padding: 20px; background-color: #fff;}
+			.character img{width: 100%; max-width: 800px;}
+			.main{width: 600px; height: 400px; margin-bottom: 20px; border: 1px solid #ccc; padding: 10px;}
+			#main02{width: 800px;}
+		</style>
 
 	</head>
-
+			
 	<body>
 		
+		<div class="box">
+			<h3>前端工程化实践 <a href="https://www.bilibili.com/video/BV18s411E7T5?spm_id_from=333.337.search-card.all.click">推荐看看尚硅谷的 gulp 视频</a></h3>
+			<p>为什么要工程化？</p>
+			<ol>
+				<li>追求页面渲染速度，<span class="color-red">减少请求数</span>：如合并 css，js 文件、背景图和使用 css3 图标等操作。<span class="color-red">减少请求量</span>：压缩 css，js 的文件内容，降低图片质量，减少 Cookie 携带，使用浏览器缓存等。</li>
+				<li>减少大量重复性工作，冗余操作。如项目更新迭代带来的代码复杂的提高，维护成本上升；不同开发人员引入的第三方库和组件造成的代码冲突和冗余； css 的命名冲突，造成样式错乱。</li>
+			</ol>
+			<p>工程化可以做到什么？</p>
+			<ol>
+				<li>代码规范</li>
+				<li>进行 JavaScript 预处理</li>
+				<li>进行 CSS 预处理</li>
+				<li>自动编译</li>
+				<li>缩减文件体积（如压缩代码，小图片合并等）</li>
+			</ol>
+			<p>自动化构建工具有 Grunt、Gulp 和 Webpack 等，来进行压缩、编译、测试、代码检查、打包发布等重复性工作。</p>
+			<h4>Gulp 实战演练</h4>
+			<ol>
+				<li> npm install gulp-cli -g  全局安装 Gulp</li>
+				<li> npm init  进入项目根目录创建 package.json 文件 </li>
+				<li> npm install gulp -save-dev  根据引导配置项目信息 然后安装 Gulp 依赖包</li>
+				<li>在项目根目录创建 gulpfile.js文件，内容为:</li>
+			</ol>
+			<pre><code> var gulp = require("gulp");
+  gulp.task("default", function(){   //定义一个名为 default 的任务
+  console.log("this is default task");// 此处定义 default 任务处理过程
+ });</code></pre>
+			<h4>利用 gulp-babel 插件将js脚本编译成es5版本</h4>
+			<p>安装插件</p>
+			<pre><code> npm install gulp-babel -save-dev 
+ npm install babel-preset-es2015 --save-dev</code></pre>
+			<p>在 gulpfile.js 中创建任务</p>
+			<pre><code>var babel = require("gulp-babel");      // 引入babel
+ gulp.task("compile-js", function(){
+	return gulp.src("js/*.js")      // 处理 src 下所有 js 文件  有 return 之后编译就会异步加载执行 
+	.pipe(babel({                  // 调用 babel
+		presets:['es2015']    // 采用es2015 预设插件
+	}))
+	.pipe(gulp.dest("dist/js/"))   //编译好的内容保存到 dist 目录下的 js 文件夹内
+});</code></pre>
+		<h4>利用 gulp-sass 插件编译 Sass 文件</h4>
+		<p>安装插件</p>
+		<pre><code> npm install gulp-sass -save-dev</code></pre>
+		<p>在 gulpfile.js 中创建任务</p>
+		<pre><code>var sass = require("gulp-sass");      // 引入 sass 插件
+ gulp.task("compile-sass", function(){   // 定义编译 sass 的任务
+	return gulp.src("sass/*.scss")       // 处理 sass 下所有 scss 文件
+	.pipe(sass().on('error', sass.logError))   //采用 sass 插件编译并处理错误
+	.pipe(gulp.dest("dist/css/"));   //编译好的内容输出到 dist 目录下的 css 文件夹内
+});</code></pre>
 		
-		
-		
-		
-		
+		<h4>如何执行任务</h4>
+		<p>如果是执行某个任务，可以直接 gulp + 任务名；如果任务比较多，需要执行多个任务，可以把几个任务合并成一个默认任务，然后执行默认任务 gulp </p>
+		<pre><code>gulp.task('default',['compile-js','compile-sass']);</code></pre>
+		</div>
 		
 	</body>
 </html>
